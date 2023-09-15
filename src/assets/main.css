@@ -3,23 +3,12 @@
 #app {
   margin: 0 auto;
   padding: 40px;
+  flex: 1;
+  align-self: stretch;
 }
 
 a {
   text-decoration: none;
   color: var(--color-text);
   transition: 0.4s;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }

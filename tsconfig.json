@@ -1,4 +1,30 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@vue/tsconfig",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["dom", "dom.iterable", "esnext", "scripthost"],
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "sourceMap": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": ["node_modules/@types", "src"],
+    "types": ["node"]
+  },
+  "include": [
+    "./*.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": ["node_modules"],
   "files": [],
   "references": [
     {
