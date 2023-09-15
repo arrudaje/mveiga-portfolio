@@ -5,25 +5,27 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: `/${process.env.GITHUB_REPOSITORY_NAME ?? ''}`,
       name: 'home',
-      component: Home
+      component: Home,
+      children: [
+        {
+          path: '/about',
+          name: 'about',
+          component: Home
+        },
+        {
+          path: '/studies',
+          name: 'studies',
+          component: Home
+        },
+        {
+          path: '/contact',
+          name: 'contact',
+          component: Home
+        }
+      ]
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: Home
-    },
-    {
-      path: '/studies',
-      name: 'studies',
-      component: Home
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: Home
-    }
   ]
 })
 
