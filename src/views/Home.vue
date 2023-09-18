@@ -1,10 +1,15 @@
 <script lang="ts" setup>
 import Navbar from "@/components/Navbar.vue";
-import { inject } from "vue";
+import { computed, inject } from "vue";
+import { useMouse } from "@vueuse/core";
 import { CHANGE_THEME } from "@/util/symbols";
 import Curved from "@/assets/svg/Curved.vue";
 
 const changeTheme = inject(CHANGE_THEME, () => null);
+
+const { x, y } = useMouse();
+const xPx = computed(() => `${x.value}px`);
+const yPx = computed(() => `${y.value}px`);
 </script>
 
 <template>
@@ -55,13 +60,14 @@ const changeTheme = inject(CHANGE_THEME, () => null);
   height: 90vh;
   position: fixed;
   z-index: -3;
-  top: 0;
-  right: 0;
+  top: calc(v-bind(yPx) - 45vh);
+  left: calc(v-bind(xPx) - 45vh);
   background: radial-gradient(
     50% 50% at 50% 50%,
     var(--color-highlight) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  transition: top 5s ease-out, left 5s ease-out;
 }
 
 .home__description {
