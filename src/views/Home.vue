@@ -10,6 +10,9 @@ const changeTheme = inject(CHANGE_THEME, () => null);
 <template>
   <div class="home">
     <div class="home__backdrop"></div>
+    <div class="home__description">
+        I'm a UX Designer
+    </div>
     <div class="home__logo-nav">
       <div class="home__logo-nav__name">
         mveiga
@@ -59,6 +62,21 @@ const changeTheme = inject(CHANGE_THEME, () => null);
     var(--color-highlight) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.home__description {
+    font-family: 'Outfit', sans-serif;
+    max-width: 70%;
+    font-size: 150px;
+    line-height: 0.9;
+    position: fixed;
+    z-index: -3;
+    top: 0;
+    right: 0;
+    text-align: right;
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
 }
 
 .home__logo-nav {
