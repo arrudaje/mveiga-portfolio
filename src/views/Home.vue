@@ -1,13 +1,21 @@
 <script lang="ts" setup>
 import Navbar from "@/components/Navbar.vue";
-import { computed, inject } from "vue";
-import { useMouse } from "@vueuse/core";
+import { computed, inject, ref } from "vue";
+import { useWindowSize } from "@vueuse/core";
 import { CHANGE_THEME } from "@/util/symbols";
 import Curved from "@/assets/svg/Curved.vue";
 
 const changeTheme = inject(CHANGE_THEME, () => null);
 
-const { x, y } = useMouse();
+const { width, height } = useWindowSize();
+const x = ref(width.value);
+const y = ref(0);
+
+setInterval(() => {
+  x.value = Math.random() * width.value;
+  y.value = Math.random() * height.value;
+}, 3000);
+
 const xPx = computed(() => `${x.value}px`);
 const yPx = computed(() => `${y.value}px`);
 </script>
@@ -56,12 +64,12 @@ const yPx = computed(() => `${y.value}px`);
 }
 
 .home__backdrop {
-  width: 90vh;
-  height: 90vh;
+  width: 100vw;
+  height: 100vw;
   position: fixed;
   z-index: -3;
-  top: calc(v-bind(yPx) - 45vh);
-  left: calc(v-bind(xPx) - 45vh);
+  top: calc(v-bind(yPx) - 50vw);
+  left: calc(v-bind(xPx) - 50vw);
   background: radial-gradient(
     50% 50% at 50% 50%,
     var(--color-highlight) 0%,
