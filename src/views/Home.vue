@@ -160,8 +160,12 @@ const yPx = computed(() => `${y.value}px`);
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        transform: translateY(-20%);
+        transform: translateY(-27%);
         gap: 16px;
+
+        @media screen and (max-width: 1120px) {
+          transform: translateY(-20%);
+        }
 
         @media screen and (max-width: 800px) {
           transform: translateY(-12%);
