@@ -1,10 +1,14 @@
-@import './base.css';
+@import './base';
 
 #app {
   margin: 0 auto;
   padding: 40px;
-  flex: 1;
+  height: 100vh;
   align-self: stretch;
+
+  @media screen and (max-width: 550px) {
+    padding: 16px;
+  }
 }
 
 a {

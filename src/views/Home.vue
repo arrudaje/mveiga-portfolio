@@ -23,9 +23,7 @@ const yPx = computed(() => `${y.value}px`);
 <template>
   <div class="home">
     <div class="home__backdrop"></div>
-    <div class="home__description">
-        I'm a UX Designer
-    </div>
+    <div class="home__description">I'm a UX Designer</div>
     <div class="home__logo-nav">
       <div class="home__logo-nav__name">
         mveiga
@@ -47,13 +45,13 @@ const yPx = computed(() => `${y.value}px`);
           ></span>
         </div>
       </div>
-      <Navbar class="home__logo-nav__navbar" />
+      <!--<Navbar class="home__logo-nav__navbar" />-->
     </div>
   </div>
 </template>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap');
+<style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap");
 
 .home {
   display: flex;
@@ -61,26 +59,25 @@ const yPx = computed(() => `${y.value}px`);
   justify-content: flex-end;
   width: 100%;
   height: 100%;
-}
 
-.home__backdrop {
-  width: 100vw;
-  height: 100vw;
-  position: fixed;
-  z-index: -3;
-  top: calc(v-bind(yPx) - 50vw);
-  left: calc(v-bind(xPx) - 50vw);
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    var(--color-highlight) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  transition: top 5s ease-out, left 5s ease-out;
-}
+  &__backdrop {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    z-index: -3;
+    top: calc(v-bind(yPx) - 50vw);
+    left: calc(v-bind(xPx) - 50vw);
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      var(--color-highlight) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    transition: top 5s ease-out, left 5s ease-out;
+  }
 
-.home__description {
-    font-family: 'Outfit', sans-serif;
-    max-width: 70%;
+  &__description {
+    font-family: "Outfit", sans-serif;
+    max-width: 80%;
     font-size: 150px;
     line-height: 0.9;
     position: fixed;
@@ -91,95 +88,116 @@ const yPx = computed(() => `${y.value}px`);
     text-transform: uppercase;
     mix-blend-mode: overlay;
     opacity: 0.5;
-}
 
-.home__logo-nav {
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
-}
+    @media screen and (max-width: 960px) {
+      max-width: none;
+    }
 
-.home__logo-nav:hover .home__logo-nav__name__dots__dot__text {
-  width: 80px;
-  height: 80px;
-}
+    @media screen and (max-width: 800px) {
+      font-size: 100px;
+    }
 
-.home__logo-nav__name {
-  display: flex;
-  color: white;
-  font-family: 'Outfit', sans-serif;
-  font-size: 290px;
-  font-weight: 700;
-  margin-bottom: -112px;
-  align-items: baseline;
-}
+    @media screen and (max-width: 550px) {
+      font-size: 80px;
+    }
 
-.home__logo-nav__name__dots {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  transform: translateY(-80%);
-  gap: 16px;
-}
+    @media screen and (max-width: 430px) {
+      font-size: 60px;
+    }
+  }
 
-.home__logo-nav__name__dots:hover
-  .home__logo-nav__name__dots__dot:not(.home__logo-nav__name__dots__dot--one) {
-  transform: translate(0);
-}
+  &__logo-nav {
+    display: flex;
+    flex-direction: column;
 
-.home__logo-nav__name__dots__dot {
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
+    &:hover &__name__dots__dot__text {
+      width: 80px;
+      height: 80px;
+    }
 
-.home__logo-nav__name__dots__dot__text {
-  position: absolute;
-  width: 0;
-  height: 0;
-  transform: rotate(140deg);
-  z-index: -2;
-  pointer-events: none;
-  transition: all 300ms ease-out;
-}
+    &__name {
+      display: flex;
+      color: white;
+      font-family: "Outfit", sans-serif;
+      font-size: 290px;
+      font-weight: 700;
+      //margin-bottom: -112px;
+      margin-bottom: -80px;
+      align-items: baseline;
 
-.home__logo-nav__name__dots__dot__text :deep(#curve-text-path) {
-  font-weight: 700;
-  font-size: 80px;
-  fill: var(--color-highlight);
-}
+      @media screen and (max-width: 1120px) {
+        font-size: 200px;
+      }
 
-.home__logo-nav__name__dots__dot:not(.home__logo-nav__name__dots__dot--one) {
-  transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+      @media screen and (max-width: 800px) {
+        font-size: 120px;
+      }
 
-.home__logo-nav__name__dots__dot--one {
-  background: var(--color-highlight);
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  z-index: 1;
-}
+      @media screen and (max-width: 550px) {
+        font-size: 90px;
+      }
 
-.home__logo-nav__name__dots__dot--two {
-  background: var(--color-second);
-  transform: translateY(calc(100% + 16px));
-}
+      &__dots {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        transform: translateY(-80%);
+        gap: 16px;
 
-.home__logo-nav__name__dots__dot--three {
-  background: var(--color-third);
-  transform: translateY(calc(270% + 16px));
-}
+        &:hover &__dot:not(.home__logo-nav__name__dots__dot--one) {
+          transform: translate(0);
+        }
 
-@media screen and (orientation: portrait) {
-  .home__backdrop {
-    width: 90vw;
-    height: 90vw;
+        &__dot {
+          width: 24px;
+          height: 24px;
+          border-radius: 12px;
+          position: relative;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          &__text {
+            position: absolute;
+            width: 0;
+            height: 0;
+            transform: rotate(140deg);
+            z-index: -2;
+            pointer-events: none;
+            transition: all 300ms ease-out;
+
+            :deep(#curve-text-path) {
+              font-weight: 700;
+              font-size: 80px;
+              fill: var(--color-highlight);
+            }
+          }
+
+          &:not(.home__logo-nav__name__dots__dot--one) {
+            transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+
+          &--one {
+            background: var(--color-highlight);
+            width: 48px;
+            height: 48px;
+            border-radius: 24px;
+            z-index: 1;
+          }
+
+          &--two {
+            background: var(--color-second);
+            transform: translateY(calc(100% + 16px));
+          }
+
+          &--three {
+            background: var(--color-third);
+            transform: translateY(calc(270% + 16px));
+          }
+        }
+      }
+    }
   }
 }
 </style>

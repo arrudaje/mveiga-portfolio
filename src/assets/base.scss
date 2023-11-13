@@ -16,7 +16,7 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
-  min-width: 0;
+  //min-width: 0;
 }
 
 body {
@@ -26,8 +26,6 @@ body {
   line-height: 1.5;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  display: flex;
-  place-items: center;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
