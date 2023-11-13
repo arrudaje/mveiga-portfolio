@@ -23,7 +23,7 @@ const yPx = computed(() => `${y.value}px`);
 <template>
   <div class="home">
     <div class="home__backdrop"></div>
-    <div class="home__description">I'm a UX Designer</div>
+    <div class="home__description">I'm a<br/>UX Designer</div>
     <div class="home__logo-nav">
       <div class="home__logo-nav__name">
         mveiga
@@ -51,8 +51,6 @@ const yPx = computed(() => `${y.value}px`);
 </template>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap");
-
 .home {
   display: flex;
   flex-direction: column;
@@ -78,7 +76,8 @@ const yPx = computed(() => `${y.value}px`);
   &__description {
     font-family: "Outfit", sans-serif;
     max-width: 80%;
-    font-size: 150px;
+    font-size: 100px;
+    //font-size: 150px;
     line-height: 0.9;
     position: fixed;
     z-index: -3;

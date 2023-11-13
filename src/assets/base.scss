@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap");
+
 :root {
   --color-1: #F05679;
   --color-2: #04B5FE;
@@ -16,7 +19,7 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
-  //min-width: 0;
+  min-width: 0;
 }
 
 body {
@@ -24,7 +27,7 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   line-height: 1.5;
-  font-family: Roboto, sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
