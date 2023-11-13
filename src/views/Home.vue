@@ -128,6 +128,7 @@ const yPx = computed(() => `${y.value}px`);
   &__logo-nav {
     display: flex;
     flex-direction: column;
+    padding-bottom: 21px;
 
     &:hover &__name__dots__dot__text {
       width: 80px;
@@ -140,9 +141,7 @@ const yPx = computed(() => `${y.value}px`);
       font-family: "Outfit", sans-serif;
       font-size: 290px;
       font-weight: 700;
-      //margin-bottom: -112px;
-      margin-bottom: -80px;
-      align-items: baseline;
+      align-items: flex-end;
       line-height: 1;
 
       @media screen and (max-width: 1120px) {
@@ -161,8 +160,16 @@ const yPx = computed(() => `${y.value}px`);
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        transform: translateY(-80%);
+        transform: translateY(-20%);
         gap: 16px;
+
+        @media screen and (max-width: 800px) {
+          transform: translateY(-12%);
+        }
+
+        @media screen and (max-width: 550px) {
+          transform: translateY(-9%);
+        }
 
         &:hover &__dot:not(.home__logo-nav__name__dots__dot--one) {
           transform: translate(0);
