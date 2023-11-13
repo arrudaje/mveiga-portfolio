@@ -4,11 +4,12 @@ import { computed, inject, ref } from "vue";
 import { useWindowSize } from "@vueuse/core";
 import { CHANGE_THEME } from "@/util/symbols";
 import Curved from "@/assets/svg/Curved.vue";
+import Burger from "@/assets/svg/Burger.vue";
 
 const changeTheme = inject(CHANGE_THEME, () => null);
 
 const { width, height } = useWindowSize();
-const x = ref(width.value);
+const x = ref(0);
 const y = ref(0);
 
 setInterval(() => {
@@ -23,7 +24,11 @@ const yPx = computed(() => `${y.value}px`);
 <template>
   <div class="home">
     <div class="home__backdrop"></div>
-    <div class="home__description">I'm a<br/>UX Designer</div>
+    <div class="home__description">
+      <!-- I'm a<br/>UX Designer -->
+      Under<br />construction
+    </div>
+    <Burger />
     <div class="home__logo-nav">
       <div class="home__logo-nav__name">
         mveiga
@@ -54,7 +59,7 @@ const yPx = computed(() => `${y.value}px`);
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
 
@@ -79,29 +84,44 @@ const yPx = computed(() => `${y.value}px`);
     font-size: 100px;
     //font-size: 150px;
     line-height: 0.9;
-    position: fixed;
+    word-break: break-all;
     z-index: -3;
-    top: 0;
-    right: 0;
+    margin-right: calc(-1 * var(--main-padding));
+    margin-top: calc(-1 * var(--main-padding));
     text-align: right;
+    align-self: flex-end;
     text-transform: uppercase;
     mix-blend-mode: overlay;
     opacity: 0.5;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1010px) {
       max-width: none;
+      font-size: 90px;
     }
 
     @media screen and (max-width: 800px) {
-      font-size: 100px;
-    }
-
-    @media screen and (max-width: 550px) {
       font-size: 80px;
+      //font-size: 100px;
     }
 
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 645px) {
+      font-size: 70px;
+      //font-size: 100px;
+    }
+
+    @media screen and (max-width: 565px) {
       font-size: 60px;
+      //font-size: 80px;
+    }
+
+    @media screen and (max-width: 485px) {
+      font-size: 50px;
+      //font-size: 60px;
+    }
+
+    @media screen and (max-width: 405px) {
+      font-size: 40px;
+      //font-size: 60px;
     }
   }
 
@@ -123,6 +143,7 @@ const yPx = computed(() => `${y.value}px`);
       //margin-bottom: -112px;
       margin-bottom: -80px;
       align-items: baseline;
+      line-height: 1;
 
       @media screen and (max-width: 1120px) {
         font-size: 200px;
@@ -169,7 +190,7 @@ const yPx = computed(() => `${y.value}px`);
             :deep(#curve-text-path) {
               font-weight: 700;
               font-size: 80px;
-              fill: var(--color-highlight);
+              fill: var(--color-text);
             }
           }
 

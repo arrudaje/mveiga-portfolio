@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-
-</script>
-
 <template>
   <svg viewBox="0 0 500 500">
     <path

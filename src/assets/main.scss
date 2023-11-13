@@ -1,14 +1,18 @@
 @import './base';
 
-#app {
-  margin: 0 auto;
-  padding: 40px;
-  height: 100vh;
-  align-self: stretch;
+:root {
+  --main-padding: 40px;
 
   @media screen and (max-width: 550px) {
-    padding: 16px;
+    --main-padding: 16px;
   }
+}
+
+#app {
+  margin: 0 auto;
+  padding: var(--main-padding);
+  height: 100vh;
+  align-self: stretch;
 }
 
 a {
