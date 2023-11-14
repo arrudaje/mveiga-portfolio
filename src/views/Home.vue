@@ -179,6 +179,12 @@ const yPx = computed(() => `${y.value}px`);
           transform: translate(0);
         }
 
+        @media screen and (hover: none) {
+          &:active &__dot:not(.home__logo-nav__name__dots__dot--one) {
+            transform: translate(0);
+          }
+        }
+
         &__dot {
           width: 24px;
           height: 24px;
