@@ -1,28 +1,36 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
+import Burger from '@/views/Burger.vue'
+import Pixel from '@/views/Pixel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: `/${import.meta.env.GITHUB_REPOSITORY_NAME ?? ''}`,
-      name: 'home',
-      component: Home,
+      path: '/pixel',
+      name: 'pixel',
+      alias: '/',
+      component: Pixel,
+      children: []
+    },
+    {
+      path: `/burger`,
+      name: 'burger',
+      component: Burger,
       children: [
         {
           path: '/about',
           name: 'about',
-          component: Home
+          component: Burger
         },
         {
           path: '/studies',
           name: 'studies',
-          component: Home
+          component: Burger
         },
         {
           path: '/contact',
           name: 'contact',
-          component: Home
+          component: Burger
         }
       ]
     },

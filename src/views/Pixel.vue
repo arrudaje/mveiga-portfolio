@@ -22,7 +22,7 @@ const yPx = computed(() => `${y.value}px`);
 </script>
 
 <template>
-  <div class="home">
+  <div class="home pixel">
     <div class="home__backdrop"></div>
     <div class="home__description">
       <!-- I'm a<br/>UX Designer -->

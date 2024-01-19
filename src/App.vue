@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, provide, ref } from "vue";
+import { provide, ref } from "vue";
 import { RouterView } from "vue-router";
 import { CHANGE_THEME } from "@/util/symbols";
 
@@ -30,6 +30,8 @@ provide(CHANGE_THEME, (value: number) => {
 </template>
 
 <style lang="scss">
+@import url('./assets/main.scss');
+
 .wrapper.style-1 {
   --color-highlight: var(--color-1);
   --color-second: var(--color-2);
