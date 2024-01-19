@@ -7,7 +7,6 @@ console.log('ENVIRONMENT DUMP: ', process.env);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_REPOSITORY_NAME ?? '',
   plugins: [
     vue(),
   ],
