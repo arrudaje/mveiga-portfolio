@@ -3,6 +3,8 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+console.log('ENVIRONMENT DUMP: ', process.env);
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.GITHUB_REPOSITORY_NAME ?? '',
