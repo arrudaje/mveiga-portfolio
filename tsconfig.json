@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@vue/tsconfig",
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
@@ -14,7 +14,8 @@
     "sourceMap": true,
     "strictPropertyInitialization": false,
     "typeRoots": ["node_modules/@types", "src"],
-    "types": ["node"]
+    "types": ["bun"],
+    "noEmit": true,
   },
   "include": [
     "./*.ts",
@@ -24,14 +25,6 @@
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
-  "exclude": ["node_modules"],
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    }
-  ]
+  "exclude": ["node_modules", "src/**/__tests__/*"],
+  "files": []
 }

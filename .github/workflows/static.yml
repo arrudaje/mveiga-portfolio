@@ -27,15 +27,12 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn
+        run: bun install -p
       - name: Build project
-        run: yarn build
+        run: bun run build
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
