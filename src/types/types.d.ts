@@ -1,7 +1,7 @@
 export type Offset = {
-  // number of pixels offset from the leftmost border of the field to the begin of the square
+  // number of pixels offset from the leftmost border of the field to the begin of the tile
   left: number;
-  // number of pixels offset from the topmost border of the field to the begin of the square
+  // number of pixels offset from the topmost border of the field to the begin of the tile
   top: number;
 };
 
@@ -12,15 +12,12 @@ export type Coordinate = {
   y: number;
 };
 
-export type Position = Offset & Coordinate;
-
-export type Map = {
-  [key in `${Position["x"]},${Position["y"]}`]?: Tile;
+export type Tile = {
+  coordinate: Coordinate;
+  allow: boolean;
+  hasChar: boolean;
 };
 
-export type Tile = {
-    position: Position;
-    allow: boolean;
-    hasChar: boolean;
-    item?: {};
+export type Map = {
+  [key: `${Position["x"]},${Position["y"]}`]: Tile;
 };
