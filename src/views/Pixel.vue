@@ -10,8 +10,8 @@ import Navigation from "@/components/Navigation.vue";
 import { useInterval } from "@vueuse/core";
 import { watch } from "vue";
 import Bubble from "@/components/Bubble.vue";
-import Char1 from "@/assets/svg/underconst_char_undercons_1.svg";
-import Char2 from "@/assets/svg/underconst_char_undercons_2.svg";
+import Char1 from "@/assets/svg/char_undercons1.svg";
+import Char2 from "@/assets/svg/char_undercons2.svg";
 
 const { counter, reset } = useInterval(2000, { controls: true });
 const { counter: charCounter, reset: charReset } = useInterval(500, { controls: true });
