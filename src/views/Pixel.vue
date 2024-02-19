@@ -9,9 +9,14 @@ import traveller from "@/assets/png/traveller.png";
 import Navigation from "@/components/Navigation.vue";
 import { useInterval } from "@vueuse/core";
 import { watch } from "vue";
+import Bubble from "@/components/Bubble.vue";
+import Char1 from "@/assets/svg/underconst_char_undercons_1.svg";
+import Char2 from "@/assets/svg/underconst_char_undercons_2.svg";
 
 const { counter, reset } = useInterval(2000, { controls: true });
+const { counter: charCounter, reset: charReset } = useInterval(500, { controls: true });
 watch(counter, () => counter.value === 5 && reset());
+watch(charCounter, () => charCounter.value === 2 && charReset());
 </script>
 
 <template>
@@ -78,6 +83,15 @@ watch(counter, () => counter.value === 5 && reset());
         </a>
       </div>
     </div>
+    <div class="pixel__heroine">
+      <div class="pixel__cloud" data-cloud-id="3"></div>
+      <div class="pixel__cloud" data-cloud-id="4"></div>
+      <div class="pixel__cloud" data-cloud-id="5"></div>
+      <div class="pixel__heroine__char">
+        <img :src="charCounter ? Char1 : Char2" class="pixel__heroine__char__img" />
+        <Bubble content="Under construction..." anchor="top-end" :width="120" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -110,6 +124,26 @@ watch(counter, () => counter.value === 5 && reset());
       top: 260px;
       animation-delay: 200ms;
       animation-duration: 1.5s;
+    }
+
+    &[data-cloud-id="3"] {
+      left: 45px;
+      top: 0;
+      animation-delay: 100ms;
+      animation-duration: 2.2s;
+    }
+
+    &[data-cloud-id="4"] {
+      left: 0;
+      top: 45px;
+      animation-delay: 300ms;
+      animation-duration: 1.9s;
+    }
+
+    &[data-cloud-id="5"] {
+      left: 150px;
+      top: 60px;
+      animation-duration: 1.7s;
     }
   }
 
@@ -152,6 +186,28 @@ watch(counter, () => counter.value === 5 && reset());
         img {
           height: 100%;
         }
+      }
+    }
+  }
+
+  &__heroine {
+    position: absolute;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    right: 8vw;
+    bottom: 5vw;
+    height: 160px;
+    width: 220px;
+
+    &__char {
+      position: relative;
+      display: flex;
+      align-items: end;
+      height: 125px;
+
+      &__img {
+        width: 65px;
       }
     }
   }
