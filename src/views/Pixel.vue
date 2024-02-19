@@ -114,6 +114,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     border: 2px solid var(--color-accent);
     aspect-ratio: 3/2;
     height: 3.5vh;
+    width: auto;
     border-radius: 2px;
     animation: bob 2s ease-out infinite;
 
@@ -151,12 +152,13 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
   }
 
   &__hero {
-    flex: 1;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 6vw;
+    margin: 0 6vw;
+    z-index: 1;
 
     &__title {
       font-size: 80px;
@@ -215,10 +217,52 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     }
 
     &__cone {
-      margin-left: -50px;
-      height: 40px;
+      margin-left: -60px;
+      height: 50px;
       transform: translate(10px, 10px);
     }
+  }
+
+  @media (orientation: portrait) {
+    &__cloud {
+      height: auto;
+      width: 5vw;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    &__cloud {
+      height: 3.5vh;
+      width: auto;
+    }
+
+    &__hero {
+      margin-top: 64px;
+      justify-content: normal;
+
+      &__title {
+        font-size: 40px;
+        line-height: 42px;
+      }
+
+      &__activities {
+        img {
+          height: 30px;
+        }
+      }
+
+      &__description {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    &__heroine {
+        right: auto;
+        left: 50%;
+        bottom: 64px;
+        transform: translateX(-50%);
+      }
   }
 }
 
