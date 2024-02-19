@@ -114,7 +114,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
   &__cloud {
     position: absolute;
     aspect-ratio: 3/2;
-    height: 3.5vh;
+    height: 5vh;
     width: auto;
     animation: bob 2s ease-out infinite;
 
@@ -146,7 +146,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 
     &[data-cloud-id="5"] {
       left: 150px;
-      top: 60px;
+      top: 70px;
       animation-duration: 1.7s;
     }
   }
@@ -202,7 +202,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     justify-content: center;
     right: 8vw;
     bottom: 5vw;
-    height: 160px;
+    height: 190px;
     width: 220px;
 
     &__char {
@@ -226,13 +226,13 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
   @media (orientation: portrait) {
     &__cloud {
       height: auto;
-      width: 5vw;
+      width: 6vw;
     }
   }
 
   @media (max-width: 575.98px) {
     &__cloud {
-      height: 3.5vh;
+      height: 5vh;
       width: auto;
 
       &[data-cloud-id="1"] {
