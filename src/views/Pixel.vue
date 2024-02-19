@@ -234,6 +234,18 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     &__cloud {
       height: 3.5vh;
       width: auto;
+
+      &[data-cloud-id="1"] {
+        left: 150px;
+        top: 70px;
+      }
+
+      &[data-cloud-id="2"] {
+        left: -10px;
+        top: 150px;
+        animation-delay: 200ms;
+        animation-duration: 1.5s;
+      }
     }
 
     &__hero {
@@ -258,11 +270,11 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     }
 
     &__heroine {
-        right: auto;
-        left: 50%;
-        bottom: 64px;
-        transform: translateX(-50%);
-      }
+      right: auto;
+      left: 50%;
+      bottom: 64px;
+      transform: translateX(-50%);
+    }
   }
 }
 
