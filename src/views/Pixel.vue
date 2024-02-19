@@ -13,6 +13,9 @@ import Bubble from "@/components/Bubble.vue";
 import Char1 from "@/assets/svg/char_undercons1.svg";
 import Char2 from "@/assets/svg/char_undercons2.svg";
 import Cone from "@/assets/svg/cone_undercons.svg";
+import Cloud1 from "@/assets/svg/cloud1.svg";
+import Cloud2 from "@/assets/svg/cloud2.svg";
+import Cloud3 from "@/assets/svg/cloud3.svg";
 
 const { counter, reset } = useInterval(2000, { controls: true });
 const { counter: charCounter, reset: charReset } = useInterval(500, {
@@ -25,8 +28,8 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 <template>
   <div class="home pixel">
     <Navigation class="pixel__nav" />
-    <div class="pixel__cloud" data-cloud-id="1"></div>
-    <div class="pixel__cloud" data-cloud-id="2"></div>
+    <img :src="Cloud2" class="pixel__cloud" data-cloud-id="1" />
+    <img :src="Cloud3" class="pixel__cloud" data-cloud-id="2" />
     <div class="pixel__hero">
       <h1 class="pixel__hero__title">I'm Mari Veiga,</h1>
       <div class="pixel__hero__activities">
@@ -83,9 +86,9 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
       </div>
     </div>
     <div class="pixel__heroine">
-      <div class="pixel__cloud" data-cloud-id="3"></div>
-      <div class="pixel__cloud" data-cloud-id="4"></div>
-      <div class="pixel__cloud" data-cloud-id="5"></div>
+      <img :src="Cloud1" class="pixel__cloud" data-cloud-id="3" />
+      <img :src="Cloud2" class="pixel__cloud" data-cloud-id="4" />
+      <img :src="Cloud3" class="pixel__cloud" data-cloud-id="5" />
       <img :src="Cone" class="pixel__heroine__cone" />
       <div class="pixel__heroine__char">
         <img
@@ -110,12 +113,9 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 
   &__cloud {
     position: absolute;
-    background-color: white;
-    border: 2px solid var(--color-accent);
     aspect-ratio: 3/2;
     height: 3.5vh;
     width: auto;
-    border-radius: 2px;
     animation: bob 2s ease-out infinite;
 
     &[data-cloud-id="1"] {
