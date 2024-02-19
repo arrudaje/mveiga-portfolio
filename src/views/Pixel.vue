@@ -12,9 +12,12 @@ import { watch } from "vue";
 import Bubble from "@/components/Bubble.vue";
 import Char1 from "@/assets/svg/char_undercons1.svg";
 import Char2 from "@/assets/svg/char_undercons2.svg";
+import Cone from "@/assets/svg/cone_undercons.svg";
 
 const { counter, reset } = useInterval(2000, { controls: true });
-const { counter: charCounter, reset: charReset } = useInterval(500, { controls: true });
+const { counter: charCounter, reset: charReset } = useInterval(500, {
+  controls: true,
+});
 watch(counter, () => counter.value === 5 && reset());
 watch(charCounter, () => charCounter.value === 2 && charReset());
 </script>
@@ -28,11 +31,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
       <h1 class="pixel__hero__title">I'm Mari Veiga,</h1>
       <div class="pixel__hero__activities">
         <Transition mode="out-in">
-          <img
-            :src="uxdesigner"
-            alt="UX Designer"
-            data-activity="1"
-          />
+          <img :src="uxdesigner" alt="UX Designer" data-activity="1" />
           <!--<img
             v-else-if="counter === 1"
             :src="productdesigner"
@@ -87,8 +86,12 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
       <div class="pixel__cloud" data-cloud-id="3"></div>
       <div class="pixel__cloud" data-cloud-id="4"></div>
       <div class="pixel__cloud" data-cloud-id="5"></div>
+      <img :src="Cone" class="pixel__heroine__cone" />
       <div class="pixel__heroine__char">
-        <img :src="charCounter ? Char1 : Char2" class="pixel__heroine__char__img" />
+        <img
+          :src="charCounter ? Char1 : Char2"
+          class="pixel__heroine__char__img"
+        />
         <Bubble content="Under construction..." anchor="top-end" :width="120" />
       </div>
     </div>
@@ -209,6 +212,12 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
       &__img {
         width: 65px;
       }
+    }
+
+    &__cone {
+      margin-left: -50px;
+      height: 40px;
+      transform: translate(10px, 10px);
     }
   }
 }
