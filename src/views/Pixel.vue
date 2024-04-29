@@ -33,9 +33,14 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     <div class="pixel__hero">
       <h1 class="pixel__hero__title">I'm Mari Veiga,</h1>
       <div class="pixel__hero__activities">
-        <Transition mode="out-in">
-          <img :src="uxdesigner" alt="UX Designer" data-activity="1" />
-          <!--<img
+        <Transition name="activities" appear mode="out-in">
+          <img
+            v-if="counter === 0"
+            :src="uxdesigner"
+            alt="UX Designer"
+            data-activity="1"
+          />
+          <img
             v-else-if="counter === 1"
             :src="productdesigner"
             alt="Product Designer"
@@ -58,7 +63,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
             :src="traveller"
             alt="Traveller"
             data-activity="5"
-          />-->
+          />
         </Transition>
       </div>
       <p class="pixel__hero__description">
@@ -171,6 +176,25 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 
       img {
         height: 50px;
+      }
+
+      .activities-enter-active,
+      .activities-leave-active {
+        transition: all 0.25s ease-out;
+      }
+
+      .activities-leave-active {
+        transition-delay: 1.5s;
+      }
+
+      .activities-enter-from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .activities-leave-to {
+        opacity: 0;
+        transform: translateY(-30px);
       }
     }
 

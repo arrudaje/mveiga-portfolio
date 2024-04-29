@@ -14,6 +14,6 @@ export default defineConfig((env) => {
       alias: {
         '@': Bun.fileURLToPath(new URL('./src', import.meta.url))
       }
-    }
+    },
   }
 })
