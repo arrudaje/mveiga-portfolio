@@ -17,7 +17,7 @@ import Cloud1 from "@/assets/svg/cloud1.svg";
 import Cloud2 from "@/assets/svg/cloud2.svg";
 import Cloud3 from "@/assets/svg/cloud3.svg";
 
-const { counter, reset } = useInterval(2000, { controls: true });
+const { counter, reset } = useInterval(2500, { controls: true });
 const { counter: charCounter, reset: charReset } = useInterval(500, {
   controls: true,
 });
@@ -181,10 +181,6 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
       .activities-enter-active,
       .activities-leave-active {
         transition: all 0.25s ease-out;
-      }
-
-      .activities-leave-active {
-        transition-delay: 1.5s;
       }
 
       .activities-enter-from {
