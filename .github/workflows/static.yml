@@ -20,6 +20,7 @@ jobs:
       GITHUB_REPOSITORY_NAME: ${{ github.event.repository.name }}
       VITE_USE_NAVIGATION: ${{ vars.USE_NAVIGATION }}
     runs-on: ubuntu-latest
+    environment: build
     steps:
       - name: Dump github context
         run:   echo "$GITHUB_CONTEXT"

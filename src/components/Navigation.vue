@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import logo from '@/assets/svg/logoPixel.svg';
-import { ref } from 'vue';
 
 const navigation = import.meta.env.VITE_USE_NAVIGATION !== '0';
 console.log(import.meta.env);
