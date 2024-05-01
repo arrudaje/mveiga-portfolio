@@ -4,17 +4,19 @@
 @import url('./fonts/04b03.css');
 
 :root {
-  --color-1: #4D4DD1;
-  --color-2: #04B5FE;
-  --color-3: #5502BD;
+  --color-1: rgb(77, 77, 209);
+  --color-2: rgb(4, 181, 254);
+  --color-3: rgb(85, 2, 189);
 
-  --color-background: #E5EEFC;
-  --color-text: #0F0F0F;
+  --color-background: rgb(229, 238, 252);
+  --color-text: rgb(15, 15, 15);
   --color-highlight: var(--color-1);
   --color-second: var(--color-2);
   --color-third: var(--color-3);
 
-  --color-accent: #AABDD8;
+  --color-accent: rgb(170, 189, 216);
+  --color-success: rgb(0, 168, 60);
+  --color-success-mild: rgb(219, 251, 234);
 }
 
 *,

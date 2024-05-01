@@ -1,14 +1,12 @@
 <script lang="ts" setup>
 import medium from "@/assets/png/medium.png";
 import linkedin from "@/assets/png/linkedin.png";
+import mail from "@/assets/png/mail.svg";
 import uxdesigner from "@/assets/png/ux-designer.png";
 import productdesigner from "@/assets/png/product-designer.png";
 import researcher from "@/assets/png/researcher.png";
 import painter from "@/assets/png/painter.png";
 import traveller from "@/assets/png/traveller.png";
-import Navigation from "@/components/Navigation.vue";
-import { useInterval } from "@vueuse/core";
-import { watch } from "vue";
 import Bubble from "@/components/Bubble.vue";
 import Char1 from "@/assets/svg/char_undercons1.svg";
 import Char2 from "@/assets/svg/char_undercons2.svg";
@@ -16,7 +14,10 @@ import Cone from "@/assets/svg/cone_undercons.svg";
 import Cloud1 from "@/assets/svg/cloud1.svg";
 import Cloud2 from "@/assets/svg/cloud2.svg";
 import Cloud3 from "@/assets/svg/cloud3.svg";
+import { useInterval } from "@vueuse/core";
+import { watch } from "vue";
 
+const navigation = import.meta.env.VITE_USE_NAVIGATION !== '0';
 const { counter, reset } = useInterval(2500, { controls: true });
 const { counter: charCounter, reset: charReset } = useInterval(500, {
   controls: true,
@@ -26,13 +27,15 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 </script>
 
 <template>
-  <div class="home pixel">
-    <Navigation class="pixel__nav" />
-    <img :src="Cloud2" class="pixel__cloud" data-cloud-id="1" />
-    <img :src="Cloud3" class="pixel__cloud" data-cloud-id="2" />
-    <div class="pixel__hero">
-      <h1 class="pixel__hero__title">I'm Mari Veiga,</h1>
-      <div class="pixel__hero__activities">
+  <div class="home">
+    <img :src="Cloud2" class="home__cloud" data-cloud-id="1" />
+    <img :src="Cloud3" class="home__cloud" data-cloud-id="2" />
+    <div class="home__hero">
+        <div v-if="navigation" class="home__hero__available">
+            Available for work
+        </div>
+      <h1 class="home__hero__title">I'm Mari Veiga,</h1>
+      <div class="home__hero__activities">
         <Transition name="activities" appear mode="out-in">
           <img
             v-if="counter === 0"
@@ -66,39 +69,46 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
           />
         </Transition>
       </div>
-      <p class="pixel__hero__description">
+      <p class="home__hero__description">
         Based in Amsterdam - Netherlands, I'm on a quest to blend cultures,
         break bias barriers, and bridge the gap between
         <del>users</del> (<em>participants</em>) and businesses.<br />
         This is an adventure of crafting empathetic and user-centric experiences
         for a caring world.
       </p>
-      <div class="pixel__hero__social">
+      <div class="home__hero__social">
         <a
           href="https://medium.com/@mveigaj.ortiz"
           target="blank"
-          class="pixel__hero__social__link"
+          class="home__hero__social__link"
         >
           <img :src="medium" alt="Medium" />
         </a>
         <a
           href="https://www.linkedin.com/in/marianaveigaux/"
           target="blank"
-          class="pixel__hero__social__link"
+          class="home__hero__social__link"
         >
           <img :src="linkedin" alt="LinkedIn" />
         </a>
+        <a
+          href="mailto:mveigaj.ortiz@gmail.com"
+          target="blank"
+          class="home__hero__social__link"
+        >
+          <img :src="mail" alt="Email" />
+        </a>
       </div>
     </div>
-    <div class="pixel__heroine">
-      <img :src="Cloud1" class="pixel__cloud" data-cloud-id="3" />
-      <img :src="Cloud2" class="pixel__cloud" data-cloud-id="4" />
-      <img :src="Cloud3" class="pixel__cloud" data-cloud-id="5" />
-      <img :src="Cone" class="pixel__heroine__cone" />
-      <div class="pixel__heroine__char">
+    <div class="home__heroine">
+      <img :src="Cloud1" class="home__cloud" data-cloud-id="3" />
+      <img :src="Cloud2" class="home__cloud" data-cloud-id="4" />
+      <img :src="Cloud3" class="home__cloud" data-cloud-id="5" />
+      <img :src="Cone" class="home__heroine__cone" />
+      <div class="home__heroine__char">
         <img
           :src="charCounter ? Char1 : Char2"
-          class="pixel__heroine__char__img"
+          class="home__heroine__char__img"
         />
         <Bubble content="Under construction..." anchor="top-end" :width="120" />
       </div>
@@ -107,14 +117,10 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 </template>
 
 <style lang="scss" scoped>
-.pixel {
+.home {
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-
-  &__nav {
-    flex: 0;
-  }
 
   &__cloud {
     position: absolute;
@@ -165,6 +171,28 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     margin: 0 6vw;
     z-index: 1;
 
+    &__available {
+        background: var(--color-success-mild);
+        color: var(--color-success);
+        border: 1px solid var(--color-success);
+        height: 40px;
+        border-radius: 40px;
+        padding: 0 24px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        margin-bottom: 8px;
+
+        &::before {
+            content: "";
+            background: var(--color-success);
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+        }
+    }
+
     &__title {
       font-size: 80px;
       font-weight: 700;
@@ -202,14 +230,16 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     }
 
     &__social {
+        margin-top: 8px;
       display: flex;
+      align-items: baseline;
       gap: 16px;
 
       &__link {
         height: 32px;
 
         img {
-          height: 100%;
+          max-height: 100%;
         }
       }
     }
