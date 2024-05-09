@@ -2,7 +2,6 @@
 import logo from '@/assets/svg/logoPixel.svg';
 
 const navigation = import.meta.env.VITE_USE_NAVIGATION !== '0';
-console.log(import.meta.env);
 </script>
 
 <template>
@@ -34,10 +33,15 @@ console.log(import.meta.env);
         margin-left: auto;
 
         &__link {
+            text-decoration: none;
             transition: color 0.25s ease-out;
 
-            &:hover, &.router-link-active {
-                color: var(--color-1);
+            &:visited {
+                color: var(--color-text);
+            }
+
+            &:hover, &.router-link-exact-active {
+                color: var(--color-highlight);
             }
         }
     }

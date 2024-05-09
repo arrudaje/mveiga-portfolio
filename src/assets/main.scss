@@ -8,21 +8,17 @@
   }
 }
 
-// #app {
-//   margin: 0 auto;
-//   padding: var(--main-padding);
-//   height: 100vh;
-//   align-self: stretch;
-// }
-
 #app {
   margin: 0 auto;
 }
 
 a {
-  text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-highlight);
   transition: 0.4s;
+
+  &:visited {
+    color: var(--color-third);
+  }
 }
 
 del {
