@@ -124,12 +124,12 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
           <template v-else> Under construction... </template>
         </Bubble>
       </div>
-      <div v-if="isFeatureEnabled(Feature.NAVIGATION)" class="home__heroine__char__link-container">
+      <div
+        v-if="isFeatureEnabled(Feature.NAVIGATION)"
+        class="home__heroine__char__link-container"
+      >
         ▶
-        <RouterLink
-          :to="{ name: 'map' }"
-          class="home__heroine__char__link"
-        >
+        <RouterLink :to="{ name: 'map' }" class="home__heroine__char__link">
           LET'S PLAY!
         </RouterLink>
       </div>
@@ -307,9 +307,9 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     }
 
     &__cone {
-      margin-left: -60px;
+      margin-left: -120px;
       height: 50px;
-      transform: translate(10px, 10px);
+      transform: translate(0px, 140px);
     }
   }
 
