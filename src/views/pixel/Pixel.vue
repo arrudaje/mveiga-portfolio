@@ -5,10 +5,10 @@ import Navigation from "@/components/Navigation.vue";
 <template>
   <div class="pixel">
     <Navigation class="pixel__nav" />
-    <RouterView v-slot="{ Component }">
-      <Transition mode="out-in">
-        <Component :is="Component" />
-      </Transition>
+    <RouterView v-slot="{ Component, route }">
+        <Transition :name="route.meta?.transition as string ?? 'fade'" mode="out-in">
+            <Component :is="Component" />
+        </Transition>
     </RouterView>
   </div>
 </template>
@@ -17,20 +17,32 @@ import Navigation from "@/components/Navigation.vue";
 .pixel {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 
   &__nav {
     flex: 0;
   }
 
-  .v-enter-active,
-  .v-leave-active {
+  .fade-enter-active,
+  .fade-leave-active {
     transition: opacity 0.5s ease;
   }
 
-  .v-enter-from,
-  .v-leave-to {
+  .fade-enter-from,
+  .fade-leave-to {
     opacity: 0;
+  }
+
+  .scroll-enter-active,
+  .scroll-leave-active {
+    transition: transform 0.5s ease-out;
+  }
+
+  .scroll-enter-from {
+    transform: translateY(calc(100% + 115px));
+  }
+
+  .scroll-leave-to {
+    transform: translateY(calc((100% + 115px) * -1));
   }
 }
 </style>

@@ -8,7 +8,6 @@ type Anchor = `${"top" | "bottom" | "left" | "right"}-${
 
 const props = withDefaults(
   defineProps<{
-    content: string;
     anchor: Anchor;
     width: number;
   }>(),
@@ -27,7 +26,7 @@ const widthPx = computed(() => props.width + "px");
     class="bubble"
     :class="`bubble--${anchorPosition} bubble--${anchorAlign}`"
   >
-    {{ content }}
+    <slot />
   </div>
 </template>
 
@@ -54,7 +53,7 @@ $bubble-border: 0 -1 * $px $white, 0 -2 * $px $black, $px 0 $white,
   box-shadow: $bubble-border, $px 3 * $px $shadow, 3 * $px $px $shadow,
     2 * $px 2 * $px $shadow;
   box-sizing: border-box;
-  max-width: v-bind(widthPx);
+  width: v-bind(widthPx);
 
   &::after {
     content: "";

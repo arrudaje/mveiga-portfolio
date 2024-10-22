@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import { computed, onMounted, ref } from "vue";
-import type { Map, Coordinate, Tile, MapSetup } from "@/types/types";
+import { computed, onMounted, ref, useTemplateRef } from "vue";
+import type { Map, Coordinate, Tile } from "@/types/types";
 import { Action } from "@/util/enums";
 import { useMagicKeys, useMousePressed } from "@vueuse/core";
 
 const props = defineProps<{
   aspectRatio: `${number}/${number}`;
   columns: number;
-  map?: MapSetup;
+  map?: Map;
   setup?: boolean;
 }>();
 
 const map = ref<Map>();
-const mapRef = ref<SVGAElement>();
+const mapRef = useTemplateRef('map-ref');
 const { pressed } = useMousePressed();
 const { A } = useMagicKeys();
 
@@ -43,7 +43,7 @@ const getNextTile = (coord: Coordinate, action: Action): Tile | null => {
       actualX++;
       break;
   }
-  const tile = map.value[`${actualX},${actualY}`];
+  const tile = map.value?.[`${actualX},${actualY}`];
   if (!tile) return null;
   return tile;
 };
@@ -51,11 +51,7 @@ const getNextTile = (coord: Coordinate, action: Action): Tile | null => {
 const generate = () => console.log(map.value);
 
 onMounted(() => {
-  if (props.map) map.value = Object.fromEntries(Object.entries(props.map).map(([key, value]) => {
-    const tile: Tile = { ...value };
-
-    return [key, value];
-  }));
+  if (props.map) map.value = props.map;
   else {
     const coords: Map = {};
     const columns = width.value / tile.value;
@@ -90,7 +86,7 @@ onMounted(() => {
 <template>
   <div class="map" :class="{ 'map--setup': setup }">
     <svg
-      ref="mapRef"
+      ref="map-ref"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       x="0"
@@ -102,8 +98,8 @@ onMounted(() => {
       <rect
         v-for="(t, key) in map"
         :key="key"
-        :x="t.position.left"
-        :y="t.position.top"
+        :x="t.coordinate.x * tile"
+        :y="t.coordinate.y * tile"
         :height="tile"
         :width="tile"
         class="map__grid__tile"
@@ -111,7 +107,7 @@ onMounted(() => {
         @mousemove="pressed && (t.allow = A)"
       />
     </svg>
-    <slot :next="getNextTile"></slot>
+    <slot :next="getNextTile" :tile></slot>
     <template v-if="setup">
       <button @click="generate">Generate</button>
     </template>

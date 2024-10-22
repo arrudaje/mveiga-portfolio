@@ -1,12 +1,17 @@
 <script lang="ts" setup>
 import Accordeon from "@/components/accordeon/Accordeon.vue";
 import AccordeonGroup from "@/components/accordeon/AccordeonGroup.vue";
+import Tag from "@/components/Tag.vue";
+import { Color } from "@/util/enums";
 </script>
 
 <template>
   <div class="about">
     <main class="about__main">
-      <div class="about__main__picture"></div>
+      <div
+        v-tooltip="{ text: 'I look better via Zoom' }"
+        class="about__main__picture"
+      ></div>
       <div class="about__main__text">
         <p class="about__main__text__paragraph">
           I know this may sound weird, but my full name is Mariana da Veiga
@@ -41,7 +46,98 @@ import AccordeonGroup from "@/components/accordeon/AccordeonGroup.vue";
     </main>
     <footer class="about__footer">
       <AccordeonGroup v-slot="{ onOpen }">
-        <Accordeon title="Top-Skills" @open="onOpen"></Accordeon>
+        <Accordeon open @open="onOpen">
+          <template #title>Top-Skills</template>
+          <div class="about__footer__skills">
+            <Tag :color="Color.PINK" size="large"> User Interface </Tag>
+            <Tag
+              v-tooltip="{ text: 'Mind-reading not included' }"
+              :color="Color.PINK"
+              size="large"
+            >
+              User Experience
+            </Tag>
+            <Tag
+              v-tooltip="{ text: 'My digital playground' }"
+              :color="Color.PINK"
+              size="large"
+            >
+              Figma
+            </Tag>
+            <Tag :color="Color.PINK" size="large"> Adobe </Tag>
+            <Tag
+              v-tooltip="{ text: 'Sprinting through projects like Usain Bolt' }"
+              :color="Color.PINK"
+              size="large"
+            >
+              Agile Methodologies
+            </Tag>
+            <Tag :color="Color.PINK" size="large"> Design Thinking </Tag>
+          </div>
+        </Accordeon>
+        <Accordeon @open="onOpen">
+          <template #title>Soft-Skills</template>
+          <div class="about__footer__skills">
+            <Tag
+              v-tooltip="{
+                text: 'According to my previous colleagues and bootcamp peers',
+              }"
+              :color="Color.VIOLET"
+              size="large"
+            >
+              Proactive
+            </Tag>
+            <Tag :color="Color.VIOLET" size="large"> People-person </Tag>
+            <Tag
+              v-tooltip="{
+                text: 'Like a chameleon, but with better design skills',
+              }"
+              :color="Color.VIOLET"
+              size="large"
+            >
+              Adaptable
+            </Tag>
+            <Tag
+              v-tooltip="{ text: 'Problems fear me' }"
+              :color="Color.VIOLET"
+              size="large"
+            >
+              Solution-driven
+            </Tag>
+            <Tag :color="Color.VIOLET" size="large"> Detail-oriented </Tag>
+            <Tag
+              v-tooltip="{ text: 'No task too big, no pixel too small' }"
+              :color="Color.VIOLET"
+              size="large"
+            >
+              Hands-on
+            </Tag>
+          </div>
+        </Accordeon>
+        <Accordeon @open="onOpen">
+          <template #title>5 years from now</template>
+          <div class="about__footer__skills">
+            <Tag :color="Color.GREEN" size="large"> Researcher </Tag>
+            <Tag
+              v-tooltip="{ text: 'You\'ll name a coffee blend after me' }"
+              :color="Color.GREEN"
+              size="large"
+            >
+              Relevant to the company
+            </Tag>
+            <Tag :color="Color.GREEN" size="large">
+              Showing an implementation that I did to my mom and friends (2
+              years, right?)
+            </Tag>
+            <Tag
+              v-tooltip="{ text: 'Spreading ideas faster than memes' }"
+              :color="Color.GREEN"
+              size="large"
+            >
+              TEDx talking
+            </Tag>
+          </div>
+        </Accordeon>
       </AccordeonGroup>
     </footer>
   </div>
@@ -86,6 +182,16 @@ import AccordeonGroup from "@/components/accordeon/AccordeonGroup.vue";
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+  }
+
+  &__footer {
+    margin-top: 32px;
+
+    &__skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
   }
 }

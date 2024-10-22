@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import Study from "@/components/Study.vue";
-import { Role, Tag } from "@/util/enums";
+import { Color, Role, Tag } from "@/util/enums";
 import Serenity from "@/assets/png/serenity.png";
 import TooGoodToGo from "@/assets/png/too-good-to-go.png";
 </script>
@@ -27,7 +27,7 @@ import TooGoodToGo from "@/assets/png/too-good-to-go.png";
         Tag.END_TO_END,
       ]"
       :image="Serenity"
-      color="#C2C2FF"
+      :color="Color.VIOLET"
     />
     <Study
       link="https://medium.com/@mveigaj.ortiz/working-with-heuristics-too-good-to-go-refactoring-8e947b65a88"
@@ -49,7 +49,7 @@ import TooGoodToGo from "@/assets/png/too-good-to-go.png";
         Tag.AGILE,
       ]"
       :image="TooGoodToGo"
-      color="#B3F2D5"
+      :color="Color.GREEN"
     />
     <Study
       link="https://medium.com/@mveigaj.ortiz/project-2-an-e-commerce-for-an-artist-3c4a151ac94d"
@@ -71,7 +71,7 @@ import TooGoodToGo from "@/assets/png/too-good-to-go.png";
         Tag.END_TO_END
       ]"
       :image="TooGoodToGo"
-      color="#FFD6A9"
+      :color="Color.YELLOW"
     />
   </div>
 </template>

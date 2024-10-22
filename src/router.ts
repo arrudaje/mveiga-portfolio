@@ -5,6 +5,7 @@ import MapSetup from "@/views/MapSetup.vue";
 import Home from "@/views/pixel/Home.vue";
 import Studies from "@/views/pixel/Studies.vue";
 import About from "@/views/pixel/About.vue";
+import MapView from "@/views/pixel/MapView.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -28,6 +29,14 @@ const router = createRouter({
           path: "/studies",
           name: "studies",
           component: Studies,
+        },
+        {
+          path: "/map",
+          name: "map",
+          meta: {
+            transition: 'scroll',
+          },
+          component: MapView,
         },
       ],
     },

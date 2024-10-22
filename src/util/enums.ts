@@ -29,3 +29,10 @@ export enum Tag {
   GRAPHIC_DESIGN = "Graphic Design",
   PROBLEM_SOLVING = "Problem solving"
 }
+
+export enum Color {
+  VIOLET = "#C2C2FF",
+  GREEN = "#B3F2D5",
+  YELLOW = "#FFD6A9",
+  PINK = "#FFB3C7"
+}

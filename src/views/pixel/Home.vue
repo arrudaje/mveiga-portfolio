@@ -16,8 +16,8 @@ import Cloud2 from "@/assets/svg/cloud2.svg";
 import Cloud3 from "@/assets/svg/cloud3.svg";
 import { useInterval } from "@vueuse/core";
 import { watch } from "vue";
+import { isFeatureEnabled, Feature } from "@/util/feature";
 
-const navigation = import.meta.env.VITE_USE_NAVIGATION !== '0';
 const { counter, reset } = useInterval(2500, { controls: true });
 const { counter: charCounter, reset: charReset } = useInterval(500, {
   controls: true,
@@ -31,9 +31,12 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     <img :src="Cloud2" class="home__cloud" data-cloud-id="1" />
     <img :src="Cloud3" class="home__cloud" data-cloud-id="2" />
     <div class="home__hero">
-        <div v-if="navigation" class="home__hero__available">
-            Available for work
-        </div>
+      <div
+        v-if="isFeatureEnabled(Feature.NAVIGATION)"
+        class="home__hero__available"
+      >
+        Available for work
+      </div>
       <h1 class="home__hero__title">I'm Mari Veiga,</h1>
       <div class="home__hero__activities">
         <Transition name="activities" appear mode="out-in">
@@ -104,13 +107,31 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
       <img :src="Cloud1" class="home__cloud" data-cloud-id="3" />
       <img :src="Cloud2" class="home__cloud" data-cloud-id="4" />
       <img :src="Cloud3" class="home__cloud" data-cloud-id="5" />
-      <img :src="Cone" class="home__heroine__cone" />
+      <img
+        v-if="!isFeatureEnabled(Feature.NAVIGATION)"
+        :src="Cone"
+        class="home__heroine__cone"
+      />
       <div class="home__heroine__char">
         <img
           :src="charCounter ? Char1 : Char2"
           class="home__heroine__char__img"
         />
-        <Bubble content="Under construction..." anchor="top-end" :width="120" />
+        <Bubble anchor="top-end" :width="120">
+          <template v-if="isFeatureEnabled(Feature.NAVIGATION)">
+            Hello :)
+          </template>
+          <template v-else> Under construction... </template>
+        </Bubble>
+      </div>
+      <div v-if="isFeatureEnabled(Feature.NAVIGATION)" class="home__heroine__char__link-container">
+        ▶
+        <RouterLink
+          :to="{ name: 'map' }"
+          class="home__heroine__char__link"
+        >
+          LET'S PLAY!
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -168,29 +189,29 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 0 6vw;
+    margin: 80px 0 0 6vw;
     z-index: 1;
 
     &__available {
-        background: var(--color-success-mild);
-        color: var(--color-success);
-        border: 1px solid var(--color-success);
-        height: 40px;
-        border-radius: 40px;
-        padding: 0 24px;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-weight: 600;
-        margin-bottom: 8px;
+      background: var(--color-success-mild);
+      color: var(--color-success);
+      border: 1px solid var(--color-success);
+      height: 40px;
+      border-radius: 40px;
+      padding: 0 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
 
-        &::before {
-            content: "";
-            background: var(--color-success);
-            height: 8px;
-            width: 8px;
-            border-radius: 50%;
-        }
+      &::before {
+        content: "";
+        background: var(--color-success);
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+      }
     }
 
     &__title {
@@ -230,7 +251,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
     }
 
     &__social {
-        margin-top: 8px;
+      margin-top: 8px;
       display: flex;
       align-items: baseline;
       gap: 16px;
@@ -248,11 +269,12 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
   &__heroine {
     position: absolute;
     display: flex;
-    align-items: end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     right: 8vw;
     bottom: 5vw;
-    height: 190px;
+    height: 220px;
     width: 220px;
 
     &__char {
@@ -263,6 +285,24 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 
       &__img {
         width: 65px;
+      }
+
+      &__link-container {
+        display: flex;
+        align-items: baseline;
+        margin-top: 8px;
+        gap: 8px;
+        font-size: 12px;
+      }
+
+      &__link {
+        font-family: "04b03";
+        color: inherit;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 2px 0;
+        border-bottom: 2px solid var(--color-text);
+        font-size: 16px;
       }
     }
 

@@ -1,49 +1,52 @@
 <script lang="ts" setup>
-import logo from '@/assets/svg/logoPixel.svg';
-
-const navigation = import.meta.env.VITE_USE_NAVIGATION !== '0';
+import logo from "@/assets/svg/logoPixel.svg";
+import { isFeatureEnabled, Feature } from "@/util/feature";
 </script>
 
 <template>
-    <nav class="navigation">
-        <img :src="logo" alt="Logo" class="navigation__logo" />
-        <div v-if="navigation" class="navigation__links">
-            <router-link :to="{ name: 'home' }" class="navigation__links__link">
-                Home
-            </router-link>
-            <router-link :to="{ name: 'about' }" class="navigation__links__link">
-                About Me
-            </router-link>
-            <router-link :to="{ name: 'studies' }" class="navigation__links__link">
-                Case Studies
-            </router-link>
-        </div>
-    </nav>
+  <nav class="navigation">
+    <img :src="logo" alt="Logo" class="navigation__logo" />
+    <div v-if="isFeatureEnabled(Feature.NAVIGATION)" class="navigation__links">
+      <RouterLink :to="{ name: 'home' }" class="navigation__links__link">
+        Home
+      </RouterLink>
+      <RouterLink :to="{ name: 'map' }" class="navigation__links__link">
+        Let's Play!
+      </RouterLink>
+      <RouterLink :to="{ name: 'about' }" class="navigation__links__link">
+        About Me
+      </RouterLink>
+      <RouterLink :to="{ name: 'studies' }" class="navigation__links__link">
+        Case Studies
+      </RouterLink>
+    </div>
+  </nav>
 </template>
 
 <style lang="scss" scoped>
 .navigation {
+  display: flex;
+  align-items: center;
+  padding: 32px 38px;
+
+  &__links {
     display: flex;
-    align-items: center;
-    padding: 32px 38px;
+    gap: 32px;
+    margin-left: auto;
 
-    &__links {
-        display: flex;
-        gap: 32px;
-        margin-left: auto;
+    &__link {
+      text-decoration: none;
+      transition: color 0.25s ease-out;
 
-        &__link {
-            text-decoration: none;
-            transition: color 0.25s ease-out;
+      &:visited {
+        color: var(--color-text);
+      }
 
-            &:visited {
-                color: var(--color-text);
-            }
-
-            &:hover, &.router-link-exact-active {
-                color: var(--color-highlight);
-            }
-        }
+      &:hover,
+      &.router-link-exact-active {
+        color: var(--color-highlight);
+      }
     }
+  }
 }
 </style>

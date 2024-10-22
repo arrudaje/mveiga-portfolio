@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import type { Role, Tag } from "@/util/enums";
+import type { Color, Role, Tag as TagTitle } from "@/util/enums";
+import Tag from "@/components/Tag.vue";
 
 defineProps<{
   link: string;
@@ -7,9 +8,9 @@ defineProps<{
   subtitle: string;
   description: string;
   roles: Array<Role>;
-  tags: Array<Tag>;
+  tags: Array<TagTitle>;
   image: string;
-  color: string;
+  color: Color;
 }>();
 </script>
 
@@ -23,9 +24,7 @@ defineProps<{
       <div class="study__main__description">{{ description }}</div>
       <div class="study__main__roles">Roles: {{ roles.join(", ") }}</div>
       <div class="study__main__tags">
-        <div v-for="tag in tags" class="study__main__tags__tag">
-          {{ tag }}
-        </div>
+        <Tag v-for="tag in tags" :text="tag" :color />
       </div>
     </main>
     <img :src="image" :alt="`${title} cover picture`" class="study__cover" />
@@ -41,13 +40,15 @@ defineProps<{
   align-items: flex-start;
   gap: 40px;
   border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
   background: linear-gradient(
     0deg,
     #fff 45.8%,
     rgba(242, 243, 245, 0.1) 118.7%
   );
-  box-shadow: 4px 4px 10px 0px rgba(71, 46, 46, 0.25);
-  transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+  box-shadow: 2px 2px 10px 0px rgba(71, 46, 46, 0.25);
+  transition: transform 0.25s ease-out, box-shadow 0.5s ease-out;
 
   &:hover {
     transform: scale(1.005);
@@ -97,22 +98,6 @@ defineProps<{
     &__tags {
       display: flex;
       gap: 8px;
-
-      &__tag {
-        display: flex;
-        padding: 0 8px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 16px;
-        background: #c2c2ff;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
-        letter-spacing: 0.2px;
-        text-transform: uppercase;
-        background: v-bind(color);
-      }
     }
   }
 

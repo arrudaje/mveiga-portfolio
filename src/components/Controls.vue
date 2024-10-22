@@ -1,28 +1,38 @@
 <script lang="ts" setup>
 import { Action } from '@/util/enums';
-import { onKeyStroke } from '@vueuse/core';
+import { getDuration } from '@/util/utils';
+import { useIntervalFn, useMagicKeys } from '@vueuse/core';
+import { computed, ref } from 'vue';
 
-const emits = defineEmits<{
+const isRunning = ref(false);
+const runDuration = computed(() => getDuration(isRunning.value));
+
+const emit = defineEmits<{
     'control-action': [action: Action]
+    'control-run': []
+    'control-walk': []
 }>();
 
-onKeyStroke('ArrowUp', (e: KeyboardEvent) => {
-    e.preventDefault();
-    emits('control-action', Action.UP);
-});
+const { current } = useMagicKeys();
+useIntervalFn(() => {
+    /* Movement controls */
+    if (current.has('arrowup')) {
+        emit('control-action', Action.UP);
+    } else if (current.has('arrowdown')) {
+        emit('control-action', Action.DOWN);
+    } else if (current.has('arrowleft')) {
+        emit('control-action', Action.LEFT);
+    } else if (current.has('arrowright')) {
+        emit('control-action', Action.RIGHT);
+    }
 
-onKeyStroke('ArrowDown', (e: KeyboardEvent) => {
-    e.preventDefault();
-    emits('control-action', Action.DOWN);
-});
-
-onKeyStroke('ArrowLeft', (e: KeyboardEvent) => {
-    e.preventDefault();
-    emits('control-action', Action.LEFT);
-});
-
-onKeyStroke('ArrowRight', (e: KeyboardEvent) => {
-    e.preventDefault();
-    emits('control-action', Action.RIGHT);
-});
+    /* Speed controls */
+    if (current.has('shift')) {
+        isRunning.value = true;
+        emit('control-run');
+    } else {
+        isRunning.value = false;
+        emit('control-walk');
+    }
+}, runDuration);
 </script>
