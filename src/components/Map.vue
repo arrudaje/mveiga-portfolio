@@ -9,6 +9,7 @@ const props = defineProps<{
   columns: number;
   map?: Map;
   setup?: boolean;
+  background?: string;
 }>();
 
 const map = ref<Map>();
@@ -44,7 +45,7 @@ const getNextTile = (coord: Coordinate, action: Action): Tile | null => {
       break;
   }
   const tile = map.value?.[`${actualX},${actualY}`];
-  if (!tile) return null;
+  if (!tile || !tile.allow) return null;
   return tile;
 };
 
@@ -125,6 +126,7 @@ onMounted(() => {
 
   &__grid {
     position: relative;
+    background-color: v-bind(background);
     aspect-ratio: v-bind(aspectRatio);
 
     &__tile {
@@ -137,11 +139,11 @@ onMounted(() => {
     .map {
       &__grid {
         &__tile {
-          fill: rgba(0, 0, 0, 0.2);
+          fill: rgba(0, 0, 0, 0.4);
           stroke: white;
 
           &--disallowed {
-            fill: rgba(red, 0.2);
+            fill: rgba(red, 0.4);
           }
 
           &:hover {

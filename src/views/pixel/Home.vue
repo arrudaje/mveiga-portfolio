@@ -8,12 +8,11 @@ import researcher from "@/assets/png/researcher.png";
 import painter from "@/assets/png/painter.png";
 import traveller from "@/assets/png/traveller.png";
 import Bubble from "@/components/Bubble.vue";
-import Char1 from "@/assets/svg/char_undercons1.svg";
-import Char2 from "@/assets/svg/char_undercons2.svg";
 import Cone from "@/assets/svg/cone_undercons.svg";
 import Cloud1 from "@/assets/svg/cloud1.svg";
 import Cloud2 from "@/assets/svg/cloud2.svg";
 import Cloud3 from "@/assets/svg/cloud3.svg";
+import Sprite from "@/assets/svg/char-sprites/Sprite.vue";
 import { useInterval } from "@vueuse/core";
 import { watch } from "vue";
 import { isFeatureEnabled, Feature } from "@/util/feature";
@@ -113,10 +112,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
         class="home__heroine__cone"
       />
       <div class="home__heroine__char">
-        <img
-          :src="charCounter ? Char1 : Char2"
-          class="home__heroine__char__img"
-        />
+        <Sprite :id="charCounter ? 'idle-down-3' : 'idle-down-2'" class="home__heroine__char__img" />
         <Bubble anchor="top-end" :width="120">
           <template v-if="isFeatureEnabled(Feature.NAVIGATION)">
             Hello :)
@@ -285,6 +281,7 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
 
       &__img {
         width: 65px;
+        height: 100%;
       }
 
       &__link-container {

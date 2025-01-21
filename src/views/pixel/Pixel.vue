@@ -1,9 +1,11 @@
 <script lang="ts" setup>
 import Navigation from "@/components/Navigation.vue";
+import CharSprites from "@/assets/svg/char-sprites/CharSprites.vue";
 </script>
 
 <template>
   <div class="pixel">
+    <CharSprites />
     <Navigation class="pixel__nav" />
     <RouterView v-slot="{ Component, route }">
         <Transition :name="route.meta?.transition as string ?? 'fade'" mode="out-in">

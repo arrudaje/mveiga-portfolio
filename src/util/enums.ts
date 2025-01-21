@@ -1,9 +1,9 @@
 export enum Action {
-  UP,
-  DOWN,
-  LEFT,
-  RIGHT,
-  INIT,
+  UP = 'up',
+  DOWN = 'down',
+  LEFT = 'left',
+  RIGHT = 'right',
+  IDLE = 'idle',
 }
 
 export enum Role {

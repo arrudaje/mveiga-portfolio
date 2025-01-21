@@ -4,9 +4,9 @@ import Map from '@/components/Map.vue';
 
 <template>
   <div class="home pixel setup">
-    <Map aspect-ratio="3/2" :columns="39" setup class="setup__map">
+    <Map aspect-ratio="16/9" :columns="36" setup class="setup__map">
       <template #background>
-        <image href="@/assets/map.png" />
+        <image href="@/assets/map.svg" />
       </template>
     </Map>
   </div>

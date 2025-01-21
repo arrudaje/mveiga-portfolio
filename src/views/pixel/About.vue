@@ -11,7 +11,9 @@ import { Color } from "@/util/enums";
       <div
         v-tooltip="{ text: 'I look better via Zoom' }"
         class="about__main__picture"
-      ></div>
+      >
+        <img src="@/assets/svg/glasses.svg" class="about__main__picture__glasses" />
+      </div>
       <div class="about__main__text">
         <p class="about__main__text__paragraph">
           I know this may sound weird, but my full name is Mariana da Veiga
@@ -49,30 +51,30 @@ import { Color } from "@/util/enums";
         <Accordeon open @open="onOpen">
           <template #title>Top-Skills</template>
           <div class="about__footer__skills">
-            <Tag :color="Color.PINK" size="large"> User Interface </Tag>
+            <Tag :color="Color.VIOLET" size="large"> User Interface </Tag>
             <Tag
               v-tooltip="{ text: 'Mind-reading not included' }"
-              :color="Color.PINK"
+              :color="Color.VIOLET"
               size="large"
             >
               User Experience
             </Tag>
             <Tag
               v-tooltip="{ text: 'My digital playground' }"
-              :color="Color.PINK"
+              :color="Color.VIOLET"
               size="large"
             >
               Figma
             </Tag>
-            <Tag :color="Color.PINK" size="large"> Adobe </Tag>
+            <Tag :color="Color.VIOLET" size="large"> Adobe </Tag>
             <Tag
               v-tooltip="{ text: 'Sprinting through projects like Usain Bolt' }"
-              :color="Color.PINK"
+              :color="Color.VIOLET"
               size="large"
             >
               Agile Methodologies
             </Tag>
-            <Tag :color="Color.PINK" size="large"> Design Thinking </Tag>
+            <Tag :color="Color.VIOLET" size="large"> Design Thinking </Tag>
           </div>
         </Accordeon>
         <Accordeon @open="onOpen">
@@ -117,21 +119,21 @@ import { Color } from "@/util/enums";
         <Accordeon @open="onOpen">
           <template #title>5 years from now</template>
           <div class="about__footer__skills">
-            <Tag :color="Color.GREEN" size="large"> Researcher </Tag>
+            <Tag :color="Color.VIOLET" size="large"> Researcher </Tag>
             <Tag
               v-tooltip="{ text: 'You\'ll name a coffee blend after me' }"
-              :color="Color.GREEN"
+              :color="Color.VIOLET"
               size="large"
             >
               Relevant to the company
             </Tag>
-            <Tag :color="Color.GREEN" size="large">
+            <Tag :color="Color.VIOLET" size="large">
               Showing an implementation that I did to my mom and friends (2
               years, right?)
             </Tag>
             <Tag
               v-tooltip="{ text: 'Spreading ideas faster than memes' }"
-              :color="Color.GREEN"
+              :color="Color.VIOLET"
               size="large"
             >
               TEDx talking
@@ -166,15 +168,12 @@ import { Color } from "@/util/enums";
       background-blend-mode: luminosity;
       background-color: black;
 
-      &::after {
-        content: "";
-        background-image: url("@/assets/svg/glasses.svg");
-        background-size: cover;
-        aspect-ratio: 16/9;
+      &__glasses {
         position: absolute;
-        top: 29%;
-        left: 2%;
-        width: 75%;
+        aspect-ratio: 4/1;
+        height: 100px;
+        top: 30%;
+        left: -15%;
       }
     }
 

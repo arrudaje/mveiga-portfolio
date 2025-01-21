@@ -28,6 +28,7 @@ import { isFeatureEnabled, Feature } from "@/util/feature";
   display: flex;
   align-items: center;
   padding: 32px 38px;
+  z-index: 100;
 
   &__links {
     display: flex;

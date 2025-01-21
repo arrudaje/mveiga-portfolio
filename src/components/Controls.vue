@@ -13,26 +13,30 @@ const emit = defineEmits<{
     'control-walk': []
 }>();
 
-const { current } = useMagicKeys();
-useIntervalFn(() => {
+const handleKeys = (keys: Set<string>, multiple: boolean = false) => {
     /* Movement controls */
-    if (current.has('arrowup')) {
+    if (keys.has('arrowup')) {
         emit('control-action', Action.UP);
-    } else if (current.has('arrowdown')) {
+    } else if (keys.has('arrowdown')) {
         emit('control-action', Action.DOWN);
-    } else if (current.has('arrowleft')) {
+    } else if (keys.has('arrowleft')) {
         emit('control-action', Action.LEFT);
-    } else if (current.has('arrowright')) {
+    } else if (keys.has('arrowright')) {
         emit('control-action', Action.RIGHT);
+    } else {
+        emit('control-action', Action.IDLE);
     }
 
     /* Speed controls */
-    if (current.has('shift')) {
+    if (keys.has('shift')) {
         isRunning.value = true;
         emit('control-run');
     } else {
         isRunning.value = false;
         emit('control-walk');
     }
-}, runDuration);
+}
+
+const { current } = useMagicKeys();
+useIntervalFn(() => handleKeys(current), runDuration);
 </script>
