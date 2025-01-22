@@ -38,7 +38,7 @@ const charInterval = computed(() => {
     return interval;
 });
 
-const { counter, pause, resume } = useInterval(charInterval, {
+const { counter } = useInterval(charInterval, {
   controls: true,
   immediate: true,
 });
@@ -99,7 +99,7 @@ watch(
     content: "";
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     height: 10%;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 50%;

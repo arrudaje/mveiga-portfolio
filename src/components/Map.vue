@@ -12,8 +12,8 @@ const props = defineProps<{
   background?: string;
 }>();
 
-const map = ref<Map>();
-const mapRef = useTemplateRef('map-ref');
+const map = ref<Map>(props.map ?? {});
+const mapRef = useTemplateRef("map-ref");
 const { pressed } = useMousePressed();
 const { A } = useMagicKeys();
 
@@ -27,7 +27,11 @@ const tileHoverColor = computed(
   () => `rgba(${A.value ? "0,0,0" : "255,0,0"}, 0.5)`
 );
 
-const getNextTile = (coord: Coordinate, action: Action): Tile | null => {
+const getNextTile = (
+  coord: Coordinate,
+  action: Action,
+  size: Coordinate
+): Tile | null => {
   let actualX = coord.x;
   let actualY = coord.y;
   switch (action) {
@@ -44,30 +48,30 @@ const getNextTile = (coord: Coordinate, action: Action): Tile | null => {
       actualX++;
       break;
   }
-  const tile = map.value?.[`${actualX},${actualY}`];
-  if (!tile || !tile.allow) return null;
-  return tile;
+  const tiles = Object.entries(map.value ?? {})
+    .filter(([key]) => {
+      const [x, y] = key.split(",").map(Number);
+      return (
+        x >= actualX &&
+        x < actualX + size.x &&
+        y >= actualY &&
+        y < actualY + size.y
+      );
+    });
+  if (!tiles.length || !tiles.every(([_, t]) => t.allow)) return null;
+  return tiles.find(([key]) => key === `${actualX},${actualY}`)?.[1] || null;
 };
 
 const generate = () => console.log(map.value);
 
 onMounted(() => {
-  if (props.map) map.value = props.map;
-  else {
+  if (!props.map) {
     const coords: Map = {};
     const columns = width.value / tile.value;
     const rows = height.value / tile.value;
 
-    for (
-      let x = 0;
-      x < columns && width.value >= (x + 1) * tile.value;
-      x++
-    ) {
-      for (
-        let y = 0;
-        y < rows && height.value >= (y + 1) * tile.value;
-        y++
-      ) {
+    for (let x = 0; x < columns && width.value >= (x + 1) * tile.value; x++) {
+      for (let y = 0; y < rows && height.value >= (y + 1) * tile.value; y++) {
         coords[`${x},${y}`] = {
           coordinate: {
             x,

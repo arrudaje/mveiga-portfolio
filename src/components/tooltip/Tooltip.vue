@@ -1,7 +1,6 @@
 <template>
-    <Teleport to="body">
+    <Teleport v-if="isVisible" to="body">
       <div 
-        v-show="isVisible" 
         class="tooltip" 
         :style="style" 
         @mouseenter="isVisible = true"

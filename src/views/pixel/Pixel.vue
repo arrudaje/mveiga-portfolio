@@ -1,16 +1,21 @@
 <script lang="ts" setup>
 import Navigation from "@/components/Navigation.vue";
 import CharSprites from "@/assets/svg/char-sprites/CharSprites.vue";
+import ItemSprites from "@/assets/svg/item-sprites/ItemSprites.vue";
 </script>
 
 <template>
   <div class="pixel">
     <CharSprites />
+    <ItemSprites />
     <Navigation class="pixel__nav" />
     <RouterView v-slot="{ Component, route }">
-        <Transition :name="route.meta?.transition as string ?? 'fade'" mode="out-in">
-            <Component :is="Component" />
-        </Transition>
+      <Transition
+        :name="(route.meta?.transition as string) ?? 'fade'"
+        mode="out-in"
+      >
+        <Component :is="Component" />
+      </Transition>
     </RouterView>
   </div>
 </template>

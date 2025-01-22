@@ -5,7 +5,9 @@ import { isFeatureEnabled, Feature } from "@/util/feature";
 
 <template>
   <nav class="navigation">
-    <img :src="logo" alt="Logo" class="navigation__logo" />
+    <RouterLink :to="{ name: 'home' }">
+        <img :src="logo" alt="Logo" class="navigation__logo" />
+    </RouterLink>
     <div v-if="isFeatureEnabled(Feature.NAVIGATION)" class="navigation__links">
       <RouterLink :to="{ name: 'home' }" class="navigation__links__link">
         Home

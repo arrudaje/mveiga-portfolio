@@ -3,6 +3,8 @@ import Accordeon from "@/components/accordeon/Accordeon.vue";
 import AccordeonGroup from "@/components/accordeon/AccordeonGroup.vue";
 import Tag from "@/components/Tag.vue";
 import { Color } from "@/util/enums";
+
+const violet = Color.VIOLET;
 </script>
 
 <template>
@@ -172,8 +174,9 @@ import { Color } from "@/util/enums";
         position: absolute;
         aspect-ratio: 4/1;
         height: 100px;
-        top: 30%;
-        left: -15%;
+        top: 32%;
+        left: -20%;
+        fill: v-bind(violet);
       }
     }
 

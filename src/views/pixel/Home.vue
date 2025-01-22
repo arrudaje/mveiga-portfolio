@@ -12,17 +12,16 @@ import Cone from "@/assets/svg/cone_undercons.svg";
 import Cloud1 from "@/assets/svg/cloud1.svg";
 import Cloud2 from "@/assets/svg/cloud2.svg";
 import Cloud3 from "@/assets/svg/cloud3.svg";
-import Sprite from "@/assets/svg/char-sprites/Sprite.vue";
-import { useInterval } from "@vueuse/core";
-import { watch } from "vue";
+import Sprite from "@/assets/svg/Sprite.vue";
+import { useInterval, whenever } from "@vueuse/core";
 import { isFeatureEnabled, Feature } from "@/util/feature";
 
 const { counter, reset } = useInterval(2500, { controls: true });
 const { counter: charCounter, reset: charReset } = useInterval(500, {
   controls: true,
 });
-watch(counter, () => counter.value === 5 && reset());
-watch(charCounter, () => charCounter.value === 2 && charReset());
+whenever(() => counter.value === 5, reset);
+whenever(() => charCounter.value === 2, charReset);
 </script>
 
 <template>
@@ -112,7 +111,10 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
         class="home__heroine__cone"
       />
       <div class="home__heroine__char">
-        <Sprite :id="charCounter ? 'idle-down-3' : 'idle-down-2'" class="home__heroine__char__img" />
+        <Sprite
+          :id="charCounter ? 'idle-down-3' : 'idle-down-2'"
+          class="home__heroine__char__img"
+        />
         <Bubble anchor="top-end" :width="120">
           <template v-if="isFeatureEnabled(Feature.NAVIGATION)">
             Hello :)
@@ -369,9 +371,11 @@ watch(charCounter, () => charCounter.value === 2 && charReset());
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(5px);
   }
+
   100% {
     transform: translateY(0);
   }

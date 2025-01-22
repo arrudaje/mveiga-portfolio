@@ -1,18 +1,20 @@
 <script lang="ts" setup>
-import Sprite from "@/assets/svg/char-sprites/Sprite.vue";
+import AnimatedSprite from "@/assets/svg/AnimatedSprite.vue";
+import Sprite from "@/assets/svg/Sprite.vue";
 import Char from "@/components/Char.vue";
 import Controls from "@/components/Controls.vue";
 import Map from "@/components/Map.vue";
 import type { Coordinate, Tile } from "@/types/types";
-import { Action } from "@/util/enums";
+import { Action, Animation } from "@/util/enums";
 import { reactive, ref } from "vue";
 import map from "@/setup/main.json";
 
-const currentTile = reactive({
+const currentTile = reactive<Tile>({
   coordinate: { x: 4, y: 5 },
   allow: true,
   hasChar: true,
 });
+const charSize = reactive<Coordinate>({ x: 1, y: 2 });
 const run = ref(false);
 const currentAction = ref<Action>(Action.IDLE);
 
@@ -23,11 +25,11 @@ const charOffset = (tile: number) => ({
 
 const setNextTile = (
   action: Action,
-  next: (coord: Coordinate, action: Action) => Tile | null
+  next: (coord: Coordinate, action: Action, size: Coordinate) => Tile | null
 ) => {
   currentAction.value = action;
   if (currentAction.value === Action.IDLE) return;
-  const tile = next(currentTile.coordinate, action);
+  const tile = next(currentTile.coordinate, action, charSize);
   if (!tile) return;
   currentTile.coordinate = tile.coordinate;
   currentTile.allow = tile.allow;
@@ -40,12 +42,84 @@ const setNextTile = (
     <!--<Map aspect-ratio="16/9" :columns="36" background="rgba(137, 34, 177, 0.15)">-->
     <Map aspect-ratio="16/9" :columns="36" :map>
       <template #background>
-        <image href="@/assets/map.svg"/>
+        <image href="@/assets/map.svg" />
       </template>
       <template #default="{ next, tile }">
+        <Controls
+          @control-action="(action) => setNextTile(action, next)"
+          @control-run="run = true"
+          @control-walk="run = false"
+        />
+
+        <!-- Koi -->
+        <AnimatedSprite
+          :height="50"
+          :width="50"
+          :offset="{ left: 6 * tile, top: 13 * tile }"
+          :interval="200"
+          :interval-animation="5000"
+          :delay="2000"
+          :animation="Animation.SWIM"
+        >
+          <Sprite id="koi-left" />
+          <Sprite id="koi-right" />
+        </AnimatedSprite>
+
+        <!-- Butterfly -->
+        <AnimatedSprite
+          :height="15"
+          :width="15"
+          :offset="{ left: 2 * tile, top: 7 * tile }"
+          :interval="200"
+          :interval-animation="1000"
+          :animation="Animation.HOVER"
+        >
+          <Sprite id="butterfly-pink-up" />
+          <Sprite id="butterfly-pink-down" />
+        </AnimatedSprite>
+
+        <!-- Butterfly -->
+        <AnimatedSprite
+          :height="15"
+          :width="15"
+          :offset="{ left: 15 * tile + 15, top: 9 * tile - 15 }"
+          :interval="200"
+          :interval-animation="1000"
+          :animation="Animation.HOVER"
+        >
+          <Sprite id="butterfly-pink-up" />
+          <Sprite id="butterfly-pink-down" />
+        </AnimatedSprite>
+
+        <!-- Butterfly -->
+        <AnimatedSprite
+          :height="15"
+          :width="15"
+          :offset="{ left: 15 * tile, top: 8 * tile }"
+          :interval="200"
+          :interval-animation="1000"
+          :animation="Animation.HOVER"
+        >
+          <Sprite id="butterfly-yellow-up" />
+          <Sprite id="butterfly-yellow-down" />
+        </AnimatedSprite>
+
+        <!-- Butterfly -->
+        <AnimatedSprite
+          :height="15"
+          :width="15"
+          :offset="{ left: 30 * tile, top: 12 * tile }"
+          :interval="200"
+          :interval-animation="1000"
+          :animation="Animation.HOVER"
+        >
+          <Sprite id="butterfly-yellow-up" />
+          <Sprite id="butterfly-yellow-down" />
+        </AnimatedSprite>
+
         <Char
-          :height="tile * 2"
-          :width="tile"
+          :height="tile * charSize.y"
+          :width="tile * charSize.x"
           :offset="charOffset(tile)"
           :action="currentAction"
           :run
@@ -90,11 +164,29 @@ const setNextTile = (
             <Sprite v-show="displayIndex === 3" id="idle-right-1" />
           </template>
         </Char>
-        <Controls
-          @control-action="setNextTile($event, next)"
-          @control-run="run = true"
-          @control-walk="run = false"
-        />
+
+        <!-- Butterfly -->
+        <AnimatedSprite
+          :height="15"
+          :width="15"
+          :offset="{ left: 28 * tile, top: 6 * tile }"
+          :interval="200"
+          :interval-animation="1000"
+          :animation="Animation.HOVER"
+        >
+          <Sprite id="butterfly-pink-up" />
+          <Sprite id="butterfly-pink-down" />
+        </AnimatedSprite>
+
+        <!-- Bridge -->
+        <AnimatedSprite
+          :height="55"
+          :width="225"
+          :offset="{ left: 654, top: 413.5 }"
+          style="clip-path: inset(0 0 50% 0);"
+        >
+          <Sprite id="bridge" />
+        </AnimatedSprite>
       </template>
     </Map>
   </div>

@@ -36,3 +36,10 @@ export enum Color {
   YELLOW = "#FFD6A9",
   PINK = "#FFB3C7"
 }
+
+export enum Animation {
+  HOVER = "hover",
+  FLOAT = "float",
+  PULSE = "pulse",
+  SWIM = "swim",
+}

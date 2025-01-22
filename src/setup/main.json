@@ -684,7 +684,7 @@
             "x": 4,
             "y": 5
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "4,6": {
@@ -844,7 +844,7 @@
             "x": 5,
             "y": 5
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "5,6": {
@@ -1012,7 +1012,7 @@
             "x": 6,
             "y": 6
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "6,7": {
@@ -1172,7 +1172,7 @@
             "x": 7,
             "y": 6
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "7,7": {
@@ -1332,7 +1332,7 @@
             "x": 8,
             "y": 6
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "8,7": {
@@ -1492,7 +1492,7 @@
             "x": 9,
             "y": 6
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "9,7": {
@@ -1652,7 +1652,7 @@
             "x": 10,
             "y": 6
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "10,7": {
@@ -1812,7 +1812,7 @@
             "x": 11,
             "y": 6
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "11,7": {
@@ -1972,7 +1972,7 @@
             "x": 12,
             "y": 6
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "12,7": {
@@ -2148,7 +2148,7 @@
             "x": 13,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "13,9": {
@@ -2308,7 +2308,7 @@
             "x": 14,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "14,9": {
@@ -2468,7 +2468,7 @@
             "x": 15,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "15,9": {
@@ -2628,7 +2628,7 @@
             "x": 16,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "16,9": {
@@ -2788,7 +2788,7 @@
             "x": 17,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "17,9": {
@@ -2948,7 +2948,7 @@
             "x": 18,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "18,9": {
@@ -3108,7 +3108,7 @@
             "x": 19,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "19,9": {
@@ -3268,7 +3268,7 @@
             "x": 20,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "20,9": {
@@ -3428,7 +3428,7 @@
             "x": 21,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "21,9": {
@@ -3588,7 +3588,7 @@
             "x": 22,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "22,9": {
@@ -3748,7 +3748,7 @@
             "x": 23,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "23,9": {
@@ -3908,7 +3908,7 @@
             "x": 24,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "24,9": {
@@ -4068,7 +4068,7 @@
             "x": 25,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "25,9": {
@@ -4228,7 +4228,7 @@
             "x": 26,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "26,9": {
@@ -4388,7 +4388,7 @@
             "x": 27,
             "y": 8
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "27,9": {
@@ -4444,7 +4444,7 @@
             "x": 27,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "27,16": {
@@ -4452,7 +4452,7 @@
             "x": 27,
             "y": 16
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "27,17": {
@@ -4460,7 +4460,7 @@
             "x": 27,
             "y": 17
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "27,18": {
@@ -4620,7 +4620,7 @@
             "x": 28,
             "y": 17
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "28,18": {
@@ -4724,7 +4724,7 @@
             "x": 29,
             "y": 10
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "29,11": {
@@ -4732,7 +4732,7 @@
             "x": 29,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "29,12": {
@@ -4740,7 +4740,7 @@
             "x": 29,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "29,13": {
@@ -4780,7 +4780,7 @@
             "x": 29,
             "y": 17
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "29,18": {
@@ -4916,7 +4916,7 @@
             "x": 30,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "30,15": {
@@ -4964,7 +4964,7 @@
             "x": 31,
             "y": 0
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "31,1": {
@@ -4972,7 +4972,7 @@
             "x": 31,
             "y": 1
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "31,2": {
@@ -5076,7 +5076,7 @@
             "x": 31,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "31,15": {
@@ -5108,7 +5108,7 @@
             "x": 31,
             "y": 18
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "31,19": {
@@ -5124,7 +5124,7 @@
             "x": 32,
             "y": 0
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "32,1": {
@@ -5132,7 +5132,7 @@
             "x": 32,
             "y": 1
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "32,2": {
@@ -5236,7 +5236,7 @@
             "x": 32,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "32,15": {
@@ -5260,7 +5260,7 @@
             "x": 32,
             "y": 17
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "32,18": {
@@ -5284,7 +5284,7 @@
             "x": 33,
             "y": 0
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,1": {
@@ -5292,7 +5292,7 @@
             "x": 33,
             "y": 1
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,2": {
@@ -5300,7 +5300,7 @@
             "x": 33,
             "y": 2
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,3": {
@@ -5308,7 +5308,7 @@
             "x": 33,
             "y": 3
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,4": {
@@ -5316,7 +5316,7 @@
             "x": 33,
             "y": 4
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,5": {
@@ -5324,7 +5324,7 @@
             "x": 33,
             "y": 5
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,6": {
@@ -5396,7 +5396,7 @@
             "x": 33,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,15": {
@@ -5420,7 +5420,7 @@
             "x": 33,
             "y": 17
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,18": {
@@ -5556,7 +5556,7 @@
             "x": 34,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "34,15": {
@@ -5580,7 +5580,7 @@
             "x": 34,
             "y": 17
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "34,18": {

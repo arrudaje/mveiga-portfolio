@@ -13,7 +13,7 @@ const openAccordeon = (id: string) => {
 
 <template>
   <div class="accordeon-group">
-    <slot :on-open="openAccordeon" />
+    <slot @open="openAccordeon" />
   </div>
 </template>
 

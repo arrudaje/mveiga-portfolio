@@ -40,3 +40,5 @@ const handleKeys = (keys: Set<string>, multiple: boolean = false) => {
 const { current } = useMagicKeys();
 useIntervalFn(() => handleKeys(current), runDuration);
 </script>
+
+<template></template>

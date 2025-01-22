@@ -46,7 +46,6 @@ const tooltip: ObjectDirective<HTMLElement, TooltipOptions> = {
       newApp.mount(element);
     }
   },
-
   unmounted(el: HTMLElement) {
     const elementData = tooltipData.get(el);
     if (elementData) {
