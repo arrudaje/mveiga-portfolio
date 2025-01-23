@@ -41,8 +41,8 @@ const setNextTile = (
   <div class="map-view">
     <!--<Map aspect-ratio="16/9" :columns="36" background="rgba(137, 34, 177, 0.15)">-->
     <Map aspect-ratio="16/9" :columns="36" :map>
-      <template #background>
-        <image href="@/assets/map.svg" />
+      <template #background="{ onLoad }">
+        <image href="@/assets/map.svg" @load="onLoad" />
       </template>
       <template #default="{ next, tile }">
         <Controls
@@ -123,6 +123,7 @@ const setNextTile = (
           :offset="charOffset(tile)"
           :action="currentAction"
           :run
+          class="map-view__char"
         >
           <template #[Action.IDLE]="{ pose, displayIndex }">
             <template v-if="pose === Action.DOWN">
@@ -197,5 +198,53 @@ const setNextTile = (
   width: 1400px;
   margin: 0 auto;
   background: #000;
+
+  &__char {
+    animation: teleport 2s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  }
 }
+
+@keyframes teleport {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  93% {
+    opacity: 0.5;
+  }
+  96% {
+    opacity: 0.8;
+  }
+  98% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 </style>

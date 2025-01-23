@@ -93,7 +93,7 @@ watch(
   width: v-bind(width);
   left: v-bind(left);
   top: v-bind(top);
-  transition: all v-bind(duration) linear;
+  transition: left v-bind(duration) linear, top v-bind(duration) linear;
 
   &:before {
     content: "";

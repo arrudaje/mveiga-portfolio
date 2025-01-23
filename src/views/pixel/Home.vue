@@ -128,7 +128,7 @@ whenever(() => charCounter.value === 2, charReset);
       >
         ▶
         <RouterLink :to="{ name: 'map' }" class="home__heroine__char__link">
-          LET'S PLAY!
+          LET'S PLAY MY GAME!
         </RouterLink>
       </div>
     </div>

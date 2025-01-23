@@ -12,6 +12,8 @@ const props = defineProps<{
   background?: string;
 }>();
 
+const backgroundLoaded = ref(false);
+
 const map = ref<Map>(props.map ?? {});
 const mapRef = useTemplateRef("map-ref");
 const { pressed } = useMousePressed();
@@ -64,6 +66,10 @@ const getNextTile = (
 
 const generate = () => console.log(map.value);
 
+const onBackgroundLoad = () => {
+  backgroundLoaded.value = true;
+};
+
 onMounted(() => {
   if (!props.map) {
     const coords: Map = {};
@@ -99,7 +105,7 @@ onMounted(() => {
       :viewBox="`0 0 ${width} ${height}`"
       class="map__grid"
     >
-      <slot name="background"></slot>
+      <slot name="background" @load="onBackgroundLoad"></slot>
       <rect
         v-for="(t, key) in map"
         :key="key"
@@ -112,7 +118,11 @@ onMounted(() => {
         @mousemove="pressed && (t.allow = A)"
       />
     </svg>
-    <slot :next="getNextTile" :tile></slot>
+    <slot
+      v-if="backgroundLoaded"
+      :next="getNextTile"
+      :tile
+    ></slot>
     <template v-if="setup">
       <button @click="generate">Generate</button>
     </template>
