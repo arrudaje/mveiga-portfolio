@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-import Map from '@/components/Map.vue';
+import Map from "@/components/Map.vue";
+import map from "@/setup/main.json";
 </script>
 
 <template>
   <div class="home pixel setup">
-    <Map aspect-ratio="16/9" :columns="36" setup class="setup__map">
+    <Map aspect-ratio="16/9" :columns="50" :map="map" setup class="setup__map">
       <template #background>
         <image href="@/assets/map.svg" />
       </template>

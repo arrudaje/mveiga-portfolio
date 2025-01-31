@@ -10,7 +10,7 @@ import { reactive, ref } from "vue";
 import map from "@/setup/main.json";
 
 const currentTile = reactive<Tile>({
-  coordinate: { x: 4, y: 5 },
+  coordinate: { x: 6, y: 7 },
   allow: true,
   hasChar: true,
 });
@@ -40,7 +40,7 @@ const setNextTile = (
 <template>
   <div class="map-view">
     <!--<Map aspect-ratio="16/9" :columns="36" background="rgba(137, 34, 177, 0.15)">-->
-    <Map aspect-ratio="16/9" :columns="36" :map>
+    <Map aspect-ratio="16/9" :columns="50" :map>
       <template #background="{ onLoad }">
         <image href="@/assets/map.svg" @load="onLoad" />
       </template>
@@ -51,11 +51,28 @@ const setNextTile = (
           @control-walk="run = false"
         />
 
+        <!-- Chimney smoke -->
+        <AnimatedSprite
+          :height="60"
+          :width="60"
+          :offset="{ left: 175, top: -25 }"
+          :interval="200"
+          :delay="2000"
+        >
+          <Sprite id="smoke-0" />
+          <Sprite id="smoke-1" />
+          <Sprite id="smoke-2" />
+          <Sprite id="smoke-3" />
+          <Sprite id="smoke-4" />
+          <Sprite id="smoke-5" />
+          <Sprite id="smoke-6" />
+        </AnimatedSprite>
+
         <!-- Koi -->
         <AnimatedSprite
           :height="50"
           :width="50"
-          :offset="{ left: 6 * tile, top: 13 * tile }"
+          :offset="{ left: 8 * tile, top: 18.5 * tile }"
           :interval="200"
           :interval-animation="5000"
           :delay="2000"
@@ -69,7 +86,7 @@ const setNextTile = (
         <AnimatedSprite
           :height="15"
           :width="15"
-          :offset="{ left: 2 * tile, top: 7 * tile }"
+          :offset="{ left: 3 * tile, top:10 * tile }"
           :interval="200"
           :interval-animation="1000"
           :animation="Animation.HOVER"
@@ -82,7 +99,7 @@ const setNextTile = (
         <AnimatedSprite
           :height="15"
           :width="15"
-          :offset="{ left: 15 * tile + 15, top: 9 * tile - 15 }"
+          :offset="{ left: 21 * tile + 20, top: 12 * tile - 20 }"
           :interval="200"
           :interval-animation="1000"
           :animation="Animation.HOVER"
@@ -95,7 +112,7 @@ const setNextTile = (
         <AnimatedSprite
           :height="15"
           :width="15"
-          :offset="{ left: 15 * tile, top: 8 * tile }"
+          :offset="{ left: 21 * tile, top: 12 * tile }"
           :interval="200"
           :interval-animation="1000"
           :animation="Animation.HOVER"
@@ -108,7 +125,7 @@ const setNextTile = (
         <AnimatedSprite
           :height="15"
           :width="15"
-          :offset="{ left: 30 * tile, top: 12 * tile }"
+          :offset="{ left: 34 * tile, top: 19 * tile }"
           :interval="200"
           :interval-animation="1000"
           :animation="Animation.HOVER"
@@ -116,6 +133,40 @@ const setNextTile = (
           <Sprite id="butterfly-yellow-up" />
           <Sprite id="butterfly-yellow-down" />
         </AnimatedSprite>
+
+        <!-- Lily -->
+        <AnimatedSprite
+          :height="30"
+          :width="30"
+          :offset="{ left: 4 * tile, top: 24 * tile }"
+          :interval-animation="2000"
+          :animation="Animation.FLOAT"
+        >
+          <Sprite id="lily-1" />
+        </AnimatedSprite>
+
+        <!-- Lily -->
+        <AnimatedSprite
+          :height="60"
+          :width="60"
+          :offset="{ left: 10 * tile, top: 16 * tile }"
+          :interval-animation="2000"
+          :animation="Animation.FLOAT"
+        >
+          <Sprite id="lily-2" />
+        </AnimatedSprite>
+
+        <!-- Shine
+        <AnimatedSprite
+          :height="780"
+          :width="400"
+          :offset="{ left: 10 * tile, top: 0 }"
+          :interval="200"
+          :interval-animation="2000"
+        >
+          <Sprite id="river-shine-1" />
+          <Sprite id="river-shine-2" />
+        </AnimatedSprite> -->
 
         <Char
           :height="tile * charSize.y"
@@ -170,7 +221,7 @@ const setNextTile = (
         <AnimatedSprite
           :height="15"
           :width="15"
-          :offset="{ left: 28 * tile, top: 6 * tile }"
+          :offset="{ left: 39 * tile, top: 9 * tile }"
           :interval="200"
           :interval-animation="1000"
           :animation="Animation.HOVER"
@@ -184,9 +235,20 @@ const setNextTile = (
           :height="55"
           :width="225"
           :offset="{ left: 654, top: 413.5 }"
-          style="clip-path: inset(0 0 50% 0);"
+          style="clip-path: inset(0 0 50% 0)"
         >
           <Sprite id="bridge" />
+        </AnimatedSprite>
+
+        <!-- Theo -->
+        <AnimatedSprite
+          :height="70"
+          :width="70"
+          :offset="{ left: 30 * tile, top: 24.5 * tile }"
+          :interval-animation="2000"
+          :animation="Animation.SPIN"
+        >
+          <Sprite id="theo" />
         </AnimatedSprite>
       </template>
     </Map>
@@ -200,7 +262,7 @@ const setNextTile = (
   background: #000;
 
   &__char {
-    animation: teleport 2s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation: teleport 2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
 }
 
@@ -245,6 +307,4 @@ const setNextTile = (
     opacity: 1;
   }
 }
-
-
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, onMounted, ref, useTemplateRef } from "vue";
+import { computed, onMounted, provide, ref, useTemplateRef } from "vue";
 import type { Map, Coordinate, Tile } from "@/types/types";
 import { Action } from "@/util/enums";
 import { useMagicKeys, useMousePressed } from "@vueuse/core";

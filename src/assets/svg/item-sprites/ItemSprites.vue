@@ -52,6 +52,50 @@
     <symbol id="bridge" viewBox="0 0 92 22">
       <use xlink:href="@/assets/svg/item-sprites/bridge-lateral.svg#Layer_2"></use>
     </symbol>
+
+    <!-- Lilypad -->
+    <symbol id="lily-1" viewBox="0 0 12 9">
+      <use xlink:href="@/assets/svg/item-sprites/lily-1.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="lily-2" viewBox="0 0 21 22">
+      <use xlink:href="@/assets/svg/item-sprites/lily-2.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="lily-3" viewBox="0 0 19 19">
+      <use xlink:href="@/assets/svg/item-sprites/lily-3.svg#Layer_2"></use>
+    </symbol>
+
+    <!-- River -->
+    <symbol id="river-shine-1" viewBox="0 0 119 299">
+      <use xlink:href="@/assets/svg/item-sprites/river-shine-1.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="river-shine-2" viewBox="0 0 119 299">
+      <use xlink:href="@/assets/svg/item-sprites/river-shine-2.svg#Layer_2"></use>
+    </symbol>
+
+    <!-- Smoke -->
+    <symbol id="smoke-1" viewBox="0 0 35 37">
+      <use xlink:href="@/assets/svg/item-sprites/smoke-1.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="smoke-2" viewBox="0 0 35 37">
+      <use xlink:href="@/assets/svg/item-sprites/smoke-2.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="smoke-3" viewBox="0 0 35 37">
+      <use xlink:href="@/assets/svg/item-sprites/smoke-3.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="smoke-4" viewBox="0 0 35 37">
+      <use xlink:href="@/assets/svg/item-sprites/smoke-4.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="smoke-5" viewBox="0 0 35 37">
+      <use xlink:href="@/assets/svg/item-sprites/smoke-5.svg#Layer_2"></use>
+    </symbol>
+    <symbol id="smoke-6" viewBox="0 0 35 37">
+      <use xlink:href="@/assets/svg/item-sprites/smoke-6.svg#Layer_2"></use>
+    </symbol>
+
+    <!-- Theo -->
+    <symbol id="theo" viewBox="0 0 28 37">
+      <use xlink:href="@/assets/svg/item-sprites/theo.svg#Layer_2"></use>
+    </symbol>
   </svg>
 </template>
 

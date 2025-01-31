@@ -159,6 +159,70 @@
         "allow": false,
         "hasChar": false
     },
+    "0,20": {
+        "coordinate": {
+            "x": 0,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "0,21": {
+        "coordinate": {
+            "x": 0,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "0,22": {
+        "coordinate": {
+            "x": 0,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "0,23": {
+        "coordinate": {
+            "x": 0,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "0,24": {
+        "coordinate": {
+            "x": 0,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "0,25": {
+        "coordinate": {
+            "x": 0,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "0,26": {
+        "coordinate": {
+            "x": 0,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "0,27": {
+        "coordinate": {
+            "x": 0,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
     "1,0": {
         "coordinate": {
             "x": 1,
@@ -315,6 +379,70 @@
         "coordinate": {
             "x": 1,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "1,20": {
+        "coordinate": {
+            "x": 1,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "1,21": {
+        "coordinate": {
+            "x": 1,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "1,22": {
+        "coordinate": {
+            "x": 1,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "1,23": {
+        "coordinate": {
+            "x": 1,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "1,24": {
+        "coordinate": {
+            "x": 1,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "1,25": {
+        "coordinate": {
+            "x": 1,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "1,26": {
+        "coordinate": {
+            "x": 1,
+            "y": 26
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "1,27": {
+        "coordinate": {
+            "x": 1,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -479,6 +607,70 @@
         "allow": false,
         "hasChar": false
     },
+    "2,20": {
+        "coordinate": {
+            "x": 2,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "2,21": {
+        "coordinate": {
+            "x": 2,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "2,22": {
+        "coordinate": {
+            "x": 2,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "2,23": {
+        "coordinate": {
+            "x": 2,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "2,24": {
+        "coordinate": {
+            "x": 2,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "2,25": {
+        "coordinate": {
+            "x": 2,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "2,26": {
+        "coordinate": {
+            "x": 2,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "2,27": {
+        "coordinate": {
+            "x": 2,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
     "3,0": {
         "coordinate": {
             "x": 3,
@@ -639,6 +831,70 @@
         "allow": false,
         "hasChar": false
     },
+    "3,20": {
+        "coordinate": {
+            "x": 3,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "3,21": {
+        "coordinate": {
+            "x": 3,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "3,22": {
+        "coordinate": {
+            "x": 3,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "3,23": {
+        "coordinate": {
+            "x": 3,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "3,24": {
+        "coordinate": {
+            "x": 3,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "3,25": {
+        "coordinate": {
+            "x": 3,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "3,26": {
+        "coordinate": {
+            "x": 3,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "3,27": {
+        "coordinate": {
+            "x": 3,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
     "4,0": {
         "coordinate": {
             "x": 4,
@@ -684,7 +940,7 @@
             "x": 4,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "4,6": {
@@ -692,7 +948,7 @@
             "x": 4,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "4,7": {
@@ -700,7 +956,7 @@
             "x": 4,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "4,8": {
@@ -708,7 +964,7 @@
             "x": 4,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "4,9": {
@@ -716,7 +972,7 @@
             "x": 4,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "4,10": {
@@ -799,6 +1055,70 @@
         "allow": false,
         "hasChar": false
     },
+    "4,20": {
+        "coordinate": {
+            "x": 4,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "4,21": {
+        "coordinate": {
+            "x": 4,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "4,22": {
+        "coordinate": {
+            "x": 4,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "4,23": {
+        "coordinate": {
+            "x": 4,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "4,24": {
+        "coordinate": {
+            "x": 4,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "4,25": {
+        "coordinate": {
+            "x": 4,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "4,26": {
+        "coordinate": {
+            "x": 4,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "4,27": {
+        "coordinate": {
+            "x": 4,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
     "5,0": {
         "coordinate": {
             "x": 5,
@@ -844,7 +1164,7 @@
             "x": 5,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "5,6": {
@@ -852,7 +1172,7 @@
             "x": 5,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "5,7": {
@@ -900,7 +1220,7 @@
             "x": 5,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "5,13": {
@@ -908,7 +1228,7 @@
             "x": 5,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "5,14": {
@@ -955,6 +1275,70 @@
         "coordinate": {
             "x": 5,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,20": {
+        "coordinate": {
+            "x": 5,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,21": {
+        "coordinate": {
+            "x": 5,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,22": {
+        "coordinate": {
+            "x": 5,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,23": {
+        "coordinate": {
+            "x": 5,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,24": {
+        "coordinate": {
+            "x": 5,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,25": {
+        "coordinate": {
+            "x": 5,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,26": {
+        "coordinate": {
+            "x": 5,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "5,27": {
+        "coordinate": {
+            "x": 5,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -1012,7 +1396,7 @@
             "x": 6,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "6,7": {
@@ -1044,7 +1428,7 @@
             "x": 6,
             "y": 10
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "6,11": {
@@ -1052,7 +1436,7 @@
             "x": 6,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "6,12": {
@@ -1060,7 +1444,7 @@
             "x": 6,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "6,13": {
@@ -1068,7 +1452,7 @@
             "x": 6,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "6,14": {
@@ -1115,6 +1499,70 @@
         "coordinate": {
             "x": 6,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,20": {
+        "coordinate": {
+            "x": 6,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,21": {
+        "coordinate": {
+            "x": 6,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,22": {
+        "coordinate": {
+            "x": 6,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,23": {
+        "coordinate": {
+            "x": 6,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,24": {
+        "coordinate": {
+            "x": 6,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,25": {
+        "coordinate": {
+            "x": 6,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,26": {
+        "coordinate": {
+            "x": 6,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "6,27": {
+        "coordinate": {
+            "x": 6,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -1172,7 +1620,7 @@
             "x": 7,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "7,7": {
@@ -1204,7 +1652,7 @@
             "x": 7,
             "y": 10
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "7,11": {
@@ -1212,7 +1660,7 @@
             "x": 7,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "7,12": {
@@ -1220,7 +1668,7 @@
             "x": 7,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "7,13": {
@@ -1228,7 +1676,7 @@
             "x": 7,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "7,14": {
@@ -1275,6 +1723,70 @@
         "coordinate": {
             "x": 7,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,20": {
+        "coordinate": {
+            "x": 7,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,21": {
+        "coordinate": {
+            "x": 7,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,22": {
+        "coordinate": {
+            "x": 7,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,23": {
+        "coordinate": {
+            "x": 7,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,24": {
+        "coordinate": {
+            "x": 7,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,25": {
+        "coordinate": {
+            "x": 7,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,26": {
+        "coordinate": {
+            "x": 7,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "7,27": {
+        "coordinate": {
+            "x": 7,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -1332,7 +1844,7 @@
             "x": 8,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "8,7": {
@@ -1340,7 +1852,7 @@
             "x": 8,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "8,8": {
@@ -1348,7 +1860,7 @@
             "x": 8,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "8,9": {
@@ -1356,7 +1868,7 @@
             "x": 8,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "8,10": {
@@ -1364,7 +1876,7 @@
             "x": 8,
             "y": 10
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "8,11": {
@@ -1372,7 +1884,7 @@
             "x": 8,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "8,12": {
@@ -1380,7 +1892,7 @@
             "x": 8,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "8,13": {
@@ -1388,7 +1900,7 @@
             "x": 8,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "8,14": {
@@ -1435,6 +1947,70 @@
         "coordinate": {
             "x": 8,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,20": {
+        "coordinate": {
+            "x": 8,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,21": {
+        "coordinate": {
+            "x": 8,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,22": {
+        "coordinate": {
+            "x": 8,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,23": {
+        "coordinate": {
+            "x": 8,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,24": {
+        "coordinate": {
+            "x": 8,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,25": {
+        "coordinate": {
+            "x": 8,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,26": {
+        "coordinate": {
+            "x": 8,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "8,27": {
+        "coordinate": {
+            "x": 8,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -1492,7 +2068,7 @@
             "x": 9,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "9,7": {
@@ -1500,7 +2076,7 @@
             "x": 9,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "9,8": {
@@ -1508,7 +2084,7 @@
             "x": 9,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "9,9": {
@@ -1532,7 +2108,7 @@
             "x": 9,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "9,12": {
@@ -1540,7 +2116,7 @@
             "x": 9,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "9,13": {
@@ -1548,7 +2124,7 @@
             "x": 9,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "9,14": {
@@ -1595,6 +2171,70 @@
         "coordinate": {
             "x": 9,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,20": {
+        "coordinate": {
+            "x": 9,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,21": {
+        "coordinate": {
+            "x": 9,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,22": {
+        "coordinate": {
+            "x": 9,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,23": {
+        "coordinate": {
+            "x": 9,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,24": {
+        "coordinate": {
+            "x": 9,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,25": {
+        "coordinate": {
+            "x": 9,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,26": {
+        "coordinate": {
+            "x": 9,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "9,27": {
+        "coordinate": {
+            "x": 9,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -1652,7 +2292,7 @@
             "x": 10,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "10,7": {
@@ -1660,7 +2300,7 @@
             "x": 10,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "10,8": {
@@ -1668,7 +2308,7 @@
             "x": 10,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "10,9": {
@@ -1692,7 +2332,7 @@
             "x": 10,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "10,12": {
@@ -1700,7 +2340,7 @@
             "x": 10,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "10,13": {
@@ -1708,7 +2348,7 @@
             "x": 10,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "10,14": {
@@ -1755,6 +2395,70 @@
         "coordinate": {
             "x": 10,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,20": {
+        "coordinate": {
+            "x": 10,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,21": {
+        "coordinate": {
+            "x": 10,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,22": {
+        "coordinate": {
+            "x": 10,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,23": {
+        "coordinate": {
+            "x": 10,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,24": {
+        "coordinate": {
+            "x": 10,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,25": {
+        "coordinate": {
+            "x": 10,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,26": {
+        "coordinate": {
+            "x": 10,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "10,27": {
+        "coordinate": {
+            "x": 10,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -1812,7 +2516,7 @@
             "x": 11,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "11,7": {
@@ -1820,7 +2524,7 @@
             "x": 11,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "11,8": {
@@ -1828,7 +2532,7 @@
             "x": 11,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "11,9": {
@@ -1852,7 +2556,7 @@
             "x": 11,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "11,12": {
@@ -1860,7 +2564,7 @@
             "x": 11,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "11,13": {
@@ -1868,7 +2572,7 @@
             "x": 11,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "11,14": {
@@ -1915,6 +2619,70 @@
         "coordinate": {
             "x": 11,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,20": {
+        "coordinate": {
+            "x": 11,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,21": {
+        "coordinate": {
+            "x": 11,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,22": {
+        "coordinate": {
+            "x": 11,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,23": {
+        "coordinate": {
+            "x": 11,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,24": {
+        "coordinate": {
+            "x": 11,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,25": {
+        "coordinate": {
+            "x": 11,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,26": {
+        "coordinate": {
+            "x": 11,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "11,27": {
+        "coordinate": {
+            "x": 11,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -1972,7 +2740,7 @@
             "x": 12,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "12,7": {
@@ -1980,7 +2748,7 @@
             "x": 12,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "12,8": {
@@ -1988,7 +2756,7 @@
             "x": 12,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "12,9": {
@@ -2012,7 +2780,7 @@
             "x": 12,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "12,12": {
@@ -2020,7 +2788,7 @@
             "x": 12,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "12,13": {
@@ -2028,7 +2796,7 @@
             "x": 12,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "12,14": {
@@ -2075,6 +2843,70 @@
         "coordinate": {
             "x": 12,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,20": {
+        "coordinate": {
+            "x": 12,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,21": {
+        "coordinate": {
+            "x": 12,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,22": {
+        "coordinate": {
+            "x": 12,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,23": {
+        "coordinate": {
+            "x": 12,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,24": {
+        "coordinate": {
+            "x": 12,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,25": {
+        "coordinate": {
+            "x": 12,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,26": {
+        "coordinate": {
+            "x": 12,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "12,27": {
+        "coordinate": {
+            "x": 12,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -2148,7 +2980,7 @@
             "x": 13,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "13,9": {
@@ -2172,7 +3004,7 @@
             "x": 13,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "13,12": {
@@ -2180,7 +3012,7 @@
             "x": 13,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "13,13": {
@@ -2188,7 +3020,7 @@
             "x": 13,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "13,14": {
@@ -2196,7 +3028,7 @@
             "x": 13,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "13,15": {
@@ -2204,7 +3036,7 @@
             "x": 13,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "13,16": {
@@ -2235,6 +3067,70 @@
         "coordinate": {
             "x": 13,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,20": {
+        "coordinate": {
+            "x": 13,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,21": {
+        "coordinate": {
+            "x": 13,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,22": {
+        "coordinate": {
+            "x": 13,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,23": {
+        "coordinate": {
+            "x": 13,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,24": {
+        "coordinate": {
+            "x": 13,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,25": {
+        "coordinate": {
+            "x": 13,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,26": {
+        "coordinate": {
+            "x": 13,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "13,27": {
+        "coordinate": {
+            "x": 13,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -2308,7 +3204,7 @@
             "x": 14,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "14,9": {
@@ -2332,7 +3228,7 @@
             "x": 14,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "14,12": {
@@ -2340,7 +3236,7 @@
             "x": 14,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "14,13": {
@@ -2348,7 +3244,7 @@
             "x": 14,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "14,14": {
@@ -2356,7 +3252,7 @@
             "x": 14,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "14,15": {
@@ -2364,7 +3260,7 @@
             "x": 14,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "14,16": {
@@ -2395,6 +3291,70 @@
         "coordinate": {
             "x": 14,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,20": {
+        "coordinate": {
+            "x": 14,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,21": {
+        "coordinate": {
+            "x": 14,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,22": {
+        "coordinate": {
+            "x": 14,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,23": {
+        "coordinate": {
+            "x": 14,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,24": {
+        "coordinate": {
+            "x": 14,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,25": {
+        "coordinate": {
+            "x": 14,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,26": {
+        "coordinate": {
+            "x": 14,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "14,27": {
+        "coordinate": {
+            "x": 14,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -2468,7 +3428,7 @@
             "x": 15,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "15,9": {
@@ -2492,7 +3452,7 @@
             "x": 15,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "15,12": {
@@ -2500,7 +3460,7 @@
             "x": 15,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "15,13": {
@@ -2508,7 +3468,7 @@
             "x": 15,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "15,14": {
@@ -2516,7 +3476,7 @@
             "x": 15,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "15,15": {
@@ -2524,7 +3484,7 @@
             "x": 15,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "15,16": {
@@ -2555,6 +3515,70 @@
         "coordinate": {
             "x": 15,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,20": {
+        "coordinate": {
+            "x": 15,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,21": {
+        "coordinate": {
+            "x": 15,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,22": {
+        "coordinate": {
+            "x": 15,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,23": {
+        "coordinate": {
+            "x": 15,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,24": {
+        "coordinate": {
+            "x": 15,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,25": {
+        "coordinate": {
+            "x": 15,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,26": {
+        "coordinate": {
+            "x": 15,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "15,27": {
+        "coordinate": {
+            "x": 15,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -2628,7 +3652,7 @@
             "x": 16,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "16,9": {
@@ -2652,7 +3676,7 @@
             "x": 16,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "16,12": {
@@ -2660,7 +3684,7 @@
             "x": 16,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "16,13": {
@@ -2668,7 +3692,7 @@
             "x": 16,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "16,14": {
@@ -2676,7 +3700,7 @@
             "x": 16,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "16,15": {
@@ -2684,7 +3708,7 @@
             "x": 16,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "16,16": {
@@ -2715,6 +3739,70 @@
         "coordinate": {
             "x": 16,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,20": {
+        "coordinate": {
+            "x": 16,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,21": {
+        "coordinate": {
+            "x": 16,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,22": {
+        "coordinate": {
+            "x": 16,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,23": {
+        "coordinate": {
+            "x": 16,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,24": {
+        "coordinate": {
+            "x": 16,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,25": {
+        "coordinate": {
+            "x": 16,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,26": {
+        "coordinate": {
+            "x": 16,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "16,27": {
+        "coordinate": {
+            "x": 16,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -2788,7 +3876,7 @@
             "x": 17,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "17,9": {
@@ -2812,7 +3900,7 @@
             "x": 17,
             "y": 11
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "17,12": {
@@ -2820,7 +3908,7 @@
             "x": 17,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "17,13": {
@@ -2828,7 +3916,7 @@
             "x": 17,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "17,14": {
@@ -2836,7 +3924,7 @@
             "x": 17,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "17,15": {
@@ -2844,7 +3932,7 @@
             "x": 17,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "17,16": {
@@ -2875,6 +3963,70 @@
         "coordinate": {
             "x": 17,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,20": {
+        "coordinate": {
+            "x": 17,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,21": {
+        "coordinate": {
+            "x": 17,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,22": {
+        "coordinate": {
+            "x": 17,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,23": {
+        "coordinate": {
+            "x": 17,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,24": {
+        "coordinate": {
+            "x": 17,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,25": {
+        "coordinate": {
+            "x": 17,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,26": {
+        "coordinate": {
+            "x": 17,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "17,27": {
+        "coordinate": {
+            "x": 17,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -2948,7 +4100,7 @@
             "x": 18,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "18,9": {
@@ -2956,7 +4108,7 @@
             "x": 18,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "18,10": {
@@ -2964,7 +4116,7 @@
             "x": 18,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "18,11": {
@@ -2980,7 +4132,7 @@
             "x": 18,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "18,13": {
@@ -2988,7 +4140,7 @@
             "x": 18,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "18,14": {
@@ -2996,7 +4148,7 @@
             "x": 18,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "18,15": {
@@ -3004,7 +4156,7 @@
             "x": 18,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "18,16": {
@@ -3035,6 +4187,70 @@
         "coordinate": {
             "x": 18,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,20": {
+        "coordinate": {
+            "x": 18,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,21": {
+        "coordinate": {
+            "x": 18,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,22": {
+        "coordinate": {
+            "x": 18,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,23": {
+        "coordinate": {
+            "x": 18,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,24": {
+        "coordinate": {
+            "x": 18,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,25": {
+        "coordinate": {
+            "x": 18,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,26": {
+        "coordinate": {
+            "x": 18,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "18,27": {
+        "coordinate": {
+            "x": 18,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -3108,7 +4324,7 @@
             "x": 19,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "19,9": {
@@ -3116,7 +4332,7 @@
             "x": 19,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "19,10": {
@@ -3124,7 +4340,7 @@
             "x": 19,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "19,11": {
@@ -3140,7 +4356,7 @@
             "x": 19,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "19,13": {
@@ -3148,7 +4364,7 @@
             "x": 19,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "19,14": {
@@ -3156,7 +4372,7 @@
             "x": 19,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "19,15": {
@@ -3164,7 +4380,7 @@
             "x": 19,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "19,16": {
@@ -3195,6 +4411,70 @@
         "coordinate": {
             "x": 19,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,20": {
+        "coordinate": {
+            "x": 19,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,21": {
+        "coordinate": {
+            "x": 19,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,22": {
+        "coordinate": {
+            "x": 19,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,23": {
+        "coordinate": {
+            "x": 19,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,24": {
+        "coordinate": {
+            "x": 19,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,25": {
+        "coordinate": {
+            "x": 19,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,26": {
+        "coordinate": {
+            "x": 19,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "19,27": {
+        "coordinate": {
+            "x": 19,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -3268,7 +4548,7 @@
             "x": 20,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "20,9": {
@@ -3276,7 +4556,7 @@
             "x": 20,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "20,10": {
@@ -3284,7 +4564,7 @@
             "x": 20,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "20,11": {
@@ -3300,7 +4580,7 @@
             "x": 20,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "20,13": {
@@ -3308,7 +4588,7 @@
             "x": 20,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "20,14": {
@@ -3316,7 +4596,7 @@
             "x": 20,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "20,15": {
@@ -3324,7 +4604,7 @@
             "x": 20,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "20,16": {
@@ -3355,6 +4635,70 @@
         "coordinate": {
             "x": 20,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,20": {
+        "coordinate": {
+            "x": 20,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,21": {
+        "coordinate": {
+            "x": 20,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,22": {
+        "coordinate": {
+            "x": 20,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,23": {
+        "coordinate": {
+            "x": 20,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,24": {
+        "coordinate": {
+            "x": 20,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,25": {
+        "coordinate": {
+            "x": 20,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,26": {
+        "coordinate": {
+            "x": 20,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "20,27": {
+        "coordinate": {
+            "x": 20,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -3428,7 +4772,7 @@
             "x": 21,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "21,9": {
@@ -3436,7 +4780,7 @@
             "x": 21,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "21,10": {
@@ -3444,7 +4788,7 @@
             "x": 21,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "21,11": {
@@ -3460,7 +4804,7 @@
             "x": 21,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "21,13": {
@@ -3468,7 +4812,7 @@
             "x": 21,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "21,14": {
@@ -3476,7 +4820,7 @@
             "x": 21,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "21,15": {
@@ -3484,7 +4828,7 @@
             "x": 21,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "21,16": {
@@ -3515,6 +4859,70 @@
         "coordinate": {
             "x": 21,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,20": {
+        "coordinate": {
+            "x": 21,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,21": {
+        "coordinate": {
+            "x": 21,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,22": {
+        "coordinate": {
+            "x": 21,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,23": {
+        "coordinate": {
+            "x": 21,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,24": {
+        "coordinate": {
+            "x": 21,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,25": {
+        "coordinate": {
+            "x": 21,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,26": {
+        "coordinate": {
+            "x": 21,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "21,27": {
+        "coordinate": {
+            "x": 21,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -3588,7 +4996,7 @@
             "x": 22,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "22,9": {
@@ -3596,7 +5004,7 @@
             "x": 22,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "22,10": {
@@ -3604,7 +5012,7 @@
             "x": 22,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "22,11": {
@@ -3620,7 +5028,7 @@
             "x": 22,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "22,13": {
@@ -3628,7 +5036,7 @@
             "x": 22,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "22,14": {
@@ -3636,7 +5044,7 @@
             "x": 22,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "22,15": {
@@ -3644,7 +5052,7 @@
             "x": 22,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "22,16": {
@@ -3675,6 +5083,70 @@
         "coordinate": {
             "x": 22,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,20": {
+        "coordinate": {
+            "x": 22,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,21": {
+        "coordinate": {
+            "x": 22,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,22": {
+        "coordinate": {
+            "x": 22,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,23": {
+        "coordinate": {
+            "x": 22,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,24": {
+        "coordinate": {
+            "x": 22,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,25": {
+        "coordinate": {
+            "x": 22,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,26": {
+        "coordinate": {
+            "x": 22,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "22,27": {
+        "coordinate": {
+            "x": 22,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -3748,7 +5220,7 @@
             "x": 23,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "23,9": {
@@ -3756,7 +5228,7 @@
             "x": 23,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "23,10": {
@@ -3764,7 +5236,7 @@
             "x": 23,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "23,11": {
@@ -3780,7 +5252,7 @@
             "x": 23,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "23,13": {
@@ -3788,7 +5260,7 @@
             "x": 23,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "23,14": {
@@ -3796,7 +5268,7 @@
             "x": 23,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "23,15": {
@@ -3804,7 +5276,7 @@
             "x": 23,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "23,16": {
@@ -3835,6 +5307,70 @@
         "coordinate": {
             "x": 23,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,20": {
+        "coordinate": {
+            "x": 23,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,21": {
+        "coordinate": {
+            "x": 23,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,22": {
+        "coordinate": {
+            "x": 23,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,23": {
+        "coordinate": {
+            "x": 23,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,24": {
+        "coordinate": {
+            "x": 23,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,25": {
+        "coordinate": {
+            "x": 23,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,26": {
+        "coordinate": {
+            "x": 23,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "23,27": {
+        "coordinate": {
+            "x": 23,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -3908,7 +5444,7 @@
             "x": 24,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "24,9": {
@@ -3916,7 +5452,7 @@
             "x": 24,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "24,10": {
@@ -3924,7 +5460,7 @@
             "x": 24,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "24,11": {
@@ -3940,7 +5476,7 @@
             "x": 24,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "24,13": {
@@ -3948,7 +5484,7 @@
             "x": 24,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "24,14": {
@@ -3956,7 +5492,7 @@
             "x": 24,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "24,15": {
@@ -3964,7 +5500,7 @@
             "x": 24,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "24,16": {
@@ -3995,6 +5531,70 @@
         "coordinate": {
             "x": 24,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,20": {
+        "coordinate": {
+            "x": 24,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,21": {
+        "coordinate": {
+            "x": 24,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,22": {
+        "coordinate": {
+            "x": 24,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,23": {
+        "coordinate": {
+            "x": 24,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,24": {
+        "coordinate": {
+            "x": 24,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,25": {
+        "coordinate": {
+            "x": 24,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,26": {
+        "coordinate": {
+            "x": 24,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "24,27": {
+        "coordinate": {
+            "x": 24,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -4068,7 +5668,7 @@
             "x": 25,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "25,9": {
@@ -4076,7 +5676,7 @@
             "x": 25,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "25,10": {
@@ -4084,7 +5684,7 @@
             "x": 25,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "25,11": {
@@ -4100,7 +5700,7 @@
             "x": 25,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "25,13": {
@@ -4108,7 +5708,7 @@
             "x": 25,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "25,14": {
@@ -4116,7 +5716,7 @@
             "x": 25,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "25,15": {
@@ -4124,7 +5724,7 @@
             "x": 25,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "25,16": {
@@ -4155,6 +5755,70 @@
         "coordinate": {
             "x": 25,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,20": {
+        "coordinate": {
+            "x": 25,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,21": {
+        "coordinate": {
+            "x": 25,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,22": {
+        "coordinate": {
+            "x": 25,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,23": {
+        "coordinate": {
+            "x": 25,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,24": {
+        "coordinate": {
+            "x": 25,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,25": {
+        "coordinate": {
+            "x": 25,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,26": {
+        "coordinate": {
+            "x": 25,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "25,27": {
+        "coordinate": {
+            "x": 25,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -4228,7 +5892,7 @@
             "x": 26,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "26,9": {
@@ -4236,7 +5900,7 @@
             "x": 26,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "26,10": {
@@ -4244,7 +5908,7 @@
             "x": 26,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "26,11": {
@@ -4260,7 +5924,7 @@
             "x": 26,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "26,13": {
@@ -4268,7 +5932,7 @@
             "x": 26,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "26,14": {
@@ -4276,7 +5940,7 @@
             "x": 26,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "26,15": {
@@ -4284,7 +5948,7 @@
             "x": 26,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "26,16": {
@@ -4315,6 +5979,70 @@
         "coordinate": {
             "x": 26,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,20": {
+        "coordinate": {
+            "x": 26,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,21": {
+        "coordinate": {
+            "x": 26,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,22": {
+        "coordinate": {
+            "x": 26,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,23": {
+        "coordinate": {
+            "x": 26,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,24": {
+        "coordinate": {
+            "x": 26,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,25": {
+        "coordinate": {
+            "x": 26,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,26": {
+        "coordinate": {
+            "x": 26,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "26,27": {
+        "coordinate": {
+            "x": 26,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -4388,7 +6116,7 @@
             "x": 27,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "27,9": {
@@ -4396,7 +6124,7 @@
             "x": 27,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "27,10": {
@@ -4404,7 +6132,7 @@
             "x": 27,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "27,11": {
@@ -4412,7 +6140,7 @@
             "x": 27,
             "y": 11
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "27,12": {
@@ -4452,7 +6180,7 @@
             "x": 27,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "27,17": {
@@ -4460,7 +6188,7 @@
             "x": 27,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "27,18": {
@@ -4475,6 +6203,70 @@
         "coordinate": {
             "x": 27,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,20": {
+        "coordinate": {
+            "x": 27,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,21": {
+        "coordinate": {
+            "x": 27,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,22": {
+        "coordinate": {
+            "x": 27,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,23": {
+        "coordinate": {
+            "x": 27,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,24": {
+        "coordinate": {
+            "x": 27,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,25": {
+        "coordinate": {
+            "x": 27,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,26": {
+        "coordinate": {
+            "x": 27,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "27,27": {
+        "coordinate": {
+            "x": 27,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -4508,7 +6300,7 @@
             "x": 28,
             "y": 3
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,4": {
@@ -4516,7 +6308,7 @@
             "x": 28,
             "y": 4
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,5": {
@@ -4524,7 +6316,7 @@
             "x": 28,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,6": {
@@ -4532,7 +6324,7 @@
             "x": 28,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,7": {
@@ -4540,7 +6332,7 @@
             "x": 28,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,8": {
@@ -4548,7 +6340,7 @@
             "x": 28,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,9": {
@@ -4556,7 +6348,7 @@
             "x": 28,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,10": {
@@ -4564,7 +6356,7 @@
             "x": 28,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,11": {
@@ -4572,7 +6364,7 @@
             "x": 28,
             "y": 11
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,12": {
@@ -4612,7 +6404,7 @@
             "x": 28,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,17": {
@@ -4620,7 +6412,7 @@
             "x": 28,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "28,18": {
@@ -4635,6 +6427,70 @@
         "coordinate": {
             "x": 28,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,20": {
+        "coordinate": {
+            "x": 28,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,21": {
+        "coordinate": {
+            "x": 28,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,22": {
+        "coordinate": {
+            "x": 28,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,23": {
+        "coordinate": {
+            "x": 28,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,24": {
+        "coordinate": {
+            "x": 28,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,25": {
+        "coordinate": {
+            "x": 28,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,26": {
+        "coordinate": {
+            "x": 28,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "28,27": {
+        "coordinate": {
+            "x": 28,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -4668,7 +6524,7 @@
             "x": 29,
             "y": 3
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,4": {
@@ -4676,7 +6532,7 @@
             "x": 29,
             "y": 4
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,5": {
@@ -4684,7 +6540,7 @@
             "x": 29,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,6": {
@@ -4692,7 +6548,7 @@
             "x": 29,
             "y": 6
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,7": {
@@ -4700,7 +6556,7 @@
             "x": 29,
             "y": 7
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,8": {
@@ -4708,7 +6564,7 @@
             "x": 29,
             "y": 8
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,9": {
@@ -4716,7 +6572,7 @@
             "x": 29,
             "y": 9
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,10": {
@@ -4724,7 +6580,7 @@
             "x": 29,
             "y": 10
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,11": {
@@ -4732,7 +6588,7 @@
             "x": 29,
             "y": 11
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,12": {
@@ -4772,7 +6628,7 @@
             "x": 29,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,17": {
@@ -4780,7 +6636,7 @@
             "x": 29,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "29,18": {
@@ -4795,6 +6651,70 @@
         "coordinate": {
             "x": 29,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,20": {
+        "coordinate": {
+            "x": 29,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,21": {
+        "coordinate": {
+            "x": 29,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,22": {
+        "coordinate": {
+            "x": 29,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,23": {
+        "coordinate": {
+            "x": 29,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,24": {
+        "coordinate": {
+            "x": 29,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,25": {
+        "coordinate": {
+            "x": 29,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,26": {
+        "coordinate": {
+            "x": 29,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "29,27": {
+        "coordinate": {
+            "x": 29,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -4828,7 +6748,7 @@
             "x": 30,
             "y": 3
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "30,4": {
@@ -4836,7 +6756,7 @@
             "x": 30,
             "y": 4
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "30,5": {
@@ -4844,7 +6764,7 @@
             "x": 30,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "30,6": {
@@ -4900,7 +6820,7 @@
             "x": 30,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "30,13": {
@@ -4908,7 +6828,7 @@
             "x": 30,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "30,14": {
@@ -4932,7 +6852,7 @@
             "x": 30,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "30,17": {
@@ -4940,7 +6860,7 @@
             "x": 30,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "30,18": {
@@ -4948,7 +6868,7 @@
             "x": 30,
             "y": 18
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "30,19": {
@@ -4959,12 +6879,76 @@
         "allow": false,
         "hasChar": false
     },
+    "30,20": {
+        "coordinate": {
+            "x": 30,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "30,21": {
+        "coordinate": {
+            "x": 30,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "30,22": {
+        "coordinate": {
+            "x": 30,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "30,23": {
+        "coordinate": {
+            "x": 30,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "30,24": {
+        "coordinate": {
+            "x": 30,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "30,25": {
+        "coordinate": {
+            "x": 30,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "30,26": {
+        "coordinate": {
+            "x": 30,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "30,27": {
+        "coordinate": {
+            "x": 30,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
     "31,0": {
         "coordinate": {
             "x": 31,
             "y": 0
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,1": {
@@ -4972,7 +6956,7 @@
             "x": 31,
             "y": 1
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,2": {
@@ -4980,7 +6964,7 @@
             "x": 31,
             "y": 2
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,3": {
@@ -4988,7 +6972,7 @@
             "x": 31,
             "y": 3
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,4": {
@@ -4996,7 +6980,7 @@
             "x": 31,
             "y": 4
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,5": {
@@ -5004,7 +6988,7 @@
             "x": 31,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,6": {
@@ -5060,7 +7044,7 @@
             "x": 31,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "31,13": {
@@ -5068,7 +7052,7 @@
             "x": 31,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "31,14": {
@@ -5092,7 +7076,7 @@
             "x": 31,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,17": {
@@ -5100,7 +7084,7 @@
             "x": 31,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,18": {
@@ -5108,7 +7092,7 @@
             "x": 31,
             "y": 18
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "31,19": {
@@ -5119,12 +7103,76 @@
         "allow": false,
         "hasChar": false
     },
+    "31,20": {
+        "coordinate": {
+            "x": 31,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "31,21": {
+        "coordinate": {
+            "x": 31,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "31,22": {
+        "coordinate": {
+            "x": 31,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "31,23": {
+        "coordinate": {
+            "x": 31,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "31,24": {
+        "coordinate": {
+            "x": 31,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "31,25": {
+        "coordinate": {
+            "x": 31,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "31,26": {
+        "coordinate": {
+            "x": 31,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "31,27": {
+        "coordinate": {
+            "x": 31,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
     "32,0": {
         "coordinate": {
             "x": 32,
             "y": 0
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,1": {
@@ -5132,7 +7180,7 @@
             "x": 32,
             "y": 1
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,2": {
@@ -5140,7 +7188,7 @@
             "x": 32,
             "y": 2
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,3": {
@@ -5148,7 +7196,7 @@
             "x": 32,
             "y": 3
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,4": {
@@ -5156,7 +7204,7 @@
             "x": 32,
             "y": 4
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,5": {
@@ -5164,7 +7212,7 @@
             "x": 32,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,6": {
@@ -5220,7 +7268,7 @@
             "x": 32,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "32,13": {
@@ -5228,7 +7276,7 @@
             "x": 32,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "32,14": {
@@ -5252,7 +7300,7 @@
             "x": 32,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,17": {
@@ -5260,7 +7308,7 @@
             "x": 32,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "32,18": {
@@ -5279,12 +7327,76 @@
         "allow": false,
         "hasChar": false
     },
+    "32,20": {
+        "coordinate": {
+            "x": 32,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "32,21": {
+        "coordinate": {
+            "x": 32,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "32,22": {
+        "coordinate": {
+            "x": 32,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "32,23": {
+        "coordinate": {
+            "x": 32,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "32,24": {
+        "coordinate": {
+            "x": 32,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "32,25": {
+        "coordinate": {
+            "x": 32,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "32,26": {
+        "coordinate": {
+            "x": 32,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "32,27": {
+        "coordinate": {
+            "x": 32,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
     "33,0": {
         "coordinate": {
             "x": 33,
             "y": 0
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,1": {
@@ -5292,7 +7404,7 @@
             "x": 33,
             "y": 1
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,2": {
@@ -5300,7 +7412,7 @@
             "x": 33,
             "y": 2
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,3": {
@@ -5308,7 +7420,7 @@
             "x": 33,
             "y": 3
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,4": {
@@ -5316,7 +7428,7 @@
             "x": 33,
             "y": 4
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,5": {
@@ -5324,7 +7436,7 @@
             "x": 33,
             "y": 5
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,6": {
@@ -5380,7 +7492,7 @@
             "x": 33,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,13": {
@@ -5388,7 +7500,7 @@
             "x": 33,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "33,14": {
@@ -5412,7 +7524,7 @@
             "x": 33,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,17": {
@@ -5420,7 +7532,7 @@
             "x": 33,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "33,18": {
@@ -5435,6 +7547,70 @@
         "coordinate": {
             "x": 33,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,20": {
+        "coordinate": {
+            "x": 33,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,21": {
+        "coordinate": {
+            "x": 33,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,22": {
+        "coordinate": {
+            "x": 33,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,23": {
+        "coordinate": {
+            "x": 33,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,24": {
+        "coordinate": {
+            "x": 33,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,25": {
+        "coordinate": {
+            "x": 33,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,26": {
+        "coordinate": {
+            "x": 33,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "33,27": {
+        "coordinate": {
+            "x": 33,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -5540,7 +7716,7 @@
             "x": 34,
             "y": 12
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "34,13": {
@@ -5548,7 +7724,7 @@
             "x": 34,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "34,14": {
@@ -5572,7 +7748,7 @@
             "x": 34,
             "y": 16
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "34,17": {
@@ -5580,7 +7756,7 @@
             "x": 34,
             "y": 17
         },
-        "allow": true,
+        "allow": false,
         "hasChar": false
     },
     "34,18": {
@@ -5595,6 +7771,70 @@
         "coordinate": {
             "x": 34,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,20": {
+        "coordinate": {
+            "x": 34,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,21": {
+        "coordinate": {
+            "x": 34,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,22": {
+        "coordinate": {
+            "x": 34,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,23": {
+        "coordinate": {
+            "x": 34,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,24": {
+        "coordinate": {
+            "x": 34,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,25": {
+        "coordinate": {
+            "x": 34,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,26": {
+        "coordinate": {
+            "x": 34,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "34,27": {
+        "coordinate": {
+            "x": 34,
+            "y": 27
         },
         "allow": false,
         "hasChar": false
@@ -5708,7 +7948,7 @@
             "x": 35,
             "y": 13
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "35,14": {
@@ -5716,7 +7956,7 @@
             "x": 35,
             "y": 14
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "35,15": {
@@ -5724,7 +7964,7 @@
             "x": 35,
             "y": 15
         },
-        "allow": false,
+        "allow": true,
         "hasChar": false
     },
     "35,16": {
@@ -5755,6 +7995,3206 @@
         "coordinate": {
             "x": 35,
             "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,20": {
+        "coordinate": {
+            "x": 35,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,21": {
+        "coordinate": {
+            "x": 35,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,22": {
+        "coordinate": {
+            "x": 35,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,23": {
+        "coordinate": {
+            "x": 35,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,24": {
+        "coordinate": {
+            "x": 35,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,25": {
+        "coordinate": {
+            "x": 35,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,26": {
+        "coordinate": {
+            "x": 35,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "35,27": {
+        "coordinate": {
+            "x": 35,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,0": {
+        "coordinate": {
+            "x": 36,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,1": {
+        "coordinate": {
+            "x": 36,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,2": {
+        "coordinate": {
+            "x": 36,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,3": {
+        "coordinate": {
+            "x": 36,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,4": {
+        "coordinate": {
+            "x": 36,
+            "y": 4
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,5": {
+        "coordinate": {
+            "x": 36,
+            "y": 5
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,6": {
+        "coordinate": {
+            "x": 36,
+            "y": 6
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,7": {
+        "coordinate": {
+            "x": 36,
+            "y": 7
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,8": {
+        "coordinate": {
+            "x": 36,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,9": {
+        "coordinate": {
+            "x": 36,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,10": {
+        "coordinate": {
+            "x": 36,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,11": {
+        "coordinate": {
+            "x": 36,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,12": {
+        "coordinate": {
+            "x": 36,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,13": {
+        "coordinate": {
+            "x": 36,
+            "y": 13
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "36,14": {
+        "coordinate": {
+            "x": 36,
+            "y": 14
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "36,15": {
+        "coordinate": {
+            "x": 36,
+            "y": 15
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "36,16": {
+        "coordinate": {
+            "x": 36,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,17": {
+        "coordinate": {
+            "x": 36,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,18": {
+        "coordinate": {
+            "x": 36,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,19": {
+        "coordinate": {
+            "x": 36,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,20": {
+        "coordinate": {
+            "x": 36,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,21": {
+        "coordinate": {
+            "x": 36,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,22": {
+        "coordinate": {
+            "x": 36,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,23": {
+        "coordinate": {
+            "x": 36,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,24": {
+        "coordinate": {
+            "x": 36,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,25": {
+        "coordinate": {
+            "x": 36,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,26": {
+        "coordinate": {
+            "x": 36,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "36,27": {
+        "coordinate": {
+            "x": 36,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,0": {
+        "coordinate": {
+            "x": 37,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,1": {
+        "coordinate": {
+            "x": 37,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,2": {
+        "coordinate": {
+            "x": 37,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,3": {
+        "coordinate": {
+            "x": 37,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,4": {
+        "coordinate": {
+            "x": 37,
+            "y": 4
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,5": {
+        "coordinate": {
+            "x": 37,
+            "y": 5
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,6": {
+        "coordinate": {
+            "x": 37,
+            "y": 6
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,7": {
+        "coordinate": {
+            "x": 37,
+            "y": 7
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,8": {
+        "coordinate": {
+            "x": 37,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,9": {
+        "coordinate": {
+            "x": 37,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,10": {
+        "coordinate": {
+            "x": 37,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,11": {
+        "coordinate": {
+            "x": 37,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,12": {
+        "coordinate": {
+            "x": 37,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,13": {
+        "coordinate": {
+            "x": 37,
+            "y": 13
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "37,14": {
+        "coordinate": {
+            "x": 37,
+            "y": 14
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "37,15": {
+        "coordinate": {
+            "x": 37,
+            "y": 15
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "37,16": {
+        "coordinate": {
+            "x": 37,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,17": {
+        "coordinate": {
+            "x": 37,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,18": {
+        "coordinate": {
+            "x": 37,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,19": {
+        "coordinate": {
+            "x": 37,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,20": {
+        "coordinate": {
+            "x": 37,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,21": {
+        "coordinate": {
+            "x": 37,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,22": {
+        "coordinate": {
+            "x": 37,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,23": {
+        "coordinate": {
+            "x": 37,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,24": {
+        "coordinate": {
+            "x": 37,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,25": {
+        "coordinate": {
+            "x": 37,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,26": {
+        "coordinate": {
+            "x": 37,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "37,27": {
+        "coordinate": {
+            "x": 37,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,0": {
+        "coordinate": {
+            "x": 38,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,1": {
+        "coordinate": {
+            "x": 38,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,2": {
+        "coordinate": {
+            "x": 38,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,3": {
+        "coordinate": {
+            "x": 38,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,4": {
+        "coordinate": {
+            "x": 38,
+            "y": 4
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,5": {
+        "coordinate": {
+            "x": 38,
+            "y": 5
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,6": {
+        "coordinate": {
+            "x": 38,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,7": {
+        "coordinate": {
+            "x": 38,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,8": {
+        "coordinate": {
+            "x": 38,
+            "y": 8
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,9": {
+        "coordinate": {
+            "x": 38,
+            "y": 9
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,10": {
+        "coordinate": {
+            "x": 38,
+            "y": 10
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,11": {
+        "coordinate": {
+            "x": 38,
+            "y": 11
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,12": {
+        "coordinate": {
+            "x": 38,
+            "y": 12
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,13": {
+        "coordinate": {
+            "x": 38,
+            "y": 13
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,14": {
+        "coordinate": {
+            "x": 38,
+            "y": 14
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,15": {
+        "coordinate": {
+            "x": 38,
+            "y": 15
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,16": {
+        "coordinate": {
+            "x": 38,
+            "y": 16
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,17": {
+        "coordinate": {
+            "x": 38,
+            "y": 17
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,18": {
+        "coordinate": {
+            "x": 38,
+            "y": 18
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,19": {
+        "coordinate": {
+            "x": 38,
+            "y": 19
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,20": {
+        "coordinate": {
+            "x": 38,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,21": {
+        "coordinate": {
+            "x": 38,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,22": {
+        "coordinate": {
+            "x": 38,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,23": {
+        "coordinate": {
+            "x": 38,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "38,24": {
+        "coordinate": {
+            "x": 38,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,25": {
+        "coordinate": {
+            "x": 38,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,26": {
+        "coordinate": {
+            "x": 38,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "38,27": {
+        "coordinate": {
+            "x": 38,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,0": {
+        "coordinate": {
+            "x": 39,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,1": {
+        "coordinate": {
+            "x": 39,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,2": {
+        "coordinate": {
+            "x": 39,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,3": {
+        "coordinate": {
+            "x": 39,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,4": {
+        "coordinate": {
+            "x": 39,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,5": {
+        "coordinate": {
+            "x": 39,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,6": {
+        "coordinate": {
+            "x": 39,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,7": {
+        "coordinate": {
+            "x": 39,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,8": {
+        "coordinate": {
+            "x": 39,
+            "y": 8
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,9": {
+        "coordinate": {
+            "x": 39,
+            "y": 9
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,10": {
+        "coordinate": {
+            "x": 39,
+            "y": 10
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,11": {
+        "coordinate": {
+            "x": 39,
+            "y": 11
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,12": {
+        "coordinate": {
+            "x": 39,
+            "y": 12
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,13": {
+        "coordinate": {
+            "x": 39,
+            "y": 13
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,14": {
+        "coordinate": {
+            "x": 39,
+            "y": 14
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,15": {
+        "coordinate": {
+            "x": 39,
+            "y": 15
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,16": {
+        "coordinate": {
+            "x": 39,
+            "y": 16
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,17": {
+        "coordinate": {
+            "x": 39,
+            "y": 17
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,18": {
+        "coordinate": {
+            "x": 39,
+            "y": 18
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,19": {
+        "coordinate": {
+            "x": 39,
+            "y": 19
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,20": {
+        "coordinate": {
+            "x": 39,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,21": {
+        "coordinate": {
+            "x": 39,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,22": {
+        "coordinate": {
+            "x": 39,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,23": {
+        "coordinate": {
+            "x": 39,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "39,24": {
+        "coordinate": {
+            "x": 39,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,25": {
+        "coordinate": {
+            "x": 39,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,26": {
+        "coordinate": {
+            "x": 39,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "39,27": {
+        "coordinate": {
+            "x": 39,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,0": {
+        "coordinate": {
+            "x": 40,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,1": {
+        "coordinate": {
+            "x": 40,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,2": {
+        "coordinate": {
+            "x": 40,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,3": {
+        "coordinate": {
+            "x": 40,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,4": {
+        "coordinate": {
+            "x": 40,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,5": {
+        "coordinate": {
+            "x": 40,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,6": {
+        "coordinate": {
+            "x": 40,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,7": {
+        "coordinate": {
+            "x": 40,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,8": {
+        "coordinate": {
+            "x": 40,
+            "y": 8
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,9": {
+        "coordinate": {
+            "x": 40,
+            "y": 9
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,10": {
+        "coordinate": {
+            "x": 40,
+            "y": 10
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,11": {
+        "coordinate": {
+            "x": 40,
+            "y": 11
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,12": {
+        "coordinate": {
+            "x": 40,
+            "y": 12
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,13": {
+        "coordinate": {
+            "x": 40,
+            "y": 13
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,14": {
+        "coordinate": {
+            "x": 40,
+            "y": 14
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,15": {
+        "coordinate": {
+            "x": 40,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,16": {
+        "coordinate": {
+            "x": 40,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,17": {
+        "coordinate": {
+            "x": 40,
+            "y": 17
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,18": {
+        "coordinate": {
+            "x": 40,
+            "y": 18
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,19": {
+        "coordinate": {
+            "x": 40,
+            "y": 19
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,20": {
+        "coordinate": {
+            "x": 40,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,21": {
+        "coordinate": {
+            "x": 40,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,22": {
+        "coordinate": {
+            "x": 40,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,23": {
+        "coordinate": {
+            "x": 40,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "40,24": {
+        "coordinate": {
+            "x": 40,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,25": {
+        "coordinate": {
+            "x": 40,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,26": {
+        "coordinate": {
+            "x": 40,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "40,27": {
+        "coordinate": {
+            "x": 40,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,0": {
+        "coordinate": {
+            "x": 41,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,1": {
+        "coordinate": {
+            "x": 41,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,2": {
+        "coordinate": {
+            "x": 41,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,3": {
+        "coordinate": {
+            "x": 41,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,4": {
+        "coordinate": {
+            "x": 41,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,5": {
+        "coordinate": {
+            "x": 41,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,6": {
+        "coordinate": {
+            "x": 41,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,7": {
+        "coordinate": {
+            "x": 41,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,8": {
+        "coordinate": {
+            "x": 41,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,9": {
+        "coordinate": {
+            "x": 41,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,10": {
+        "coordinate": {
+            "x": 41,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,11": {
+        "coordinate": {
+            "x": 41,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,12": {
+        "coordinate": {
+            "x": 41,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,13": {
+        "coordinate": {
+            "x": 41,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,14": {
+        "coordinate": {
+            "x": 41,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,15": {
+        "coordinate": {
+            "x": 41,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,16": {
+        "coordinate": {
+            "x": 41,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,17": {
+        "coordinate": {
+            "x": 41,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,18": {
+        "coordinate": {
+            "x": 41,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,19": {
+        "coordinate": {
+            "x": 41,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,20": {
+        "coordinate": {
+            "x": 41,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,21": {
+        "coordinate": {
+            "x": 41,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,22": {
+        "coordinate": {
+            "x": 41,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,23": {
+        "coordinate": {
+            "x": 41,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "41,24": {
+        "coordinate": {
+            "x": 41,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,25": {
+        "coordinate": {
+            "x": 41,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,26": {
+        "coordinate": {
+            "x": 41,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "41,27": {
+        "coordinate": {
+            "x": 41,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,0": {
+        "coordinate": {
+            "x": 42,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,1": {
+        "coordinate": {
+            "x": 42,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,2": {
+        "coordinate": {
+            "x": 42,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,3": {
+        "coordinate": {
+            "x": 42,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,4": {
+        "coordinate": {
+            "x": 42,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,5": {
+        "coordinate": {
+            "x": 42,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,6": {
+        "coordinate": {
+            "x": 42,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,7": {
+        "coordinate": {
+            "x": 42,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,8": {
+        "coordinate": {
+            "x": 42,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,9": {
+        "coordinate": {
+            "x": 42,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,10": {
+        "coordinate": {
+            "x": 42,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,11": {
+        "coordinate": {
+            "x": 42,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,12": {
+        "coordinate": {
+            "x": 42,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,13": {
+        "coordinate": {
+            "x": 42,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,14": {
+        "coordinate": {
+            "x": 42,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,15": {
+        "coordinate": {
+            "x": 42,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,16": {
+        "coordinate": {
+            "x": 42,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,17": {
+        "coordinate": {
+            "x": 42,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,18": {
+        "coordinate": {
+            "x": 42,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,19": {
+        "coordinate": {
+            "x": 42,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,20": {
+        "coordinate": {
+            "x": 42,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,21": {
+        "coordinate": {
+            "x": 42,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,22": {
+        "coordinate": {
+            "x": 42,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,23": {
+        "coordinate": {
+            "x": 42,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,24": {
+        "coordinate": {
+            "x": 42,
+            "y": 24
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,25": {
+        "coordinate": {
+            "x": 42,
+            "y": 25
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "42,26": {
+        "coordinate": {
+            "x": 42,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "42,27": {
+        "coordinate": {
+            "x": 42,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,0": {
+        "coordinate": {
+            "x": 43,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,1": {
+        "coordinate": {
+            "x": 43,
+            "y": 1
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,2": {
+        "coordinate": {
+            "x": 43,
+            "y": 2
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,3": {
+        "coordinate": {
+            "x": 43,
+            "y": 3
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,4": {
+        "coordinate": {
+            "x": 43,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,5": {
+        "coordinate": {
+            "x": 43,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,6": {
+        "coordinate": {
+            "x": 43,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,7": {
+        "coordinate": {
+            "x": 43,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,8": {
+        "coordinate": {
+            "x": 43,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,9": {
+        "coordinate": {
+            "x": 43,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,10": {
+        "coordinate": {
+            "x": 43,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,11": {
+        "coordinate": {
+            "x": 43,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,12": {
+        "coordinate": {
+            "x": 43,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,13": {
+        "coordinate": {
+            "x": 43,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,14": {
+        "coordinate": {
+            "x": 43,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,15": {
+        "coordinate": {
+            "x": 43,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,16": {
+        "coordinate": {
+            "x": 43,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,17": {
+        "coordinate": {
+            "x": 43,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,18": {
+        "coordinate": {
+            "x": 43,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,19": {
+        "coordinate": {
+            "x": 43,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,20": {
+        "coordinate": {
+            "x": 43,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,21": {
+        "coordinate": {
+            "x": 43,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,22": {
+        "coordinate": {
+            "x": 43,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,23": {
+        "coordinate": {
+            "x": 43,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,24": {
+        "coordinate": {
+            "x": 43,
+            "y": 24
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,25": {
+        "coordinate": {
+            "x": 43,
+            "y": 25
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "43,26": {
+        "coordinate": {
+            "x": 43,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "43,27": {
+        "coordinate": {
+            "x": 43,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,0": {
+        "coordinate": {
+            "x": 44,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,1": {
+        "coordinate": {
+            "x": 44,
+            "y": 1
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,2": {
+        "coordinate": {
+            "x": 44,
+            "y": 2
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,3": {
+        "coordinate": {
+            "x": 44,
+            "y": 3
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,4": {
+        "coordinate": {
+            "x": 44,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,5": {
+        "coordinate": {
+            "x": 44,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,6": {
+        "coordinate": {
+            "x": 44,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,7": {
+        "coordinate": {
+            "x": 44,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,8": {
+        "coordinate": {
+            "x": 44,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,9": {
+        "coordinate": {
+            "x": 44,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,10": {
+        "coordinate": {
+            "x": 44,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,11": {
+        "coordinate": {
+            "x": 44,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,12": {
+        "coordinate": {
+            "x": 44,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,13": {
+        "coordinate": {
+            "x": 44,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,14": {
+        "coordinate": {
+            "x": 44,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,15": {
+        "coordinate": {
+            "x": 44,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,16": {
+        "coordinate": {
+            "x": 44,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,17": {
+        "coordinate": {
+            "x": 44,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,18": {
+        "coordinate": {
+            "x": 44,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,19": {
+        "coordinate": {
+            "x": 44,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,20": {
+        "coordinate": {
+            "x": 44,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,21": {
+        "coordinate": {
+            "x": 44,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,22": {
+        "coordinate": {
+            "x": 44,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,23": {
+        "coordinate": {
+            "x": 44,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,24": {
+        "coordinate": {
+            "x": 44,
+            "y": 24
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,25": {
+        "coordinate": {
+            "x": 44,
+            "y": 25
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "44,26": {
+        "coordinate": {
+            "x": 44,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "44,27": {
+        "coordinate": {
+            "x": 44,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,0": {
+        "coordinate": {
+            "x": 45,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,1": {
+        "coordinate": {
+            "x": 45,
+            "y": 1
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,2": {
+        "coordinate": {
+            "x": 45,
+            "y": 2
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,3": {
+        "coordinate": {
+            "x": 45,
+            "y": 3
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,4": {
+        "coordinate": {
+            "x": 45,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,5": {
+        "coordinate": {
+            "x": 45,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,6": {
+        "coordinate": {
+            "x": 45,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,7": {
+        "coordinate": {
+            "x": 45,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,8": {
+        "coordinate": {
+            "x": 45,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,9": {
+        "coordinate": {
+            "x": 45,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,10": {
+        "coordinate": {
+            "x": 45,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,11": {
+        "coordinate": {
+            "x": 45,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,12": {
+        "coordinate": {
+            "x": 45,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,13": {
+        "coordinate": {
+            "x": 45,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,14": {
+        "coordinate": {
+            "x": 45,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,15": {
+        "coordinate": {
+            "x": 45,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,16": {
+        "coordinate": {
+            "x": 45,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,17": {
+        "coordinate": {
+            "x": 45,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,18": {
+        "coordinate": {
+            "x": 45,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,19": {
+        "coordinate": {
+            "x": 45,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,20": {
+        "coordinate": {
+            "x": 45,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,21": {
+        "coordinate": {
+            "x": 45,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,22": {
+        "coordinate": {
+            "x": 45,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,23": {
+        "coordinate": {
+            "x": 45,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "45,24": {
+        "coordinate": {
+            "x": 45,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,25": {
+        "coordinate": {
+            "x": 45,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,26": {
+        "coordinate": {
+            "x": 45,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "45,27": {
+        "coordinate": {
+            "x": 45,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,0": {
+        "coordinate": {
+            "x": 46,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,1": {
+        "coordinate": {
+            "x": 46,
+            "y": 1
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,2": {
+        "coordinate": {
+            "x": 46,
+            "y": 2
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,3": {
+        "coordinate": {
+            "x": 46,
+            "y": 3
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,4": {
+        "coordinate": {
+            "x": 46,
+            "y": 4
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,5": {
+        "coordinate": {
+            "x": 46,
+            "y": 5
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,6": {
+        "coordinate": {
+            "x": 46,
+            "y": 6
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,7": {
+        "coordinate": {
+            "x": 46,
+            "y": 7
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,8": {
+        "coordinate": {
+            "x": 46,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,9": {
+        "coordinate": {
+            "x": 46,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,10": {
+        "coordinate": {
+            "x": 46,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,11": {
+        "coordinate": {
+            "x": 46,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,12": {
+        "coordinate": {
+            "x": 46,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,13": {
+        "coordinate": {
+            "x": 46,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,14": {
+        "coordinate": {
+            "x": 46,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,15": {
+        "coordinate": {
+            "x": 46,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,16": {
+        "coordinate": {
+            "x": 46,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,17": {
+        "coordinate": {
+            "x": 46,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,18": {
+        "coordinate": {
+            "x": 46,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,19": {
+        "coordinate": {
+            "x": 46,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,20": {
+        "coordinate": {
+            "x": 46,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,21": {
+        "coordinate": {
+            "x": 46,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,22": {
+        "coordinate": {
+            "x": 46,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,23": {
+        "coordinate": {
+            "x": 46,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "46,24": {
+        "coordinate": {
+            "x": 46,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,25": {
+        "coordinate": {
+            "x": 46,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,26": {
+        "coordinate": {
+            "x": 46,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "46,27": {
+        "coordinate": {
+            "x": 46,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,0": {
+        "coordinate": {
+            "x": 47,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,1": {
+        "coordinate": {
+            "x": 47,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,2": {
+        "coordinate": {
+            "x": 47,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,3": {
+        "coordinate": {
+            "x": 47,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,4": {
+        "coordinate": {
+            "x": 47,
+            "y": 4
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,5": {
+        "coordinate": {
+            "x": 47,
+            "y": 5
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,6": {
+        "coordinate": {
+            "x": 47,
+            "y": 6
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,7": {
+        "coordinate": {
+            "x": 47,
+            "y": 7
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,8": {
+        "coordinate": {
+            "x": 47,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,9": {
+        "coordinate": {
+            "x": 47,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,10": {
+        "coordinate": {
+            "x": 47,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,11": {
+        "coordinate": {
+            "x": 47,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,12": {
+        "coordinate": {
+            "x": 47,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,13": {
+        "coordinate": {
+            "x": 47,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,14": {
+        "coordinate": {
+            "x": 47,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,15": {
+        "coordinate": {
+            "x": 47,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,16": {
+        "coordinate": {
+            "x": 47,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,17": {
+        "coordinate": {
+            "x": 47,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,18": {
+        "coordinate": {
+            "x": 47,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,19": {
+        "coordinate": {
+            "x": 47,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,20": {
+        "coordinate": {
+            "x": 47,
+            "y": 20
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "47,21": {
+        "coordinate": {
+            "x": 47,
+            "y": 21
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "47,22": {
+        "coordinate": {
+            "x": 47,
+            "y": 22
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "47,23": {
+        "coordinate": {
+            "x": 47,
+            "y": 23
+        },
+        "allow": true,
+        "hasChar": false
+    },
+    "47,24": {
+        "coordinate": {
+            "x": 47,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,25": {
+        "coordinate": {
+            "x": 47,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,26": {
+        "coordinate": {
+            "x": 47,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "47,27": {
+        "coordinate": {
+            "x": 47,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,0": {
+        "coordinate": {
+            "x": 48,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,1": {
+        "coordinate": {
+            "x": 48,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,2": {
+        "coordinate": {
+            "x": 48,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,3": {
+        "coordinate": {
+            "x": 48,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,4": {
+        "coordinate": {
+            "x": 48,
+            "y": 4
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,5": {
+        "coordinate": {
+            "x": 48,
+            "y": 5
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,6": {
+        "coordinate": {
+            "x": 48,
+            "y": 6
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,7": {
+        "coordinate": {
+            "x": 48,
+            "y": 7
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,8": {
+        "coordinate": {
+            "x": 48,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,9": {
+        "coordinate": {
+            "x": 48,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,10": {
+        "coordinate": {
+            "x": 48,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,11": {
+        "coordinate": {
+            "x": 48,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,12": {
+        "coordinate": {
+            "x": 48,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,13": {
+        "coordinate": {
+            "x": 48,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,14": {
+        "coordinate": {
+            "x": 48,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,15": {
+        "coordinate": {
+            "x": 48,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,16": {
+        "coordinate": {
+            "x": 48,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,17": {
+        "coordinate": {
+            "x": 48,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,18": {
+        "coordinate": {
+            "x": 48,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,19": {
+        "coordinate": {
+            "x": 48,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,20": {
+        "coordinate": {
+            "x": 48,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,21": {
+        "coordinate": {
+            "x": 48,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,22": {
+        "coordinate": {
+            "x": 48,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,23": {
+        "coordinate": {
+            "x": 48,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,24": {
+        "coordinate": {
+            "x": 48,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,25": {
+        "coordinate": {
+            "x": 48,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,26": {
+        "coordinate": {
+            "x": 48,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "48,27": {
+        "coordinate": {
+            "x": 48,
+            "y": 27
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,0": {
+        "coordinate": {
+            "x": 49,
+            "y": 0
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,1": {
+        "coordinate": {
+            "x": 49,
+            "y": 1
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,2": {
+        "coordinate": {
+            "x": 49,
+            "y": 2
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,3": {
+        "coordinate": {
+            "x": 49,
+            "y": 3
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,4": {
+        "coordinate": {
+            "x": 49,
+            "y": 4
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,5": {
+        "coordinate": {
+            "x": 49,
+            "y": 5
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,6": {
+        "coordinate": {
+            "x": 49,
+            "y": 6
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,7": {
+        "coordinate": {
+            "x": 49,
+            "y": 7
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,8": {
+        "coordinate": {
+            "x": 49,
+            "y": 8
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,9": {
+        "coordinate": {
+            "x": 49,
+            "y": 9
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,10": {
+        "coordinate": {
+            "x": 49,
+            "y": 10
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,11": {
+        "coordinate": {
+            "x": 49,
+            "y": 11
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,12": {
+        "coordinate": {
+            "x": 49,
+            "y": 12
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,13": {
+        "coordinate": {
+            "x": 49,
+            "y": 13
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,14": {
+        "coordinate": {
+            "x": 49,
+            "y": 14
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,15": {
+        "coordinate": {
+            "x": 49,
+            "y": 15
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,16": {
+        "coordinate": {
+            "x": 49,
+            "y": 16
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,17": {
+        "coordinate": {
+            "x": 49,
+            "y": 17
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,18": {
+        "coordinate": {
+            "x": 49,
+            "y": 18
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,19": {
+        "coordinate": {
+            "x": 49,
+            "y": 19
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,20": {
+        "coordinate": {
+            "x": 49,
+            "y": 20
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,21": {
+        "coordinate": {
+            "x": 49,
+            "y": 21
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,22": {
+        "coordinate": {
+            "x": 49,
+            "y": 22
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,23": {
+        "coordinate": {
+            "x": 49,
+            "y": 23
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,24": {
+        "coordinate": {
+            "x": 49,
+            "y": 24
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,25": {
+        "coordinate": {
+            "x": 49,
+            "y": 25
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,26": {
+        "coordinate": {
+            "x": 49,
+            "y": 26
+        },
+        "allow": false,
+        "hasChar": false
+    },
+    "49,27": {
+        "coordinate": {
+            "x": 49,
+            "y": 27
         },
         "allow": false,
         "hasChar": false

@@ -42,4 +42,5 @@ export enum Animation {
   FLOAT = "float",
   PULSE = "pulse",
   SWIM = "swim",
+  SPIN = "spin",
 }

@@ -87,7 +87,7 @@ watch(
 .char {
   position: absolute;
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   justify-content: center;
   height: v-bind(height);
   width: v-bind(width);
@@ -98,7 +98,7 @@ watch(
   &:before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     width: 100%;
     height: 10%;
     background: rgba(0, 0, 0, 0.2);

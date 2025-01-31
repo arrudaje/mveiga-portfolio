@@ -33,13 +33,18 @@ const delay = computed(() => `${props.delay ?? 0}ms`);
 const sprites = ref<(SVGElement | HTMLImageElement)[]>([]);
 const displayIndex = ref(0);
 
-const { counter } = useInterval(props.interval || 1000, {
+const { counter, pause, resume } = useInterval(props.interval || 1000, {
   controls: true,
   immediate: true,
 });
 
 watch(counter, (value) => {
   displayIndex.value = value % sprites.value.length;
+
+  if (displayIndex.value === 0 && props.delay) {
+    pause();
+    setTimeout(resume, props.delay);
+  }
 });
 
 const extractImgElements = (
