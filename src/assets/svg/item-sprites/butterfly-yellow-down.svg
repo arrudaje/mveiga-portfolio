@@ -2,25 +2,25 @@
 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 5">
   <defs>
     <style>
-      .cls-1 {
+      .clara {
         fill: #ffe79e;
       }
 
-      .cls-2 {
+      .escura {
         fill: #fdffcf;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1" shape-rendering="crispEdges">
-    <rect class="cls-1" x="1" width="1" height="1"/>
-    <rect class="cls-1" y="1" width="1" height="1"/>
-    <rect class="cls-1" x="1" y="1" width="1" height="1"/>
-    <rect class="cls-2" x="2" y="1" width="1" height="1"/>
-    <rect class="cls-1" y="2" width="1" height="1"/>
-    <rect class="cls-2" x="1" y="2" width="1" height="1"/>
-    <rect class="cls-2" x="2" y="2" width="1" height="1"/>
-    <rect class="cls-2" y="3" width="1" height="1"/>
-    <rect class="cls-2" x="1" y="3" width="1" height="1"/>
-    <rect class="cls-2" y="4" width="1" height="1"/>
+    <rect class="clara" x="1" width="1" height="1"/>
+    <rect class="clara" y="1" width="1" height="1"/>
+    <rect class="clara" x="1" y="1" width="1" height="1"/>
+    <rect class="escura" x="2" y="1" width="1" height="1"/>
+    <rect class="clara" y="2" width="1" height="1"/>
+    <rect class="escura" x="1" y="2" width="1" height="1"/>
+    <rect class="escura" x="2" y="2" width="1" height="1"/>
+    <rect class="escura" y="3" width="1" height="1"/>
+    <rect class="escura" x="1" y="3" width="1" height="1"/>
+    <rect class="escura" y="4" width="1" height="1"/>
   </g>
 </svg>

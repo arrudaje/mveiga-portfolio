@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { Offset } from "@/types/types";
 import { computed, ref, watch, useTemplateRef, nextTick } from "vue";
-import { getDuration } from "@/util/utils";
+import { getDuration, isMovementAction } from "@/util/utils";
 import { useInterval, useMounted } from "@vueuse/core";
 import { Action } from "@/util/enums";
 
@@ -67,7 +67,7 @@ watch(
   ([value, isMounted]: [Action, boolean]) => {
     nextTick(() => {
       if (!isMounted) return;
-      if (value !== Action.IDLE) pose.value = value;
+      if (isMovementAction(value)) pose.value = value as Pose;
       const slotContent = Array.from(charRef.value?.children || []);
       sprites.value = slotContent.flatMap(extractImgElements);
       displayIndex.value = 0;
@@ -79,6 +79,7 @@ watch(
 
 <template>
   <div ref="char" class="char">
+    <slot v-if="!isMovementAction(action)" :pose :display-index />
     <slot :name="action" :pose :display-index />
   </div>
 </template>

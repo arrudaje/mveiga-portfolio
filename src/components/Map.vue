@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, onMounted, provide, ref, useTemplateRef } from "vue";
+import { computed, onMounted, ref, useTemplateRef } from "vue";
 import type { Map, Coordinate, Tile } from "@/types/types";
 import { Action } from "@/util/enums";
 import { useMagicKeys, useMousePressed } from "@vueuse/core";
@@ -50,17 +50,22 @@ const getNextTile = (
       actualX++;
       break;
   }
-  const tiles = Object.entries(map.value ?? {})
-    .filter(([key]) => {
-      const [x, y] = key.split(",").map(Number);
-      return (
-        x >= actualX &&
-        x < actualX + size.x &&
-        y >= actualY &&
-        y < actualY + size.y
-      );
-    });
-  if (!tiles.length || !tiles.every(([_, t]) => t.allow)) return null;
+  const tiles = Object.entries(map.value ?? {}).filter(([key]) => {
+    const [x, y] = key.split(",").map(Number);
+    return (
+      x >= actualX &&
+      x < actualX + size.x &&
+      y >= actualY &&
+      y < actualY + size.y
+    );
+  });
+  const bottomTiles = tiles.filter(([key]) => {
+    const [_, y] = key.split(",").map(Number);
+    return y === actualY + size.y - 1;
+  });
+  if (!bottomTiles.length || !bottomTiles.every(([_, t]) => t.allow))
+    return null;
+
   return tiles.find(([key]) => key === `${actualX},${actualY}`)?.[1] || null;
 };
 
@@ -84,7 +89,6 @@ onMounted(() => {
             y,
           },
           allow: true,
-          hasChar: false,
         };
       }
     }
@@ -108,21 +112,21 @@ onMounted(() => {
       <slot name="background" @load="onBackgroundLoad"></slot>
       <rect
         v-for="(t, key) in map"
+        :tileX="t.coordinate.x"
+        :tileY="t.coordinate.y"
         :key="key"
         :x="t.coordinate.x * tile"
         :y="t.coordinate.y * tile"
         :height="tile"
         :width="tile"
         class="map__grid__tile"
-        :class="{ 'map__grid__tile--disallowed': !t.allow }"
-        @mousemove="pressed && (t.allow = A)"
+        :class="{
+          'map__grid__tile--disallowed': !t.allow,
+        }"
+        @mousemove="setup && pressed && (t.allow = A)"
       />
     </svg>
-    <slot
-      v-if="backgroundLoaded"
-      :next="getNextTile"
-      :tile
-    ></slot>
+    <slot v-if="backgroundLoaded" :next="getNextTile" :tile></slot>
     <template v-if="setup">
       <button @click="generate">Generate</button>
     </template>
@@ -146,6 +150,12 @@ onMounted(() => {
     &__tile {
       fill: transparent;
       stroke: none;
+    //   fill: rgba(0, 0, 0, 0.5);
+    //   stroke: red;
+
+      &--char {
+        fill: rgba(255, 0, 0, 0.7);
+      }
     }
   }
 

@@ -99,8 +99,8 @@ watch(displayIndex, (newIndex) => {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: v-bind(height);
-  width: v-bind(width);
+  height: v-bind(height) !important;
+  width: v-bind(width) !important;
   left: v-bind(left);
   top: v-bind(top);
   animation-name: v-bind(animation);
@@ -108,6 +108,8 @@ watch(displayIndex, (newIndex) => {
   animation-delay: v-bind(delay);
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 
   & > * {
     height: 100%;

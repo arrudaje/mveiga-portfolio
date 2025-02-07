@@ -4,6 +4,7 @@ export enum Action {
   LEFT = 'left',
   RIGHT = 'right',
   IDLE = 'idle',
+  INTERACT = 'interact',
 }
 
 export enum Role {
@@ -43,4 +44,5 @@ export enum Animation {
   PULSE = "pulse",
   SWIM = "swim",
   SPIN = "spin",
+  SWING = "swing",
 }

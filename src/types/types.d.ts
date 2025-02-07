@@ -15,7 +15,6 @@ export type Coordinate = {
 export type Tile = {
   coordinate: Coordinate;
   allow: boolean;
-  hasChar: boolean;
 };
 
 export type Map = {

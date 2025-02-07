@@ -92,14 +92,36 @@ em {
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-2px) rotate(10deg);
     }
 
     50% {
-        transform: rotate(30deg);
+        transform: translateY(-2px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(0) rotate(10deg);
     }
 
     100% {
-        transform: rotate(0deg);
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }

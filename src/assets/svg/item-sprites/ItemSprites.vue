@@ -96,6 +96,11 @@
     <symbol id="theo" viewBox="0 0 28 37">
       <use xlink:href="@/assets/svg/item-sprites/theo.svg#Layer_2"></use>
     </symbol>
+
+    <!-- Trees -->
+    <symbol id="trees" viewBox="0 0 107 136">
+      <use xlink:href="@/assets/svg/item-sprites/trees.svg#Layer_2"></use>
+    </symbol>
   </svg>
 </template>
 

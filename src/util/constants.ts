@@ -1,2 +1,2 @@
-export const WALK_DURATION = 500;
-export const RUN_DURATION = 250;
+export const WALK_DURATION = 300;
+export const RUN_DURATION = WALK_DURATION / 2;
