@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import { computed, ref, watch, useTemplateRef, nextTick } from "vue";
+import { computed, ref, watch, useTemplateRef, inject, toRef } from "vue";
 import { useInterval, useMounted } from "@vueuse/core";
-import type { Offset } from "@/types/types";
 import { Animation } from "@/util/enums";
+import { MAP_DIMENSIONS } from "@/util/constants";
 
 const props = withDefaults(
   defineProps<{
     height: number;
     width: number;
-    offset: Offset;
     interval?: number;
     intervalAnimation?: number;
     delay?: number;
     animation?: Animation;
+    absolute?: boolean;
   }>(),
   {
     interval: 1000,
@@ -21,11 +21,19 @@ const props = withDefaults(
 
 const spriteRef = useTemplateRef("sprite");
 const isMounted = useMounted();
+const { width: mapWidth, height: mapHeight } = inject(MAP_DIMENSIONS, {
+  width: 0,
+  height: 0,
+});
 
-const height = computed(() => `${props.height}px`);
-const width = computed(() => `${props.width}px`);
-const left = computed(() => `${props.offset.left}px`);
-const top = computed(() => `${props.offset.top}px`);
+const heightPx = computed(() => {
+  if (mapHeight === 0 || props.absolute) return `${props.height}px`;
+  return `${(props.height / mapHeight) * 100}%`;
+});
+const widthPx = computed(() => {
+  if (mapWidth === 0 || props.absolute) return `${props.width}px`;
+  return `${(props.width / mapWidth) * 100}%`;
+});
 const duration = computed(
   () => `${props.intervalAnimation ?? props.interval}ms`
 );
@@ -99,10 +107,8 @@ watch(displayIndex, (newIndex) => {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: v-bind(height) !important;
-  width: v-bind(width) !important;
-  left: v-bind(left);
-  top: v-bind(top);
+  height: v-bind(heightPx) !important;
+  width: v-bind(widthPx) !important;
   animation-name: v-bind(animation);
   animation-duration: v-bind(duration);
   animation-delay: v-bind(delay);

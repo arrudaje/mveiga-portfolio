@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import type { Offset } from "@/types/types";
 import { computed, ref, watch, useTemplateRef, nextTick } from "vue";
 import { getDuration, isMovementAction } from "@/util/utils";
-import { useInterval, useMounted } from "@vueuse/core";
+import { useInterval, useMounted, whenever } from "@vueuse/core";
 import { Action } from "@/util/enums";
+import Bubble from "@/components/Bubble.vue";
 
 type Pose = Exclude<Action, Action.IDLE>;
 
 const props = defineProps<{
   height: number;
   width: number;
-  offset: Offset;
   run: boolean;
   action: Action;
+  containerRef?: HTMLElement | null;
 }>();
 
 const charRef = useTemplateRef("char");
@@ -21,9 +21,9 @@ const isMounted = useMounted();
 
 const height = computed(() => `${props.height}px`);
 const width = computed(() => `${props.width}px`);
-const left = computed(() => `${props.offset.left}px`);
-const top = computed(() => `${props.offset.top}px`);
 const duration = computed(() => `${getDuration(props.run)}ms`);
+
+const isDialogueOpen = ref(false);
 
 const pose = ref<Pose>(Action.DOWN);
 
@@ -31,11 +31,11 @@ const sprites = ref<(SVGElement | HTMLImageElement)[]>([]);
 const displayIndex = ref(0);
 
 const charInterval = computed(() => {
-    let interval = getDuration(props.run) / 2;
-    if (props.action === Action.IDLE) {
-        interval = getDuration(false);
-    }
-    return interval;
+  let interval = getDuration(props.run) / 2;
+  if (props.action === Action.IDLE) {
+    interval = getDuration(false);
+  }
+  return interval;
 });
 
 const { counter } = useInterval(charInterval, {
@@ -75,12 +75,33 @@ watch(
   },
   { immediate: true }
 );
+
+whenever(isDialogueOpen, () => {
+  setTimeout(() => {
+    isDialogueOpen.value = false;
+  }, 5000);
+});
 </script>
 
 <template>
-  <div ref="char" class="char">
+  <div ref="char" class="char" @click="isDialogueOpen = true">
     <slot v-if="!isMovementAction(action)" :pose :display-index />
     <slot :name="action" :pose :display-index />
+
+    <Bubble
+      v-if="isDialogueOpen"
+      anchor="right-start"
+      :width="100"
+      typewriter-effect
+      :container-ref
+      :anchor-element="charRef"
+      :font-size="20"
+      background-color="#E5EEFC"
+      border-color="#B7C2D4"
+      shadow-color="#27406A"
+    >
+      Hi!
+    </Bubble>
   </div>
 </template>
 
@@ -88,18 +109,18 @@ watch(
 .char {
   position: absolute;
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   justify-content: center;
   height: v-bind(height);
   width: v-bind(width);
-  left: v-bind(left);
-  top: v-bind(top);
-  transition: left v-bind(duration) linear, top v-bind(duration) linear;
+  transition:
+    left v-bind(duration) linear,
+    top v-bind(duration) linear;
 
   &:before {
     content: "";
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     width: 100%;
     height: 10%;
     background: rgba(0, 0, 0, 0.2);
@@ -108,7 +129,7 @@ watch(
   }
 
   & > * {
-    height: 90%;
+    height: 85%;
   }
 }
 </style>

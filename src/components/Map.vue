@@ -10,24 +10,24 @@ const props = defineProps<{
   map?: Map;
   setup?: boolean;
   background?: string;
+  width: number;
 }>();
 
 const backgroundLoaded = ref(false);
 
 const map = ref<Map>(props.map ?? {});
-const mapRef = useTemplateRef("map-ref");
 const { pressed } = useMousePressed();
 const { A } = useMagicKeys();
 
-const width = computed(() => mapRef.value?.getBoundingClientRect().width ?? 0);
 const height = computed(() => {
   const [aspectWidth, aspectHeight] = props.aspectRatio.split("/");
-  return (width.value * Number(aspectHeight)) / Number(aspectWidth);
+  return (props.width * Number(aspectHeight)) / Number(aspectWidth);
 });
-const tile = computed(() => width.value / props.columns);
+const tile = computed(() => props.width / props.columns);
 const tileHoverColor = computed(
   () => `rgba(${A.value ? "0,0,0" : "255,0,0"}, 0.5)`
 );
+const mapWidthPx = computed(() => `${props.width}px`);
 
 const getNextTile = (
   coord: Coordinate,
@@ -78,10 +78,10 @@ const onBackgroundLoad = () => {
 onMounted(() => {
   if (!props.map) {
     const coords: Map = {};
-    const columns = width.value / tile.value;
+    const columns = props.width / tile.value;
     const rows = height.value / tile.value;
 
-    for (let x = 0; x < columns && width.value >= (x + 1) * tile.value; x++) {
+    for (let x = 0; x < columns && props.width >= (x + 1) * tile.value; x++) {
       for (let y = 0; y < rows && height.value >= (y + 1) * tile.value; y++) {
         coords[`${x},${y}`] = {
           coordinate: {
@@ -127,20 +127,19 @@ onMounted(() => {
       />
     </svg>
     <slot v-if="backgroundLoaded" :next="getNextTile" :tile></slot>
-    <template v-if="setup">
-      <button @click="generate">Generate</button>
-    </template>
+    <button v-if="setup" @click="generate">Generate</button>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .map {
   position: relative;
-  width: 100%;
+  width: v-bind(mapWidthPx);
   display: flex;
   gap: 32px;
   flex-flow: column;
   align-items: center;
+  background: #000;
 
   &__grid {
     position: relative;
@@ -150,12 +149,6 @@ onMounted(() => {
     &__tile {
       fill: transparent;
       stroke: none;
-    //   fill: rgba(0, 0, 0, 0.5);
-    //   stroke: red;
-
-      &--char {
-        fill: rgba(255, 0, 0, 0.7);
-      }
     }
   }
 

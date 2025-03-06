@@ -8,6 +8,8 @@
   --color-2: rgb(4, 181, 254);
   --color-3: rgb(85, 2, 189);
 
+  --color-3-light: rgb(142, 108, 183);
+
   --color-background: rgb(229, 238, 252);
   --color-text: rgb(15, 15, 15);
   --color-highlight: var(--color-1);
@@ -17,6 +19,9 @@
   --color-accent: rgb(170, 189, 216);
   --color-success: rgb(0, 168, 60);
   --color-success-mild: rgb(219, 251, 234);
+
+  --cursor-regular: url(./svg/handy-1.svg) 18 2, pointer;
+  --cursor-click: url(./svg/handy-2.svg) 18 2, pointer;
 }
 
 *,

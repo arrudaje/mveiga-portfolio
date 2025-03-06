@@ -2,12 +2,14 @@
 import Navigation from "@/components/Navigation.vue";
 import CharSprites from "@/assets/svg/char-sprites/CharSprites.vue";
 import ItemSprites from "@/assets/svg/item-sprites/ItemSprites.vue";
+import IconSprites from "@/assets/svg/IconSprites.vue";
 </script>
 
 <template>
   <div class="pixel">
     <CharSprites />
     <ItemSprites />
+    <IconSprites />
     <Navigation class="pixel__nav" />
     <RouterView v-slot="{ Component, route }">
       <Transition

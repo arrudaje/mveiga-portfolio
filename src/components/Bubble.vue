@@ -1,5 +1,13 @@
 <script lang="ts" setup>
-import { computed, useTemplateRef } from "vue";
+import {
+  computed,
+  inject,
+  nextTick,
+  ref,
+  useTemplateRef,
+  watchEffect,
+} from "vue";
+import { useElementBounding, onClickOutside } from "@vueuse/core";
 
 type Anchor = `${"top" | "bottom" | "left" | "right"}-${
   | "start"
@@ -11,9 +19,12 @@ const props = withDefaults(
     anchor: Anchor;
     width: number;
     height?: number;
+    anchorElement?: HTMLElement | null;
     containerRef?: HTMLElement | null;
     withTail?: boolean;
     inner?: boolean;
+    closable?: boolean;
+    fixed?: boolean;
     backgroundColor?: string;
     borderColor?: string;
     shadowColor?: string;
@@ -33,15 +44,17 @@ const props = withDefaults(
   }
 );
 
-const emit = defineEmits(["typewriter-finished"]);
+const emit = defineEmits(["typewriter-finished", "close"]);
 
 const bubble = useTemplateRef("bubble");
+
+const isMapView = inject("isMapView", false);
 
 const widthPx = computed(() => props.width + "px");
 const heightPx = computed(() => (props.height ? props.height + "px" : "auto"));
 const fontSizePx = computed(() => props.fontSize + "px");
 
-const slotContent = useTemplateRef("slotContent");
+const slotContent = useTemplateRef<HTMLDivElement>("slotContent");
 const characterCount = computed(() => {
   if (slotContent.value) {
     return slotContent.value.textContent?.trim().length || 0;
@@ -50,13 +63,17 @@ const characterCount = computed(() => {
 });
 const typewriterDelay = computed(() => `${props.typewriterSpeed}ms`);
 
-const finalContainerRef = props.containerRef ?? document.body;
+const finalContainerRef = computed(() => props.containerRef ?? document.body);
+const finalAnchorElement = computed(
+  () => props.anchorElement ?? finalContainerRef.value
+);
 
-const adjustedAnchor = computed(() => {
+const getAdjustedAnchor = () => {
   if (!bubble.value || !finalContainerRef) return props.anchor;
 
-  const bubbleRect = bubble.value.getBoundingClientRect();
-  const containerRect = finalContainerRef.getBoundingClientRect();
+  const bubbleRect = useElementBounding(bubble);
+  const containerRect = useElementBounding(finalContainerRef);
+
   const [position, alignment] = props.anchor.split("-");
 
   let newPosition = position;
@@ -64,63 +81,107 @@ const adjustedAnchor = computed(() => {
 
   // Check for vertical overflow
   if (position === "top") {
-    const topOverflow = containerRect.top > bubbleRect.top;
+    const topOverflow = containerRect.top.value > bubbleRect.top.value;
     if (topOverflow) newPosition = "bottom";
   } else if (position === "bottom") {
-    const bottomOverflow = containerRect.bottom < bubbleRect.bottom;
+    const bottomOverflow = containerRect.bottom.value < bubbleRect.bottom.value;
     if (bottomOverflow) newPosition = "top";
   }
 
   // Check for horizontal overflow
   if (position === "left") {
-    const leftOverflow = containerRect.left > bubbleRect.left;
+    const leftOverflow = containerRect.left.value > bubbleRect.left.value;
     if (leftOverflow) newPosition = "right";
   } else if (position === "right") {
-    const rightOverflow = containerRect.right < bubbleRect.right;
+    const rightOverflow = containerRect.right.value < bubbleRect.right.value;
     if (rightOverflow) newPosition = "left";
   }
 
   // Check alignment overflow
   if (newPosition === "top" || newPosition === "bottom") {
-    if (alignment === "start" && bubbleRect.left < containerRect.left) {
-      newAlignment = "end";
-    } else if (alignment === "end" && bubbleRect.right > containerRect.right) {
-      newAlignment = "start";
-    }
-  } else {
-    if (alignment === "start" && bubbleRect.top < containerRect.top) {
+    if (
+      alignment === "start" &&
+      bubbleRect.left.value < containerRect.left.value
+    ) {
       newAlignment = "end";
     } else if (
       alignment === "end" &&
-      bubbleRect.bottom > containerRect.bottom
+      bubbleRect.right.value > containerRect.right.value
+    ) {
+      newAlignment = "start";
+    }
+  } else {
+    if (
+      alignment === "start" &&
+      bubbleRect.top.value < containerRect.top.value
+    ) {
+      newAlignment = "end";
+    } else if (
+      alignment === "end" &&
+      bubbleRect.bottom.value > containerRect.bottom.value
     ) {
       newAlignment = "start";
     }
   }
 
   return `${newPosition}-${newAlignment}` as Anchor;
+};
+
+const anchorPosition = ref(props.anchor.split("-")[0]);
+const anchorAlign = ref(props.anchor.split("-")[1]);
+
+const {
+  left,
+  top,
+  width: anchorWidth,
+  height: anchorHeight,
+} = useElementBounding(finalAnchorElement);
+const anchorWidthPx = computed(() => anchorWidth.value + "px");
+const anchorHeightPx = computed(() => anchorHeight.value + "px");
+
+watchEffect(() => {
+  if (bubble.value && finalAnchorElement.value && !props.fixed) {
+    nextTick(() => {
+      anchorPosition.value = getAdjustedAnchor().split("-")[0];
+      anchorAlign.value = getAdjustedAnchor().split("-")[1];
+    });
+  }
 });
 
-const anchorPosition = computed(() => adjustedAnchor.value.split("-")[0]);
-const anchorAlign = computed(() => adjustedAnchor.value.split("-")[1]);
-
+const closeBubble = () => emit("close");
+onClickOutside(bubble, () => {
+  console.log("clicked outside");
+  closeBubble();
+});
 </script>
 
 <template>
-  <div
-    ref="bubble"
-    class="bubble"
-    :class="[
-      `bubble--${anchorPosition}`,
-      `bubble--${anchorAlign}`,
-      { 'bubble--with-tail': withTail },
-      { 'bubble--typewriter': typewriterEffect },
-    ]"
-  >
-    <span ref="slotContent" class="bubble__content">
-      <slot />
-    </span>
-  </div>
+  <Teleport :to="finalContainerRef">
+    <div
+      ref="bubble"
+      class="bubble"
+      :class="[
+        `bubble--${anchorPosition}`,
+        `bubble--${anchorAlign}`,
+        {
+          'bubble--with-tail': withTail,
+          'bubble--typewriter': typewriterEffect,
+          'bubble--with-cursor': isMapView,
+        },
+      ]"
+      :style="{
+        left: `${left}px`,
+        top: `${top}px`,
+      }"
+    >
+      <span ref="slotContent" class="bubble__content">
+        <slot />
+      </span>
+      <button v-if="closable" class="bubble__close" @click="closeBubble">
+        x
+      </button>
+    </div>
+  </Teleport>
 </template>
 
 <style lang="scss" scoped>
@@ -161,10 +222,18 @@ $bubble-border:
   box-sizing: border-box;
   width: v-bind(widthPx) !important;
   height: v-bind(heightPx) !important;
-  z-index: 1000;
+  z-index: 10000;
 
-  &__content {
-    width: 100%;
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-family: "04b03";
+    font-size: 18px;
+    color: $text;
   }
 
   &--typewriter {
@@ -205,9 +274,19 @@ $bubble-border:
     }
   }
 
+  &--with-cursor {
+    &,
+    .bubble__close {
+      cursor: var(--cursor-regular);
+
+      &:active {
+        cursor: var(--cursor-click);
+      }
+    }
+  }
+
   &--top {
     $bubble-transform: translateY(calc(-100% - 2 * $px));
-    top: 0;
     transform: $bubble-transform;
 
     &::after {
@@ -215,7 +294,6 @@ $bubble-border:
     }
 
     &.bubble--start {
-      left: 0;
       transform: $bubble-transform translateX(calc(-100% + $px));
 
       &::after {
@@ -224,7 +302,6 @@ $bubble-border:
     }
 
     &.bubble--center {
-      left: 50%;
       transform: $bubble-transform translateX(-50%);
 
       &::after {
@@ -233,8 +310,7 @@ $bubble-border:
     }
 
     &.bubble--end {
-      right: 0;
-      transform: $bubble-transform translateX(calc(100% - $px));
+      transform: $bubble-transform translateX(calc(v-bind(anchorWidthPx) - $px));
 
       &::after {
         left: $px;
@@ -244,9 +320,8 @@ $bubble-border:
   }
 
   &--bottom {
-    $bubble-transform: translateY(calc(100% + 2 * $px));
+    $bubble-transform: translateY(calc(v-bind(anchorHeightPx) + 2 * $px));
     $anchor-transform: scaleY(-1);
-    bottom: 0;
     transform: $bubble-transform;
 
     &::after {
@@ -255,7 +330,6 @@ $bubble-border:
     }
 
     &.bubble--start {
-      left: 0;
       transform: $bubble-transform translateX(calc(-100% + $px));
 
       &::after {
@@ -264,7 +338,6 @@ $bubble-border:
     }
 
     &.bubble--center {
-      left: 50%;
       transform: $bubble-transform translateX(-50%);
 
       &::after {
@@ -273,8 +346,7 @@ $bubble-border:
     }
 
     &.bubble--end {
-      right: 0;
-      transform: $bubble-transform translateX(calc(100% - $px));
+      transform: $bubble-transform translateX(calc(v-bind(anchorWidthPx) - $px));
 
       &::after {
         left: $px;
@@ -286,7 +358,6 @@ $bubble-border:
   &--left {
     $bubble-transform: translateX(calc(-100% - 2 * $px));
     $anchor-transform: rotate(-90deg) scaleX(-1);
-    left: 0;
     transform: $bubble-transform;
 
     &::after {
@@ -295,7 +366,6 @@ $bubble-border:
     }
 
     &.bubble--start {
-      top: 0;
       transform: $bubble-transform translateY(calc(-100% + $px));
 
       &::after {
@@ -304,7 +374,6 @@ $bubble-border:
     }
 
     &.bubble--center {
-      top: 50%;
       transform: $bubble-transform translateY(-50%);
 
       &::after {
@@ -314,8 +383,7 @@ $bubble-border:
     }
 
     &.bubble--end {
-      bottom: 0;
-      transform: $bubble-transform translateY(calc(100% - $px));
+      transform: $bubble-transform translateY($px);
 
       &::after {
         top: $px;
@@ -325,9 +393,8 @@ $bubble-border:
   }
 
   &--right {
-    $bubble-transform: translateX(calc(100% + 2 * $px));
+    $bubble-transform: translateX(calc(v-bind(anchorWidthPx) + 2 * $px));
     $anchor-transform: rotate(90deg);
-    right: 0;
     transform: $bubble-transform;
 
     &::after {
@@ -336,7 +403,6 @@ $bubble-border:
     }
 
     &.bubble--start {
-      top: 0;
       transform: $bubble-transform translateY(calc(-100% + $px));
 
       &::after {
@@ -345,7 +411,6 @@ $bubble-border:
     }
 
     &.bubble--center {
-      top: 50%;
       transform: $bubble-transform translateY(-50%);
 
       &::after {
@@ -355,8 +420,7 @@ $bubble-border:
     }
 
     &.bubble--end {
-      bottom: 0;
-      transform: $bubble-transform translateY(calc(100% - $px));
+      transform: $bubble-transform translateY(calc(v-bind(anchorHeightPx) - $px));
 
       &::after {
         top: $px;

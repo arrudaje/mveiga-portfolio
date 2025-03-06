@@ -15,6 +15,9 @@ import Cloud3 from "@/assets/svg/cloud3.svg";
 import Sprite from "@/assets/svg/Sprite.vue";
 import { useInterval, whenever } from "@vueuse/core";
 import { isFeatureEnabled, Feature } from "@/util/feature";
+import { useTemplateRef } from "vue";
+
+const heroineSprite = useTemplateRef("heroineSprite");
 
 const { counter, reset } = useInterval(2500, { controls: true });
 const { counter: charCounter, reset: charReset } = useInterval(500, {
@@ -110,12 +113,17 @@ whenever(() => charCounter.value === 2, charReset);
         :src="Cone"
         class="home__heroine__cone"
       />
-      <div class="home__heroine__char">
+      <div ref="heroineSprite" class="home__heroine__char">
         <Sprite
           :id="charCounter ? 'idle-down-3' : 'idle-down-2'"
           class="home__heroine__char__img"
         />
-        <Bubble anchor="top-end" :width="120">
+        <Bubble
+          anchor="top-end"
+          :width="120"
+          :anchor-element="heroineSprite"
+          fixed
+        >
           <template v-if="isFeatureEnabled(Feature.NAVIGATION)">
             Hello :)
           </template>

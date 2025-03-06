@@ -18,9 +18,9 @@ import { isFeatureEnabled, Feature } from "@/util/feature";
       <RouterLink :to="{ name: 'about' }" class="navigation__links__link">
         About Me
       </RouterLink>
-      <RouterLink :to="{ name: 'studies' }" class="navigation__links__link">
+      <!-- <RouterLink :to="{ name: 'studies' }" class="navigation__links__link">
         Case Studies
-      </RouterLink>
+      </RouterLink> -->
     </div>
   </nav>
 </template>

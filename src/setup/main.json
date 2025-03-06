@@ -3014,14 +3014,14 @@
       "x": 15,
       "y": 10
     },
-    "allow": false
+    "allow": true
   },
   "15,11": {
     "coordinate": {
       "x": 15,
       "y": 11
     },
-    "allow": false
+    "allow": true
   },
   "15,12": {
     "coordinate": {
@@ -3217,7 +3217,7 @@
       "x": 16,
       "y": 11
     },
-    "allow": false
+    "allow": true
   },
   "16,12": {
     "coordinate": {
@@ -3413,14 +3413,14 @@
       "x": 17,
       "y": 11
     },
-    "allow": false
+    "allow": true
   },
   "17,12": {
     "coordinate": {
       "x": 17,
       "y": 12
     },
-    "allow": false
+    "allow": true
   },
   "17,13": {
     "coordinate": {
@@ -6577,7 +6577,7 @@
       "x": 33,
       "y": 15
     },
-    "allow": true
+    "allow": false
   },
   "33,16": {
     "coordinate": {
@@ -6773,7 +6773,7 @@
       "x": 34,
       "y": 15
     },
-    "allow": true
+    "allow": false
   },
   "34,16": {
     "coordinate": {

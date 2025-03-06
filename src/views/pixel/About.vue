@@ -3,6 +3,8 @@ import Accordeon from "@/components/accordeon/Accordeon.vue";
 import AccordeonGroup from "@/components/accordeon/AccordeonGroup.vue";
 import Tag from "@/components/Tag.vue";
 import { Color } from "@/util/enums";
+import linkedin from "@/assets/png/linkedin.png";
+import mail from "@/assets/png/mail.svg";
 
 const violet = Color.VIOLET;
 </script>
@@ -14,7 +16,10 @@ const violet = Color.VIOLET;
         v-tooltip="{ text: 'I look better via Zoom' }"
         class="about__main__picture"
       >
-        <img src="@/assets/svg/glasses.svg" class="about__main__picture__glasses" />
+        <img
+          src="@/assets/svg/glasses.svg"
+          class="about__main__picture__glasses"
+        />
       </div>
       <div class="about__main__text">
         <p class="about__main__text__paragraph">
@@ -46,6 +51,29 @@ const violet = Color.VIOLET;
             >download my cv</a
           >.
         </p>
+        <div class="about__main__text__paragraph">
+          <div class="about__contact">
+            <h3>Talk to me!</h3>
+            <div class="about__contact__links">
+              <a
+                href="https://www.linkedin.com/in/marianaveigaux/"
+                target="blank"
+                class="about__contact__link"
+              >
+                <img :src="linkedin" alt="LinkedIn" />
+                LinkedIn
+              </a>
+              <a
+                href="mailto:mveigaj.ortiz@gmail.com"
+                target="blank"
+                class="about__contact__link"
+              >
+                <img :src="mail" alt="Email" />
+                E-mail
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="about__footer">
@@ -184,6 +212,28 @@ const violet = Color.VIOLET;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+  }
+
+  &__contact {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__links {
+      display: flex;
+      gap: 8px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        height: 20px;
+      }
     }
   }
 
