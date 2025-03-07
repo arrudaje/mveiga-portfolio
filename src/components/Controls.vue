@@ -94,8 +94,8 @@ useIntervalFn(() => handleKeys(current), runDuration);
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 40%,
-    rgba(255, 255, 255, 0.4) 100%
+    rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 255, 255, 0.7) 100%
   );
   border-radius: 12px;
 

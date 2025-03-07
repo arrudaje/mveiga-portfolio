@@ -90,7 +90,7 @@ em {
     }
 }
 
-@keyframes spin {
+@keyframes buoy {
     0% {
         transform: translateY(0) rotate(0deg);
     }
@@ -123,5 +123,15 @@ em {
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

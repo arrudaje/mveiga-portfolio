@@ -1,8 +1,11 @@
 <script lang="ts" setup>
-import { computed, onMounted, ref, useTemplateRef } from "vue";
+import { computed, onMounted, ref } from "vue";
 import type { Map, Coordinate, Tile } from "@/types/types";
-import { Action } from "@/util/enums";
-import { useMagicKeys, useMousePressed } from "@vueuse/core";
+import { Action, Animation } from "@/util/enums";
+import { useMagicKeys, useMousePressed, useSessionStorage } from "@vueuse/core";
+import ActionButton from "@/components/ActionButton.vue";
+import AnimatedSprite from "@/assets/svg/AnimatedSprite.vue";
+import Sprite from "@/assets/svg/Sprite.vue";
 
 const props = defineProps<{
   aspectRatio: `${number}/${number}`;
@@ -14,6 +17,7 @@ const props = defineProps<{
 }>();
 
 const backgroundLoaded = ref(false);
+const initialized = useSessionStorage("mapInitialized", false);
 
 const map = ref<Map>(props.map ?? {});
 const { pressed } = useMousePressed();
@@ -100,7 +104,14 @@ onMounted(() => {
 
 <template>
   <div class="map" :class="{ 'map--setup': setup }">
+    <div v-if="!initialized" class="map__initialize">
+      <slot name="init"></slot>
+      <ActionButton class="map__initialize__button" @click="initialized = true">
+        START
+      </ActionButton>
+    </div>
     <svg
+      v-else
       ref="map-ref"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -126,7 +137,21 @@ onMounted(() => {
         @mousemove="setup && pressed && (t.allow = A)"
       />
     </svg>
-    <slot v-if="backgroundLoaded" :next="getNextTile" :tile></slot>
+    <AnimatedSprite
+      v-if="initialized && !backgroundLoaded"
+      :height="100"
+      :width="100"
+      :interval="1000"
+      :animation="Animation.SPIN"
+      class="map__loading"
+    >
+      <Sprite id="cone" />
+    </AnimatedSprite>
+    <slot
+      v-if="initialized && backgroundLoaded"
+      :next="getNextTile"
+      :tile
+    ></slot>
     <button v-if="setup" @click="generate">Generate</button>
   </div>
 </template>
@@ -135,16 +160,33 @@ onMounted(() => {
 .map {
   position: relative;
   width: v-bind(mapWidthPx);
+  aspect-ratio: v-bind(aspectRatio);
   display: flex;
   gap: 32px;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
   background: #000;
+
+  &__initialize {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 24px;
+    color: var(--color-background);
+    margin: auto;
+    font-family: "04b03";
+    align-items: center;
+    justify-content: center;
+
+    &__button {
+      font-size: inherit;
+    }
+  }
 
   &__grid {
     position: relative;
     background-color: v-bind(background);
-    aspect-ratio: v-bind(aspectRatio);
 
     &__tile {
       fill: transparent;

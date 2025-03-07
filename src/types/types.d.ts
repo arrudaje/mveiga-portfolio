@@ -12,6 +12,11 @@ export type Coordinate = {
   y: number;
 };
 
+export type Size = {
+  width: number;
+  height: number;
+};
+
 export type Tile = {
   coordinate: Coordinate;
   allow: boolean;

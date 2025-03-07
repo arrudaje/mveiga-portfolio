@@ -101,6 +101,11 @@
     <symbol id="trees" viewBox="0 0 107 136">
       <use xlink:href="@/assets/svg/item-sprites/trees.svg#Layer_2"></use>
     </symbol>
+
+    <!-- Cone -->
+    <symbol id="cone" viewBox="0 0 156.6 127">
+      <use xlink:href="@/assets/svg/item-sprites/cone.svg#Layer_1"></use>
+    </symbol>
   </svg>
 </template>
 

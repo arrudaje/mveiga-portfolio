@@ -1,15 +1,11 @@
 <script lang="ts" setup>
 import { computed, useTemplateRef, watch, inject, toRef } from "vue";
-import type { Offset } from "@/types/types";
+import type { Offset, Size } from "@/types/types";
 import { Action, Animation } from "@/util/enums";
 import Sprite from "@/assets/svg/Sprite.vue";
 import Bubble from "@/components/Bubble.vue";
 import AnimatedSprite from "@/assets/svg/AnimatedSprite.vue";
-import {
-  onClickOutside,
-  useElementBounding,
-  useToggle,
-} from "@vueuse/core";
+import { useElementBounding, useToggle } from "@vueuse/core";
 import { event } from "vue-gtag";
 import { INTERACTIBLE_ITEM_INTERACT } from "@/util/events";
 import { MAP_DIMENSIONS } from "@/util/constants";
@@ -23,7 +19,7 @@ const props = withDefaults(
     interval?: number;
     delay?: number;
     animation?: Animation;
-    interactionRadius?: number;
+    characterSize: Size;
     charPosition: Offset;
     action: Action;
     invert?: boolean;
@@ -31,7 +27,7 @@ const props = withDefaults(
   }>(),
   {
     interval: 1000,
-    interactionRadius: 100,
+    characterSize: () => ({ width: 40, height: 40 }),
   }
 );
 
@@ -62,12 +58,31 @@ const arrowOffset = computed(() => ({
   top: `-5px`,
 }));
 
+const RADIUS_PADDING = 16;
+
 const isInRange = computed(() => {
+  const interactibleCenter = {
+    left: left.value + props.width / 2,
+    top: top.value + props.height / 2,
+  };
+
+  const characterCenter = {
+    left: props.charPosition.left + props.characterSize.width / 2,
+    top: props.charPosition.top + props.characterSize.height / 2,
+  };
+
   const distance = Math.sqrt(
-    Math.pow(props.charPosition.left - (left.value + props.width / 2), 2) +
-      Math.pow(props.charPosition.top - (top.value + props.height / 2), 2)
+    Math.pow(characterCenter.left - interactibleCenter.left, 2) +
+      Math.pow(characterCenter.top - interactibleCenter.top, 2)
   );
-  return distance - 2 <= props.interactionRadius;
+
+  const characterRadius =
+    Math.sqrt(
+      Math.pow(props.characterSize.width, 2) +
+        Math.pow(props.characterSize.height, 2)
+    ) / 2;
+
+  return distance <= characterRadius + RADIUS_PADDING;
 });
 
 const [isDialogueOpen, toggleDialogue] = useToggle(false);

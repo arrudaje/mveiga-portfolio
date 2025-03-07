@@ -23,7 +23,9 @@ const charSize = reactive<Coordinate>({ x: 2, y: 3 });
 const run = ref(false);
 const currentAction = ref<Action>(Action.IDLE);
 const mapView = useTemplateRef("mapView");
+const char = useTemplateRef("char");
 const { left, top, width } = useElementBounding(mapView);
+const { left: charLeft, top: charTop } = useElementBounding(char);
 const MAP_WIDTH = 1400;
 const COLUMNS = 50;
 const tileSize = computed(() => width.value / COLUMNS);
@@ -34,19 +36,18 @@ const mapHeight = computed(() => {
 });
 
 const charOffset = computed(() => ({
-  left: `${charPosition.value.x * tileSize.value}px`,
-  top: `${charPosition.value.y * tileSize.value}px`,
+  left: charPosition.value.x * tileSize.value,
+  top: charPosition.value.y * tileSize.value,
 }));
 
-const charCenterOffset = computed(() => ({
-  left:
-    left.value +
-    charPosition.value.x * tileSize.value +
-    (charSize.x * tileSize.value) / 2,
-  top:
-    top.value +
-    charPosition.value.y * tileSize.value +
-    (charSize.y * tileSize.value) / 2,
+const charScreenOffset = computed(() => ({
+  left: charLeft.value,
+  top: charTop.value,
+}));
+
+const charSizePx = computed(() => ({
+  width: charSize.x * tileSize.value,
+  height: charSize.y * tileSize.value,
 }));
 
 const setNextTile = (
@@ -62,11 +63,17 @@ const setNextTile = (
   }
 };
 
-const { isFullscreen, toggle: toggleFullscreen } = useFullscreen(mapView);
+// const fullscreenButton = useTemplateRef("fullscreenButton");
+// const { isFullscreen, toggle } = useFullscreen(mapView);
 
-const fullscreenAltText = computed(() =>
-  isFullscreen.value ? "Exit fullscreen" : "Enter fullscreen"
-);
+// const toggleFullscreen = () => {
+//   toggle();
+//   fullscreenButton.value?.blur();
+// };
+
+// const fullscreenAltText = computed(() =>
+//   isFullscreen.value ? "Exit fullscreen" : "Enter fullscreen"
+// );
 
 provide("isMapView", true);
 provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
@@ -83,11 +90,17 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
       :map
       class="map-view__map"
     >
+      <template #init>
+        <div class="map-view__init">
+            <strong>Rule:</strong> Turn the notebooks on to access the Case Studies
+        </div>
+      </template>
       <template #background="{ onLoad }">
         <image href="@/assets/map.svg" @load="onLoad" />
       </template>
       <template #default="{ next }">
-        <button
+        <!-- <button
+          ref="fullscreenButton"
           class="map-view__fullscreen-btn"
           @click="toggleFullscreen"
           :title="fullscreenAltText"
@@ -98,7 +111,7 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
             height="16"
             class="map-view__fullscreen-btn__icon"
           />
-        </button>
+        </button> -->
 
         <Controls
           @control-action="(action) => setNextTile(action, next)"
@@ -112,7 +125,6 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
           :height="80"
           :width="80"
           :interval="200"
-          :delay="2000"
           :style="{
             left: '11.7%',
             top: '1.2%',
@@ -133,7 +145,6 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
           :width="50"
           :interval="200"
           :interval-animation="5000"
-          :delay="2000"
           :animation="Animation.SWIM"
           :style="{
             left: '16%',
@@ -274,8 +285,8 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
           :height="tileSize * 2"
           :width="tileSize * 2"
           :container-ref="mapView"
-          :charPosition="charCenterOffset"
-          :interaction-radius="2 * tileSize"
+          :char-position="charScreenOffset"
+          :character-size="charSizePx"
           :action="currentAction"
           :style="{
             left: '90%',
@@ -306,12 +317,13 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
           :height="tileSize * 2"
           :width="tileSize * 2"
           :container-ref="mapView"
-          :charPosition="charCenterOffset"
-          :interaction-radius="2 * tileSize"
+          :char-position="charScreenOffset"
+          :character-size="charSizePx"
           :action="currentAction"
+          invert
           :style="{
-            left: '56%',
-            top: '35.57%',
+            left: '72%',
+            top: '59%',
           }"
         >
           <template #off>
@@ -338,13 +350,12 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
           :height="tileSize * 2"
           :width="tileSize * 2"
           :container-ref="mapView"
-          :charPosition="charCenterOffset"
-          :interaction-radius="2 * tileSize"
+          :char-position="charScreenOffset"
+          :character-size="charSizePx"
           :action="currentAction"
-          invert
           :style="{
-            left: '72%',
-            top: '60.48%',
+            left: '31%',
+            top: '33%',
           }"
         >
           <template #off>
@@ -371,12 +382,12 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
           :height="tileSize * 2"
           :width="tileSize * 2"
           :container-ref="mapView"
-          :charPosition="charCenterOffset"
-          :interaction-radius="2 * tileSize"
+          :char-position="charScreenOffset"
+          :character-size="charSizePx"
           :action="currentAction"
           :style="{
-            left: '31%',
-            top: '33%',
+            left: '56%',
+            top: '35.57%',
           }"
         >
           <template #off>
@@ -399,12 +410,16 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
         </InteractibleItem>
 
         <Char
+          ref="char"
           :height="tileSize * charSize.y"
           :width="tileSize * charSize.x"
           :action="currentAction"
           :run
           :container-ref="mapView"
-          :style="charOffset"
+          :style="{
+            left: `${charOffset.left}px`,
+            top: `${charOffset.top}px`,
+          }"
           class="map-view__char"
         >
           <template #default="{ pose, displayIndex }">
@@ -482,7 +497,7 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
           :height="70"
           :width="70"
           :interval-animation="5000"
-          :animation="Animation.SPIN"
+          :animation="Animation.BUOY"
           :style="{
             left: '60%',
             top: '87%',
@@ -538,12 +553,15 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
     border-radius: 4px;
     color: white;
     padding: 8px;
-    cursor: pointer;
-    z-index: 100;
     transition: background-color 0.2s;
+    cursor: var(--cursor-regular);
 
     &:hover {
       background: rgba(0, 0, 0, 0.7);
+    }
+
+    &:active {
+      cursor: var(--cursor-click);
     }
 
     &__icon {

@@ -1,10 +1,10 @@
 export enum Action {
-  UP = 'up',
-  DOWN = 'down',
-  LEFT = 'left',
-  RIGHT = 'right',
-  IDLE = 'idle',
-  INTERACT = 'interact',
+  UP = "up",
+  DOWN = "down",
+  LEFT = "left",
+  RIGHT = "right",
+  IDLE = "idle",
+  INTERACT = "interact",
 }
 
 export enum Role {
@@ -28,14 +28,14 @@ export enum Tag {
   AGILE = "Agile",
   ECOMMERCE = "E-Commerce",
   GRAPHIC_DESIGN = "Graphic Design",
-  PROBLEM_SOLVING = "Problem solving"
+  PROBLEM_SOLVING = "Problem solving",
 }
 
 export enum Color {
   VIOLET = "#C2C2FF",
   GREEN = "#B3F2D5",
   YELLOW = "#FFD6A9",
-  PINK = "#FFB3C7"
+  PINK = "#FFB3C7",
 }
 
 export enum Animation {
@@ -45,4 +45,5 @@ export enum Animation {
   SWIM = "swim",
   SPIN = "spin",
   SWING = "swing",
+  BUOY = "buoy",
 }
