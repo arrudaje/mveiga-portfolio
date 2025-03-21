@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4">
-  <defs>
-    <style>
-      .clara {
-        fill: #fdffcf;
-      }
-
-      .escura {
-        fill: #ffa985;
-      }
-    </style>
-  </defs>
+  
   <g id="Layer_1-2" data-name="Layer 1" shape-rendering="crispEdges">
-    <rect class="clara" width="1" height="1"/>
-    <rect class="clara" x="1" width="1" height="1"/>
-    <rect class="escura" y="1" width="1" height="1"/>
-    <rect class="clara" x="1" y="1" width="1" height="1"/>
-    <rect class="escura" y="2" width="1" height="1"/>
-    <rect class="escura" x="1" y="2" width="1" height="1"/>
-    <rect class="clara" x="2" y="2" width="1" height="1"/>
-    <rect class="escura" x="1" y="3" width="1" height="1"/>
-    <rect class="clara" x="2" y="3" width="1" height="1"/>
+    <rect fill="#fdffcf" width="1" height="1"/>
+    <rect fill="#fdffcf" x="1" width="1" height="1"/>
+    <rect fill="#ffa985" y="1" width="1" height="1"/>
+    <rect fill="#fdffcf" x="1" y="1" width="1" height="1"/>
+    <rect fill="#ffa985" y="2" width="1" height="1"/>
+    <rect fill="#ffa985" x="1" y="2" width="1" height="1"/>
+    <rect fill="#fdffcf" x="2" y="2" width="1" height="1"/>
+    <rect fill="#ffa985" x="1" y="3" width="1" height="1"/>
+    <rect fill="#fdffcf" x="2" y="3" width="1" height="1"/>
   </g>
 </svg>

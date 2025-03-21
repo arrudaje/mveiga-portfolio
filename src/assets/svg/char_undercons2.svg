@@ -2,9 +2,7 @@
 <!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 156.6 292.5" style="enable-background:new 0 0 156.6 292.5;" xml:space="preserve">
-<style type="text/css">
-	.st88{fill:#F7D881;}
-</style>
+
 <image style="overflow:visible;" width="643" height="1211" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoYAAATBCAYAAACmB1WXAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAJlJJREFUeNrs3W9sVed9wPFLbEyM
 sU1MMF0CiWOH1G2gCemflDTZoPnDlrZbVmlrtVZatUl9kVbai0rbu1w7bzbtxaS2696smvIi0aZ2
@@ -181,6 +179,6 @@ CACAMAQAQBgCACAMAQAQhgAACEMAAIQhAADCEAAAYQgAgDAEAEAYAgAgDAEAEIYAAAhDAACEIQAA
 whAAAGEIAIAwBABAGAIAIAwBAEhToyUgUf2WALz2AAAAAAAAAACI6v8FGAA0p8zAlGgIbwAAAABJ
 RU5ErkJggg==" transform="matrix(0.24 0 0 0.24 2.4578 1.8385)">
 </image>
-<polygon class="st88" points="140.8,72.5 140.8,84.3 137.9,84.3 137.9,87.2 135,87.2 135,84.3 132,84.3 132,78.4 135,78.4 135,75.5 
+<polygon fill="#F7D881" points="140.8,72.5 140.8,84.3 137.9,84.3 137.9,87.2 135,87.2 135,84.3 132,84.3 132,78.4 135,78.4 135,75.5 
 	137.9,75.5 137.9,72.5 "/>
 </svg>
