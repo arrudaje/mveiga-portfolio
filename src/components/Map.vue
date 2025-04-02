@@ -173,14 +173,14 @@ onMounted(() => {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  background: #000;
+  background: var(--color-background);
 
   &__initialize {
     display: flex;
     flex-direction: column;
     gap: 16px;
     font-size: 24px;
-    color: var(--color-background);
+    color: var(--color-text);
     margin: auto;
     font-family: "04b03";
     align-items: center;
