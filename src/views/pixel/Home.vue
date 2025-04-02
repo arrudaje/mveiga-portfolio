@@ -74,7 +74,7 @@ whenever(() => charCounter.value === 2, charReset);
         </Transition>
       </div>
       <p class="home__hero__description">
-        Based in Amsterdam - Netherlands, I'm on a quest to blend cultures,
+        Based in Valencia - Spain, I'm on a quest to blend cultures,
         break bias barriers, and bridge the gap between
         <del>users</del> (<em>participants</em>) and businesses.<br />
         This is an adventure of crafting empathetic and user-centric experiences
