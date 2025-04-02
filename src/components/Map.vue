@@ -6,6 +6,8 @@ import { useMagicKeys, useMousePressed, useSessionStorage } from "@vueuse/core";
 import ActionButton from "@/components/ActionButton.vue";
 import AnimatedSprite from "@/assets/svg/AnimatedSprite.vue";
 import Sprite from "@/assets/svg/Sprite.vue";
+import {event} from "vue-gtag";
+import {OPEN_GAME} from "@/util/events";
 
 const props = defineProps<{
   aspectRatio: `${number}/${number}`;
@@ -79,6 +81,11 @@ const onBackgroundLoad = () => {
   backgroundLoaded.value = true;
 };
 
+const initialize = () => {
+  initialized.value = true
+  event(OPEN_GAME)
+}
+
 onMounted(() => {
   if (!props.map) {
     const coords: Map = {};
@@ -106,7 +113,7 @@ onMounted(() => {
   <div class="map" :class="{ 'map--setup': setup }">
     <div v-if="!initialized" class="map__initialize">
       <slot name="init"></slot>
-      <ActionButton class="map__initialize__button" @click="initialized = true">
+      <ActionButton class="map__initialize__button" @click="initialize">
         START
       </ActionButton>
     </div>
