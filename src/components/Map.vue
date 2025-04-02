@@ -166,14 +166,22 @@ onMounted(() => {
 <style lang="scss" scoped>
 .map {
   position: relative;
-  width: v-bind(mapWidthPx);
+  width: 100%;
+  max-width: v-bind(mapWidthPx);
   aspect-ratio: v-bind(aspectRatio);
+  margin: auto;
   display: flex;
   gap: 32px;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   background: var(--color-background);
+  cursor: var(--cursor-regular);
+  overflow: hidden;
+
+  &:active {
+    cursor: var(--cursor-click);
+  }
 
   &__initialize {
     display: flex;
@@ -222,6 +230,12 @@ onMounted(() => {
 
   :slotted(image) {
     width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .map {
+
   }
 }
 </style>

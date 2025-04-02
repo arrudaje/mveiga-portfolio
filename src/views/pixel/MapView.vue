@@ -11,7 +11,7 @@ import { computed, provide, reactive, ref, toRef, useTemplateRef } from "vue";
 import map from "@/setup/main.json";
 import { isMovementAction } from "@/util/utils";
 import ActionButton from "@/components/ActionButton.vue";
-import { useElementBounding, useFullscreen } from "@vueuse/core";
+import {useElementBounding, useFullscreen, useWindowSize} from "@vueuse/core";
 import { MAP_DIMENSIONS } from "@/util/constants";
 
 const currentTile = reactive<Tile>({
@@ -24,16 +24,17 @@ const run = ref(false);
 const currentAction = ref<Action>(Action.IDLE);
 const mapView = useTemplateRef("mapView");
 const char = useTemplateRef("char");
-const { left, top, width } = useElementBounding(mapView);
 const { left: charLeft, top: charTop } = useElementBounding(char);
 const MAP_WIDTH = 1400;
 const COLUMNS = 50;
-const tileSize = computed(() => width.value / COLUMNS);
+const { width: windowWidth } = useWindowSize();
+const actualWidth = computed(() => Math.min(windowWidth.value, MAP_WIDTH));
+const tileSize = computed(() => actualWidth.value / COLUMNS);
 const MAP_ASPECT_RATIO = "16/9";
-const mapHeight = computed(() => {
+const originalMapHeight = computed(() => {
   const [aspectWidth, aspectHeight] = MAP_ASPECT_RATIO.split("/");
   return (MAP_WIDTH * Number(aspectHeight)) / Number(aspectWidth);
-});
+})
 
 const charOffset = computed(() => ({
   left: charPosition.value.x * tileSize.value,
@@ -76,7 +77,7 @@ const setNextTile = (
 // );
 
 provide("isMapView", true);
-provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
+provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: originalMapHeight.value });
 </script>
 
 <template>
@@ -85,7 +86,7 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
     <Map
       id="map"
       :aspect-ratio="MAP_ASPECT_RATIO"
-      :width="MAP_WIDTH"
+      :width="actualWidth"
       :columns="COLUMNS"
       :map
       class="map-view__map"
@@ -282,8 +283,8 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
         <!-- Notebook Ellen Van Dijk -->
         <InteractibleItem
           id="ellen-van-dijk"
-          :height="tileSize * 2"
-          :width="tileSize * 2"
+          :height="60"
+          :width="60"
           :container-ref="mapView"
           :char-position="charScreenOffset"
           :character-size="charSizePx"
@@ -314,8 +315,8 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
         <!-- Notebook Too Good To Go -->
         <InteractibleItem
           id="too-good-to-go"
-          :height="tileSize * 2"
-          :width="tileSize * 2"
+          :height="60"
+          :width="60"
           :container-ref="mapView"
           :char-position="charScreenOffset"
           :character-size="charSizePx"
@@ -347,8 +348,8 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
         <!-- Notebook Serenity -->
         <InteractibleItem
           id="serenity"
-          :height="tileSize * 2"
-          :width="tileSize * 2"
+          :height="60"
+          :width="60"
           :container-ref="mapView"
           :char-position="charScreenOffset"
           :character-size="charSizePx"
@@ -379,8 +380,8 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
         <!-- Notebook Ride Capital -->
         <InteractibleItem
           id="ride-capital"
-          :height="tileSize * 2"
-          :width="tileSize * 2"
+          :height="60"
+          :width="60"
           :container-ref="mapView"
           :char-position="charScreenOffset"
           :character-size="charSizePx"
@@ -526,11 +527,7 @@ provide(MAP_DIMENSIONS, { width: MAP_WIDTH, height: mapHeight.value });
 <style lang="scss" scoped>
 .map-view {
   margin: 0 auto;
-  cursor: var(--cursor-regular);
-
-  &:active {
-    cursor: var(--cursor-click);
-  }
+  width: 100%;
 
   &__char {
     transform: translate3d(0, 0, 0);
