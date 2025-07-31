@@ -13,7 +13,7 @@ import { isFeatureEnabled, Feature } from "@/util/feature";
         Home
       </RouterLink>
       <RouterLink :to="{ name: 'map' }" class="navigation__links__link">
-        Let's Play!
+        Case Studies
       </RouterLink>
       <RouterLink :to="{ name: 'about' }" class="navigation__links__link">
         About Me
