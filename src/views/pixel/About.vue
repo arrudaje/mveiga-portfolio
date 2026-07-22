@@ -28,8 +28,8 @@ const violet = Color.VIOLET;
           is Mari.
         </p>
         <p class="about__main__text__paragraph">
-          I am a Brazilian (Portuguese citizen and EU Passport Holder) currently
-          living in the beautiful Amsterdam who graduated in Graphic Design and
+          I am Brazilian/Spanish currently
+          living in the beautiful Valencia who graduated in Graphic Design and
           specialised in UX/UI through Iron Hack.
         </p>
         <p class="about__main__text__paragraph">
