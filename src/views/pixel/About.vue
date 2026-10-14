@@ -46,7 +46,7 @@ const violet = Color.VIOLET;
         <p class="about__main__text__paragraph">
           If you want to know my full experience, please
           <a
-            href="https://drive.google.com/file/d/1TLjLVhBSr4MaqTy5f-LAmD9SbCcXQQT-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Yl3RNp6_a2V1EnfhqF6ZFbkKHsYLleBh/view?usp=sharing"
             target="_blank"
             >download my cv</a
           >.
